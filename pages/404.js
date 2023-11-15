@@ -7,7 +7,7 @@ import Grid from '@components/grid';
 
 // import Image from 'next/image';
 
-export default function Custom404({ title, articles }) {
+export default function Custom404({ title, splash, articles }) {
   const router = useRouter();
 
   // fix for trailling slash URL error from Github pages
@@ -27,12 +27,11 @@ export default function Custom404({ title, articles }) {
 
   if (!router.asPath.endsWith('/')) {
     return (
-      <Layout title={title}>
+      <Layout title={title} splash={splash}>
         <div className="container error-shape">
-          <h1>404 - Page Not Found</h1>
-          <div data-aos="fade-up">
-            <Grid data={random} className="mt-10 mb-10" />
-          </div>
+          <section data-aos="fade-right">
+            <Grid data={random} />
+          </section>
           <div>
             <Link href="/">
               <a className="btn mb-20">Go back Home</a>
@@ -51,6 +50,7 @@ export default function Custom404({ title, articles }) {
 
 Custom404.propTypes = {
   title: PropTypes.string.isRequired,
+  splash: PropTypes.string,
   articles: PropTypes.array,
 };
 
@@ -59,7 +59,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      title: '404 - Page Not Found | Rémy Beumier',
+      title: 'Page Not Found',
+      splash: '/images/beach.jpg',
       articles: articles,
     },
   };

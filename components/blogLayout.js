@@ -20,16 +20,13 @@ export default function BlogLayout({ children }) {
   const nextLink = articles[articles.findIndex((x) => x.title === title) + 1] || articles[0];
   const previousLink = articles[articles.findIndex((x) => x.title === title) - 1] || articles[articles.length - 1];
   const relatedLinks = [];
+  // const relatedLinks = [previousLink, nextLink];
 
   return (
     <>
-      <Layout title={`${title} | Blog | Rémy Beumier`} description={intro} itemtype="Article" {...article}>
+      <Layout title={`${title}`} description={intro} splash={img} itemtype="Article" {...article}>
         <div data-aos="fade-right">
           <article className="new-stack">
-            <div className="article__splash">
-              <img src={img} alt={title} width="300" height="150" itemProp="image" />
-              <h1 itemProp="headline name">{title}</h1>
-            </div>
             <div className="article__main article-shape">
               <div className="container narrow">
                 <div className="space-between-x pt-5 mb-10">

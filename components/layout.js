@@ -1,12 +1,26 @@
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import Header from '@components/header';
 import Footer from '@components/footer';
+import Splash from './splash';
 // import MobileNav from '@components/mobileNav';
 
-export default function Layout({ title, description, img, url, children, itemtype, published, modified }) {
+export default function Layout({
+  title,
+  subtitle,
+  description,
+  img,
+  splash,
+  url,
+  children,
+  itemtype,
+  published,
+  modified,
+}) {
   const [theme, setTheme] = useState('');
+  const router = useRouter();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -30,15 +44,19 @@ export default function Layout({ title, description, img, url, children, itemtyp
       itemType={itemtype ? 'http://schema.org/' + itemtype : undefined}
     >
       <Head>
-        <title key="title">{title}</title>
+        <title key="title">{`${title}${router.pathname !== '/' ? ' | Tripser' : ''}`}</title>
         <meta name="description" content={description} key="description" />
 
-        <meta property="og:title" content={title} key="og:title" />
+        <meta property="og:title" content={`${title}${router.pathname !== '/' ? ' | Tripser' : ''}`} key="og:title" />
         <meta property="og:description" content={description} key="og:description" />
         <meta property="og:url" content={url || 'https://tripser.github.io'} key="og:url" />
         <meta property="og:image" content={fullImageUrl || 'https://tripser.github.io/images/rb.jpg'} key="og:image" />
 
-        <meta property="twitter:title" content={title} key="twitter:title" />
+        <meta
+          property="twitter:title"
+          content={`${title}${router.pathname !== '/' ? ' | Tripser' : ''}`}
+          key="twitter:title"
+        />
         <meta property="twitter:description" content={description} key="twitter:description" />
         <meta property="twitter:url" content={url || 'https://tripser.github.io'} key="twitter:url" />
         <meta
@@ -51,7 +69,10 @@ export default function Layout({ title, description, img, url, children, itemtyp
         {modified ? <meta property="article:modified_time" content={modified} /> : null}
       </Head>
       <Header onClick={switchTheme} theme={theme} />
-      <div className="new-stack">{children}</div>
+      <div className="new-stack">
+        <Splash title={title} subtitle={subtitle} splash={splash} />
+        <div className="body">{children}</div>
+      </div>
       <Footer />
       {/* <MobileNav /> */}
       <div id="ie-banner">
@@ -63,8 +84,10 @@ export default function Layout({ title, description, img, url, children, itemtyp
 
 Layout.propTypes = {
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   description: PropTypes.string,
   img: PropTypes.string,
+  splash: PropTypes.string,
   url: PropTypes.string,
   children: PropTypes.node,
   itemtype: PropTypes.string,

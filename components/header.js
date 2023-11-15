@@ -11,7 +11,7 @@ export default function Header({ onClick, theme }) {
           <Link href={n.link} key={n.text}>
             {!i ? (
               <a className="logo">
-                <img src="/images/logo.png" alt="Rémy Beumier logo" title={n.text} width="30" height="30" />
+                <img src="/images/logo.png" alt="Tripser logo" title={n.text} width="30" height="30" />
               </a>
             ) : (
               <a>{n.text}</a>

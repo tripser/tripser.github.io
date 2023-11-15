@@ -10,11 +10,7 @@ function GridItem({ item }) {
         </div>
         <div className="card__data">
           <h2 className="card__title t-ellipsis">{item.title}</h2>
-          <p>
-            {item.categories.split(', ').map((x) => (
-              <span key={x}>{x}</span>
-            ))}
-          </p>
+          <p>{item.categories}</p>
         </div>
       </a>
     </Link>

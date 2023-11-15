@@ -82,12 +82,6 @@ main {
   --text40: rgba(256, 256, 256, 0.4);
   --text60: rgba(256, 256, 256, 0.6);
   --text80: rgba(256, 256, 256, 0.8);
-
-  header .logo img {
-    @media screen and (min-width: 768px) {
-      filter: grayscale(1) invert(1);
-    }
-  }
 }
 
 main.dark {
