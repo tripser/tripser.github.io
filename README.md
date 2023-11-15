@@ -33,8 +33,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
 ## TODO
 
 - new logo
-- new colors
-- new design
 - social card
 
 - review button design && shapes && h1 (articles)

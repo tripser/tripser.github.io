@@ -2,7 +2,6 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { AiFillCaretRight } from 'react-icons/ai';
 import Layout from '@components/layout';
-import Logo from '@components/logo';
 import Grid from '@components/grid';
 
 export default function Home({ title, description, articles }) {
@@ -14,7 +13,6 @@ export default function Home({ title, description, articles }) {
             <div className="t-center">
               <h1>Tripser</h1>
               <p>Voyage blog</p>
-              {/* <Logo /> */}
             </div>
           </div>
         </div>

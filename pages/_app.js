@@ -55,6 +55,8 @@ export default function MyApp({ Component, pageProps }) {
         <meta property="twitter:url" content={url} key="twitter:url" />
         <meta property="twitter:image" content={imgUrl} key="twitter:image" />
 
+        <meta name="google-site-verification" content="z2hRht9XAlPwzcTZ_4eqa9-fBU4ZQTIalemhd4_2m8Y" />
+
         <meta name="theme-color" content="#009688" key="theme-color" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
