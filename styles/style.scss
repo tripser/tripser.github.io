@@ -1,0 +1,14 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/general';
+@import 'base/mixins';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/mobileNav';
+@import 'components/breadcrumb';
+@import 'components/grid';
+
+@import 'pages/home';
+@import 'pages/blog';
+@import 'pages/404';

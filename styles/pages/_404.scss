@@ -1,0 +1,3 @@
+@media screen and (min-width: 992px) {
+  @include moving-shapes(error-shape, 2.5rem, 8rem, 2.5rem, 53s, 100deg, -20rem, 1.5rem);
+}
