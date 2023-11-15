@@ -1,0 +1,142 @@
+@media screen and (min-width: 992px) {
+  @include moving-shapes(blog-shape, 2rem, 8rem, 2.5rem, 53s, 100deg, -20rem, 1rem);
+  @include moving-shapes(article-shape, 3rem, 10rem, 2.5rem, 53s, -100deg, -1rem, 20rem);
+}
+
+.blog__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .btn {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+}
+
+.article__splash {
+  position: relative;
+  z-index: -1;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: 400px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1 {
+    position: absolute;
+    margin: 0 0 var(--radius-wave) 0;
+    text-align: center;
+  }
+}
+
+.article__main {
+  position: relative;
+  background: var(--bg);
+  margin-top: calc(var(--radius-wave) * -1);
+  border-top-left-radius: var(--radius-wave);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 4px);
+    height: 100%;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--primary);
+    background: linear-gradient(-45deg, var(--primary), var(--secondary));
+    transition: all var(--transition);
+  }
+}
+
+.article__categories a {
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+}
+
+.article__date {
+  display: block;
+  text-align: right;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.article__content {
+  h1 {
+    animation: none;
+    color: inherit;
+    font-weight: normal;
+    letter-spacing: 0;
+    display: block;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+  }
+
+  pre {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg2);
+    overflow-x: auto;
+  }
+
+  code {
+    background: var(--bg2);
+    padding: 0.125rem 0.25rem;
+  }
+
+  blockquote {
+    margin: 1rem auto;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-left: solid 0.5rem var(--bg3);
+    font-style: italic;
+
+    cite {
+      display: block;
+      margin-top: 0.5rem;
+
+      &::before {
+        content: '— ';
+      }
+    }
+  }
+}
