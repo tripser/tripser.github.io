@@ -78,7 +78,7 @@ $rules: (
 @mixin moving-shapes($class, $side, $top, $right, $sec, $rotate, $translateX, $translateY) {
   .#{$class} {
     &::before {
-      content: '';
+      // content: '';
       position: absolute;
       background: var(--primary);
       box-shadow: 1.25rem 1.25rem var(--bg), 1.25rem 1.25rem 0 1px var(--text2);
