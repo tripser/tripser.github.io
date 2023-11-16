@@ -34,15 +34,13 @@ This will trigger Github Action and deploy the changes to gh-pages.
 
 - ensure image urls work
 - get a real logo
-- social card
 
-- review button design && shapes && h1 (articles)
+- review button design && shapes
 
 - TS?
 - write first articles
 
 - goatcounter
-- create GH secret?
 - domain
 - socials
 

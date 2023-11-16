@@ -50,7 +50,11 @@ export default function Layout({
         <meta property="og:title" content={`${title}${router.pathname !== '/' ? ' | Tripser' : ''}`} key="og:title" />
         <meta property="og:description" content={description} key="og:description" />
         <meta property="og:url" content={url || 'https://tripser.github.io'} key="og:url" />
-        <meta property="og:image" content={fullImageUrl || 'https://tripser.github.io/images/rb.jpg'} key="og:image" />
+        <meta
+          property="og:image"
+          content={fullImageUrl || 'https://tripser.github.io/images/tripser.jpg'}
+          key="og:image"
+        />
 
         <meta
           property="twitter:title"
@@ -61,7 +65,7 @@ export default function Layout({
         <meta property="twitter:url" content={url || 'https://tripser.github.io'} key="twitter:url" />
         <meta
           property="twitter:image"
-          content={fullImageUrl || 'https://tripser.github.io/images/rb.jpg'}
+          content={fullImageUrl || 'https://tripser.github.io/images/tripser.jpg'}
           key="twitter:image"
         />
 
