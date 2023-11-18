@@ -53,6 +53,14 @@
 }
 
 .article__content {
+  p {
+    margin: 0;
+
+    +p {
+      margin-top: 1em;
+    }
+  }
+
   h1 {
     animation: none;
     color: inherit;

@@ -35,10 +35,12 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - ensure image urls work
 - get a real logo
 
-- review button design && shapes
+- article image with caption and credits
+  - image gallery?
+
+- review button design && moving shapes
 
 - TS?
-- write first articles
 
 - goatcounter
 - domain
