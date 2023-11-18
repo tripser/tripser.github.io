@@ -65,7 +65,7 @@ a {
   &:hover,
   &:focus {
     color: var(--primary);
-    transition: color 0.2s linear;
+    transition: all var(--transition);
   }
 }
 
@@ -246,10 +246,9 @@ main {
 button {
   position: relative;
   color: var(--text2);
-  background: var(--bg);
+  background-color: var(--bg);
   border: none;
   outline: none;
-  // border-radius: var(--radius-sm) 0 var(--radius-sm) 0;
   border-radius: 0.5rem 0 0.5rem 0;
   text-decoration: none;
   margin: 0.25rem;
@@ -270,14 +269,13 @@ button {
     border-radius: 0.75rem 0 0.75rem 0;
     background: var(--primary);
     background: linear-gradient(-45deg, var(--primary), var(--secondary));
-    transition: all var(--transition);
   }
 
   &.active,
   &:not(.active):hover,
   &:not(.active):focus {
     color: var(--bg);
-    background: rgba(256, 256, 256, 0);
+    background-color: rgba(256, 256, 256, 0);
   }
 }
 
