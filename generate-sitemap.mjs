@@ -6,8 +6,8 @@ async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const baseUrl = 'https://tripser.github.io';
   const pages = [
-    { link: '', modified: '2023-05-29', freq: 'yearly', prio: '1.0' },
-    { link: '/blog', modified: '2023-05-29', freq: 'monthly', prio: '0.8' },
+    { link: '', modified: '2023-11-15', freq: 'yearly', prio: '1.0' },
+    { link: '/blog', modified: '2023-11-15', freq: 'monthly', prio: '0.8' },
   ];
 
   const sitemap = `
@@ -21,7 +21,7 @@ async function generate() {
           return `
             <url>
               <loc>${baseUrl}${item.link}</loc>
-              <lastmod>${item.modified || '2021-11-1'}</lastmod>
+              <lastmod>${item.modified || '2023-11-15'}</lastmod>
               <changefreq>${item.freq || 'yearly'}</changefreq>
               <priority>${item.prio || '0.6'}</priority>
             </url>

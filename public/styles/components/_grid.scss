@@ -7,9 +7,13 @@
   z-index: 0;
 
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     margin-bottom: 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
