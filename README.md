@@ -32,7 +32,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
 
 ## TODO
 
-- ensure image urls work
 - get a real logo
 
 - article image with caption and credits
@@ -60,9 +59,11 @@ This will trigger Github Action and deploy the changes to gh-pages.
   categories: 'next.js, css, tutorial, analytics'
   ---
   ```
-- Write the article with keywords, speaking with we, code examples and a final result on codepen or codesandbox
+- Write the article with keywords, speaking with we, giving lots of details on itinerary, location, hotels, restaurants, activities
+- affiliation??
 - Review spell on https://languagetool.org/
-- Create blog article image: https://codepen.io/beumsk/full/wvjYygY and upload in /public/images/articles
+- Find splash image and upload in  /public/images/articles/(articleName).jpg
+- Find content images, resize to 800x450, compress on https://compressjpeg.com/ and upload in /public/images/content/(articleName)/(name).jpg
 
 ## ANALYTICS
 

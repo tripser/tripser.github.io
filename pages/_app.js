@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }) {
 
         <title key="title">{title}</title>
         <meta name="description" content={desc} key="description" />
-        <meta name="author" content="Rémy Beumier" key="author" />
+        <meta name="author" content="Tripser" key="author" />
 
         <meta property="og:title" content={title} key="og:title" />
         <meta property="og:description" content={desc} key="og:description" />
