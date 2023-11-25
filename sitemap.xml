@@ -19,6 +19,13 @@
   </url>
 
   <url>
+    <loc>https://tripser.github.io/blog/weekend-au-luxembourg</loc>
+    <lastmod>2023-11-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://tripser.github.io/blog/weekend-in-luxembourg</loc>
     <lastmod>2023-11-18</lastmod>
     <changefreq>yearly</changefreq>

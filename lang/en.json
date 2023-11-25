@@ -1,0 +1,31 @@
+{
+  "subtitle": "Voyage blog",
+  "articles": {
+    "latest-articles": "Latest articles",
+    "discover-articles": "Discover our latest pieces written with love and filled with tips for your best trips.",
+    "check-articles": "Check all articles"
+  },
+  "about": {
+    "intro": "Hey, it's Charlotte & Rémy, we are from Brussels and we try our best to discover and share the best trips.",
+    "body": "Ever since our young years, we have always enjoyed <strong>exploring</strong>. We have developed our passion for <strong> travelling</strong> through numbers of voyages with family, friends and loved ones."
+  },
+  "blog": {
+    "intro": "We craft blog articles we wish we could have come across while planning and booking for holidays. We aim to cover all sorts of trips, short and long, close and far away.",
+    "all": "All articles",
+    "published": "Published on:",
+    "modified": "Modified on:",
+    "back": "Back to blog listing",
+    "suggested": "Suggested articles"
+  },
+  "categories": {
+    "voyage": "voyage",
+    "europe": "europe",
+    "africa": "africa",
+    "america": "america",
+    "asia": "asia",
+    "hike": "hike",
+    "city-trip": "city-trip"
+  },
+  "contact": "Feel free to get in touch and stay connected with us via these different channels.",
+  "404": { "title": "Page not found", "back": "Go back home" }
+}
