@@ -36,9 +36,10 @@
 }
 
 .article__categories a {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   cursor: pointer;
   text-decoration: underline;
+  text-transform: uppercase;
 
   &:not(:last-of-type) {
     margin-right: 0.5rem;

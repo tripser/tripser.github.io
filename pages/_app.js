@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 import Head from 'next/head';
 import AOS from 'aos';
+import 'public/lang/i18n';
 
 import 'public/styles/font-import.css';
 import 'aos/dist/aos.css';
@@ -11,6 +13,7 @@ import 'public/styles/style.scss';
 // eslint-disable-next-line react/prop-types
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window.goatcounter) {
@@ -27,6 +30,20 @@ export default function MyApp({ Component, pageProps }) {
       offset: 100,
     });
   }, [router]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const localLang = window.localStorage.getItem('lang');
+      const userLang = window.navigator.language || window.navigator.userLanguage;
+      if (['en', 'fr'].includes(localLang)) {
+        i18n.changeLanguage(localLang);
+      } else if (['en', 'fr'].includes(userLang)) {
+        i18n.changeLanguage(userLang);
+      } else {
+        i18n.changeLanguage('en');
+      }
+    }
+  }, []);
 
   const title = `Tripser | Voyage blog`;
   const desc = `Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.`;

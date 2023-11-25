@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
+import { AiFillCaretLeft } from 'react-icons/ai';
 import PropTypes from 'prop-types';
 import Layout from '@components/layout';
 import Grid from '@components/grid';
@@ -9,6 +11,8 @@ import Grid from '@components/grid';
 
 export default function Custom404({ title, splash, articles }) {
   const router = useRouter();
+  const { t, i18n } = useTranslation();
+  const [random, setRandom] = useState([]);
 
   // fix for trailling slash URL error from Github pages
   useEffect(() => {
@@ -17,24 +21,25 @@ export default function Custom404({ title, splash, articles }) {
     }
   }, [router]);
 
-  const [random, setRandom] = useState([]);
-
   useEffect(() => {
-    const randomPost = articles[Math.floor(Math.random() * articles.length)];
+    const articlesByLang = articles.filter((x) => x.lang === i18n.language);
+    const randomPost = articlesByLang[Math.floor(Math.random() * articlesByLang.length)];
     setRandom([randomPost]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [i18n.language]);
 
   if (!router.asPath.endsWith('/')) {
     return (
-      <Layout title={title} splash={splash}>
+      <Layout title={t('404.title') || title} splash={splash}>
         <div className="container error-shape">
           <section data-aos="fade-right">
             <Grid data={random} />
           </section>
           <div>
             <Link href="/">
-              <a className="btn mb-20">Go back Home</a>
+              <a className="btn mb-20">
+                <AiFillCaretLeft className="mr-1" />
+                {t('404.back')}
+              </a>
             </Link>
           </div>
           {/* <div style={{ position: 'relative', aspectRatio: '1200/630' }}>

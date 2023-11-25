@@ -32,6 +32,9 @@ This will trigger Github Action and deploy the changes to gh-pages.
 
 ## TODO
 
+- lang: how to define user's lang?
+  - change text from layout??
+  - seo: https://developers.google.com/search/docs/specialty/international/localized-versions?visit_id=638362841979166576-1413381444&rd=1
 - get a real logo
 
 - article image with caption and credits

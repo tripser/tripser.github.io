@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
 import articles from '@data/articles';
 import Layout from '@components/layout';
@@ -11,14 +12,17 @@ const convertDate = (d) =>
 
 export default function BlogLayout({ children }) {
   const router = useRouter();
+  const { t, i18n } = useTranslation();
 
   const article = articles.find((p) => p.slug === router.asPath.replace('/blog/', ''));
   const { title, intro, img, published, modified, categories } = article;
 
   const categoriesList = categories?.split(', ').filter((x) => x);
 
-  const nextLink = articles[articles.findIndex((x) => x.title === title) + 1] || articles[0];
-  const previousLink = articles[articles.findIndex((x) => x.title === title) - 1] || articles[articles.length - 1];
+  const articlesByLang = articles.filter((x) => x.lang === i18n.language);
+  const nextLink = articlesByLang[articlesByLang.findIndex((x) => x.title === title) + 1] || articlesByLang[0];
+  const previousLink =
+    articlesByLang[articlesByLang.findIndex((x) => x.title === title) - 1] || articlesByLang[articlesByLang.length - 1];
   const relatedLinks = [];
   // const relatedLinks = [previousLink, nextLink];
 
@@ -34,7 +38,7 @@ export default function BlogLayout({ children }) {
                     {categoriesList?.map((c) => (
                       <Link key={c} href={`/blog?${c}`}>
                         <a>
-                          <span itemProp="articleSection">{c.charAt(0).toUpperCase() + c.slice(1)}</span>
+                          <span itemProp="articleSection">{t(`categories.${c}`)}</span>
                         </a>
                       </Link>
                     ))}
@@ -46,7 +50,7 @@ export default function BlogLayout({ children }) {
                       content={convertDate(published)}
                       dateTime={convertDate(published)}
                     >
-                      Published on: {convertDate(published)}
+                      {t('blog.published')} {convertDate(published)}
                     </time>
                     <time
                       className="article__date"
@@ -54,7 +58,7 @@ export default function BlogLayout({ children }) {
                       content={convertDate(modified)}
                       dateTime={convertDate(modified)}
                     >
-                      Modified on: {convertDate(modified)}
+                      {t('blog.modified')} {convertDate(modified)}
                     </time>
                   </div>
                 </div>
@@ -67,14 +71,14 @@ export default function BlogLayout({ children }) {
                   <Link href="/blog">
                     <a className="btn">
                       <AiFillCaretLeft className="mr-1" />
-                      Back to blog listing
+                      {t('blog.back')}
                     </a>
                   </Link>
                 </div>
 
                 {relatedLinks.length ? (
                   <div>
-                    <h2 className="mb-5">Suggested articles</h2>
+                    <h2 className="mb-5">{t('blog.suggested')}</h2>
                     <Grid data={relatedLinks} className="mb-20" />
                   </div>
                 ) : null}

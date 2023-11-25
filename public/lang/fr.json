@@ -1,0 +1,31 @@
+{
+  "subtitle": "Blog voyage",
+  "articles": {
+    "latest-articles": "Derniers articles",
+    "discover-articles": "Découvrir nos derniers articles écrits avec amour et remplis de conseils pour vos meilleurs voyages.",
+    "check-articles": "Voir tous les articles"
+  },
+  "about": {
+    "intro": "Salut, c'est Charlotte & Rémy, nous sommes basés à Bruxelles et nous essayons de découvrir et de partager les meilleurs voyages.",
+    "body": "Depuis notre plus jeune âge, nous avons toujours aimé <strong>explorer</strong>. Notre passion pour les <strong>voyages</strong> s'est développée au fil de nombreux voyages en famille, avec des amis et des proches."
+  },
+  "blog": {
+    "intro": "Nous rédigeons des articles de blog que nous aurions aimé trouver lors de la planification et de la réservation de nos vacances. Nous nous efforçons de couvrir toutes sortes de voyages, courts ou longs, proches ou lointains.",
+    "all": "Tous les articles",
+    "published": "Publié le :",
+    "modified": "Modifié le :",
+    "back": "Retour à la liste des articles",
+    "suggested": "Articles suggerés"
+  },
+  "categories": {
+    "voyage": "voyage",
+    "europe": "europe",
+    "africa": "afrique",
+    "america": "amerique",
+    "asia": "asie",
+    "hike": "rando",
+    "city-trip": "city-trip"
+  },
+  "contact": "N'hésitez pas à nous contacter et à rester en contact avec nous via ces différents canaux.",
+  "404": { "title": "Page introuvable", "back": "Retour à l'accueil" }
+}

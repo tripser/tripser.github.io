@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { SiGmail, SiInstagram, SiPinterest } from 'react-icons/si';
 import Breadcrumb from './breadcrumb';
 
@@ -21,11 +22,13 @@ const footerLinks = [
 ];
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer id="contact" className="contact">
       <div className="container" data-aos="fade-right">
         <Breadcrumb />
-        <p className="mb-5">Feel free to get in touch and stay connected with us via these different channels.</p>
+        <p className="mb-5">{t('contact')}</p>
         <div className="mb-10">
           {footerLinks.map((f) => {
             const Icon = f.icon;

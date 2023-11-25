@@ -18,6 +18,9 @@ export default function Layout({
   itemtype,
   published,
   modified,
+  lang,
+  en,
+  fr,
 }) {
   const [theme, setTheme] = useState('');
   const router = useRouter();
@@ -37,6 +40,11 @@ export default function Layout({
 
   const fullImageUrl = img ? (img.startsWith('http') ? img : `https://tripser.github.io${img}`) : null;
 
+  const OGLocales = {
+    en: 'en_GB',
+    fr: 'fr_FR',
+  };
+
   return (
     <main
       className={theme}
@@ -44,6 +52,8 @@ export default function Layout({
       itemType={itemtype ? 'http://schema.org/' + itemtype : undefined}
     >
       <Head>
+        {lang ? <meta property="og:locale" content={OGLocales[lang]} key="og:locale" /> : null}
+
         <title key="title">{`${title}${router.pathname !== '/' ? ' | Tripser' : ''}`}</title>
         <meta name="description" content={description} key="description" />
 
@@ -72,7 +82,7 @@ export default function Layout({
         {published ? <meta property="article:published_time" content={published} /> : null}
         {modified ? <meta property="article:modified_time" content={modified} /> : null}
       </Head>
-      <Header onClick={switchTheme} theme={theme} />
+      <Header onClick={switchTheme} theme={theme} en={en} fr={fr} />
       <div className="new-stack">
         <Splash title={title} subtitle={subtitle} splash={splash} />
         <div className="body">{children}</div>
@@ -97,4 +107,7 @@ Layout.propTypes = {
   itemtype: PropTypes.string,
   published: PropTypes.string,
   modified: PropTypes.string,
+  lang: PropTypes.string,
+  en: PropTypes.string,
+  fr: PropTypes.string,
 };

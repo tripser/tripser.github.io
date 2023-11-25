@@ -1,25 +1,27 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { AiFillCaretRight } from 'react-icons/ai';
 import Layout from '@components/layout';
 import Grid from '@components/grid';
 
-export default function Home({ title, subtitle, description, splash, articles }) {
+export default function Home({ title, description, splash, articles }) {
+  const { t, i18n } = useTranslation();
+
+  const articlesByLang = articles.filter((x) => x.lang === i18n.language);
+
   return (
-    <Layout title={title} subtitle={subtitle} description={description} splash={splash}>
+    <Layout title={title} subtitle={t('subtitle')} description={description} splash={splash}>
       <section id="blog" className="blog">
         <div className="home-shapes"></div>
         <div className="container mt-3" data-aos="fade-right">
-          <h2>Latest articles</h2>
-          <p className="mb-10">
-            Discover our latest pieces written with love and filled with tips for your best trips.
-          </p>
-          <Grid data={articles.slice(0, 3)} className="mt-10 mb-10" />
-          {/* <Grid data={[...articles, ...articles, ...articles, ...articles, ...articles, ...articles]} /> */}
+          <h2>{t('articles.latest-articles')}</h2>
+          <p className="mb-10">{t('articles.discover-articles')}</p>
+          <Grid data={articlesByLang.slice(0, 3)} className="mt-10 mb-10" />
           <div className="btn-wrapper-right">
             <Link href="/blog">
               <a className="btn">
-                Check all articles
+                {t('articles.check-articles')}
                 <AiFillCaretRight className="ml-1" />
               </a>
             </Link>
@@ -32,19 +34,8 @@ export default function Home({ title, subtitle, description, splash, articles })
         <div className="container" data-aos="fade-right">
           <div className="cols cols-lg">
             <div className="col centered-v">
-              <h2>
-                Hey, it's Charlotte & Rémy, we are from Brussels and we try our best to discover and share the best
-                trips.
-              </h2>
-              <p>
-                Ever since our young years, we have always enjoyed <strong>exploring</strong>. We have developed our
-                passion for
-                <strong> travelling</strong> through numbers of voyages with family, friends and loved ones.
-              </p>
-              <a className="btn mt-5 mb-4 mr-4" href="" target="_blank">
-                Check out my resume
-                <AiFillCaretRight className="ml-1" />
-              </a>
+              <h2>{t('about.intro')}</h2>
+              <p dangerouslySetInnerHTML={{ __html: t('about.body') }} />
             </div>
 
             <div className="col centered-v">
@@ -66,7 +57,6 @@ export default function Home({ title, subtitle, description, splash, articles })
 
 Home.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
   description: PropTypes.string,
   splash: PropTypes.string,
   articles: PropTypes.array,
@@ -78,7 +68,6 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Tripser',
-      subtitle: 'Voyage blog',
       description:
         'Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.',
       splash: '/images/mountain.jpg',
