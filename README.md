@@ -68,6 +68,11 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - Find splash image and upload in  /public/images/articles/(articleName).jpg
 - Find content images, resize to 800x450, compress on https://compressjpeg.com/ and upload in /public/images/content/(articleName)/(name).jpg
 
+## SOCIALS
+
+- https://pinterest.com/tripserblog/
+- https://instagram.com/tripserblog/
+
 ## ANALYTICS
 
 Easy web analytics without tracking of personal data at https://tripser.goatcounter.com/

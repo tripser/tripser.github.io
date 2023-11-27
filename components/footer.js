@@ -3,14 +3,13 @@ import { SiGmail, SiInstagram, SiPinterest } from 'react-icons/si';
 import Breadcrumb from './breadcrumb';
 
 const footerLinks = [
-  // TODO: add real links !! + twitter, other?
   {
-    link: 'https://instagram.com',
+    link: 'https://instagram.com/tripserblog/',
     title: 'Instagram',
     icon: SiInstagram,
   },
   {
-    link: 'https://pinterest.com',
+    link: 'https://pinterest.com/tripserblog/',
     title: 'Pinterest',
     icon: SiPinterest,
   },
