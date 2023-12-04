@@ -39,7 +39,7 @@ This will trigger Github Action and deploy the changes to gh-pages.
   - image gallery?
   - link on image and/or link?
 - rearange homepage: big pinned article (carousel??)
-- get a real logo
+- rework logo to svg + add on homepage?
 - lang: check seo is good
 
 

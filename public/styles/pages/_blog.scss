@@ -79,6 +79,16 @@
     margin-bottom: 0.75em;
   }
 
+  a {
+    text-decoration: none;
+    color: var(--primary);
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
   ul,
   ol {
     margin-bottom: 1rem;
@@ -88,6 +98,12 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+  }
+
+  hr {
+    border: none;
+    border-bottom: solid 1px var(--bg3);
+    margin: 2rem auto;
   }
 
   pre {

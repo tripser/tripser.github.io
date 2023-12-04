@@ -24,7 +24,7 @@ export default function Header({ onClick, theme, ...props }) {
           </Link>
         ))}
 
-        <div>
+        <div className="actions">
           <button
             onClick={() => {
               const newLang = i18n.language === 'en' ? 'fr' : 'en';
