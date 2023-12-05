@@ -49,10 +49,14 @@
     }
 
     p {
-      font-size: 2rem;
+      font-size: 1.25rem;
       color: var(--light);
       text-shadow: 1px 1px rgba(0, 0, 0, 0.2), -1px -1px rgba(0, 0, 0, 0.2);
       z-index: 1;
+
+      @media screen and (min-width:768px) {
+        font-size: 2rem;
+      }
     }
   }
 

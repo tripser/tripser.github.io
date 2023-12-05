@@ -38,6 +38,7 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - article image with caption and credits
   - image gallery?
   - link on image and/or link?
+  - modal for bigger image?
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
 - lang: check seo is good

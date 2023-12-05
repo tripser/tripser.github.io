@@ -33,7 +33,7 @@ export default function BlogLayout({ children }) {
           <article className="new-stack">
             <div className="article__main article-shape">
               <div className="container narrow">
-                <div className="space-between-x pt-5 mb-10">
+                <div className="article__details">
                   <div className="article__categories">
                     {categoriesList?.map((c) => (
                       <Link key={c} href={`/blog?${c}`}>
