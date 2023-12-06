@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+// TODO: .figures .col-2 or .col-1-2 or col-2-1 ...
 export default function Figures({ data }) {
   const cols = data.length % 2 === 0;
   return (
