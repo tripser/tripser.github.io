@@ -34,13 +34,15 @@ This will trigger Github Action and deploy the changes to gh-pages.
 
 - Articles
   - Drome and Vercors
+  - intra links
+  - suggestions
 
-- article image with caption and credits
-  - image gallery?
+- article image with credit
   - link on image and/or link?
   - modal for bigger image?
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
+- image gallery page with links to articles
 - lang: check seo is good
 
 
