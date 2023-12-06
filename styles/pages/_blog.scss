@@ -110,10 +110,36 @@
     margin-bottom: 1rem;
   }
 
-  img {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+  .figures {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    gap: 1rem;
+
+    &.figures2 {
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    figure {
+      position: relative;
+
+      img {
+        border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+      }
+
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        z-index: 11;
+        padding: 0.25rem 0.5rem;
+        margin-top: -1rem;
+        color: var(--text);
+        font-size: 0.875rem;
+        background: var(--bg80);
+      }
+    }
   }
 
   hr {
