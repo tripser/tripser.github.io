@@ -14,7 +14,7 @@ export default function BlogLayout({ children }) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  const article = articles.find((p) => p.slug === router.asPath.replace('/blog/', ''));
+  const article = articles.find((p) => p.slug === router.pathname.replace('/blog/', ''));
   const { title, intro, img, published, modified, categories } = article;
 
   const categoriesList = categories?.split(', ').filter((x) => x);

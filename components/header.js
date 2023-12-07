@@ -30,7 +30,7 @@ export default function Header({ onClick, theme, ...props }) {
               const newLang = i18n.language === 'en' ? 'fr' : 'en';
               i18n.changeLanguage(newLang);
               window.localStorage.setItem('lang', newLang);
-              if (router.asPath.includes('/blog/')) {
+              if (router.pathname.includes('/blog/')) {
                 router.push(`/blog/${props[newLang]}`);
               }
             }}

@@ -6,7 +6,7 @@ export default function Figures({ data }) {
   return (
     <div className={`figures ${cols ? 'figures2' : ''}`}>
       {data.map((fig) => (
-        <figure key={fig}>
+        <figure key={fig.caption}>
           <img src={fig.src} alt={fig.caption} />
           <figcaption>{fig.caption}</figcaption>
         </figure>

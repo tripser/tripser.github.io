@@ -16,8 +16,8 @@ export default function Custom404({ title, splash, articles }) {
 
   // fix for trailling slash URL error from Github pages
   useEffect(() => {
-    if (router.asPath.endsWith('/')) {
-      router.replace(router.asPath.replace(/\/$/, ''));
+    if (router.pathname.endsWith('/')) {
+      router.replace(router.pathname.replace(/\/$/, ''));
     }
   }, [router]);
 
@@ -27,11 +27,12 @@ export default function Custom404({ title, splash, articles }) {
     setRandom([randomPost]);
   }, [i18n.language]);
 
-  if (!router.asPath.endsWith('/')) {
+  if (!router.pathname.endsWith('/')) {
     return (
       <Layout title={t('404.title') || title} splash={splash}>
         <div className="container error-shape">
           <section data-aos="fade-right">
+            <h2 className="mb-10">{t('404.try')}</h2>
             <Grid data={random} />
           </section>
           <div>

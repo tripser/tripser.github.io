@@ -4,8 +4,8 @@ import { AiFillCaretRight } from 'react-icons/ai';
 
 export default function Breadcrumb() {
   const router = useRouter();
-  // the regex replace removes all characters after '?' to get rid of the query parameters
-  const route = router.asPath.replace(/\?.*/g, "$'");
+
+  const route = router.pathname;
   const split = route.split('/').filter((x) => x);
 
   return router.route !== '/' ? (
