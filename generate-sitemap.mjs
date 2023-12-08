@@ -5,9 +5,13 @@ import articles from './data/articles.js';
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const baseUrl = 'https://tripser.github.io';
+  const today = `${new Date().getFullYear()}-${(new Date().getMonth() + 1).toString().padStart(2, '0')}-${new Date()
+    .getDate()
+    .toString()
+    .padStart(2, '0')}`;
   const pages = [
-    { link: '', modified: '2023-11-25', freq: 'yearly', prio: '1.0' },
-    { link: '/blog', modified: '2023-11-25', freq: 'monthly', prio: '0.8' },
+    { link: '', modified: today, freq: 'weekly', prio: '1.0' },
+    { link: '/blog', modified: today, freq: 'weekly', prio: '0.8' },
   ];
 
   const sitemap = `
@@ -22,7 +26,7 @@ async function generate() {
             <url>
               <loc>${baseUrl}${item.link}</loc>
               <lastmod>${item.modified || '2023-11-15'}</lastmod>
-              <changefreq>${item.freq || 'yearly'}</changefreq>
+              <changefreq>${item.freq || 'monthly'}</changefreq>
               <priority>${item.prio || '0.6'}</priority>
             </url>
           `;

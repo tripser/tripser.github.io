@@ -42,7 +42,7 @@ export default function Blog({ title, description, splash, url, articles }) {
         </div>
 
         <div data-aos="fade-right">
-          <Grid data={articlesFiltered} className="mt-6 mb-20" />
+          <Grid data={articlesFiltered} className="mt-6 mb-10" />
         </div>
       </section>
     </Layout>

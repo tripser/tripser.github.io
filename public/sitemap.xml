@@ -6,22 +6,43 @@
 >
   <url>
     <loc>https://tripser.github.io</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2023-12-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://tripser.github.io/blog</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2023-12-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/first-article</loc>
-    <lastmod>2023-04-11</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://tripser.github.io/blog/drome-and-vercors</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.github.io/blog/drome-et-vercors</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.github.io/blog/weekend-au-luxembourg</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.github.io/blog/weekend-in-luxembourg</loc>
+    <lastmod>2023-12-06</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>

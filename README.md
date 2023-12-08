@@ -33,7 +33,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
 ## TODO
 
 - Articles
-  - Drome and Vercors
   - intra links
   - suggestions
 
@@ -41,6 +40,7 @@ This will trigger Github Action and deploy the changes to gh-pages.
   - link on image and/or link?
   - modal for bigger image?
   - more Figures layouts
+- 404 to have more suggestions
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
 - image gallery page with links to articles
