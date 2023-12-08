@@ -78,7 +78,7 @@
     z-index: -1;
     border-radius: inherit;
     background: var(--primary);
-    background: linear-gradient(-45deg, var(--primary), var(--secondary));
+    background: linear-gradient(-90deg, var(--primary), var(--secondary));
     transition: all var(--transition);
   }
 }
