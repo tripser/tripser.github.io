@@ -9,10 +9,10 @@ export const links = [
     text: 'Blog',
     link: '/blog',
   },
-  {
-    text: 'Photos',
-    link: '/photos',
-  },
+  // {
+  //   text: 'Photos',
+  //   link: '/photos',
+  // },
 ];
 
 export default function Header({ onClick, theme, ...props }) {
