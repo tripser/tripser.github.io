@@ -12,36 +12,48 @@
     align-items: center;
   }
 
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      padding: 0.875rem 0.5rem;
+      text-decoration: none;
+
+      @media screen and (min-width: 768px) {
+        padding: 0.875rem 1rem;
+      }
+    }
+  }
+
   .actions {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    padding: 3px;
   }
 
-  a {
-    padding: 0.875rem 0.5rem;
-    text-decoration: none;
+  .logo {
+    padding: 0.5rem 0 0.5rem 0;
 
-    &.logo {
-      padding: 0.5rem 0.5rem 0.5rem 0;
+    img {
+      height: 2.25rem;
+      width: auto;
 
-      img {
-        height: 2.25rem;
-        width: auto;
-
-        @media screen and (min-width: 768px) {
-          filter: grayscale(1);
-        }
-
-        transition: filter 0.2s;
+      @media screen and (min-width: 768px) {
+        filter: grayscale(1);
       }
 
-      &:hover img,
-      &:focus img {
-        filter: grayscale(0);
-      }
+      transition: filter 0.2s;
     }
+
+    &:hover img,
+    &:focus img {
+      filter: grayscale(0);
+    }
+
   }
 
   button,
