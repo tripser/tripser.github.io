@@ -1,13 +1,12 @@
-section {
+.home-page {
   position: relative;
-  padding: var(--space) 0;
-}
 
-.blog {}
+  .blog {}
 
-.about {
-  .about__img {
-    min-width: 0;
+  .about {
+    .about__img {
+      min-width: 0;
+    }
   }
 }
 
@@ -58,8 +57,4 @@ section {
       }
     }
   }
-}
-
-.btn-wrapper-right {
-  text-align: right;
 }

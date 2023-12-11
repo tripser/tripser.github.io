@@ -3,7 +3,17 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
-import { nav } from '@data/nav';
+
+export const links = [
+  {
+    text: 'Blog',
+    link: '/blog',
+  },
+  {
+    text: 'Photos',
+    link: '/photos',
+  },
+];
 
 export default function Header({ onClick, theme, ...props }) {
   const router = useRouter();
@@ -12,17 +22,19 @@ export default function Header({ onClick, theme, ...props }) {
   return (
     <header className="header">
       <div className="container">
-        {nav.map((n, i) => (
-          <Link href={n.link} key={n.text}>
-            {!i ? (
-              <a className="logo">
-                <img src="/images/logo.png" alt="Tripser logo" title={n.text} width="30" height="30" />
-              </a>
-            ) : (
+        <Link href="/">
+          <a className="logo">
+            <img src="/images/logo.png" alt="Tripser logo" title="Home" width="30" height="30" />
+          </a>
+        </Link>
+
+        <div className="links">
+          {links.map((n) => (
+            <Link href={n.link} key={n.text}>
               <a>{n.text}</a>
-            )}
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
 
         <div className="actions">
           <button

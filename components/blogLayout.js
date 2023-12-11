@@ -29,62 +29,64 @@ export default function BlogLayout({ children }) {
   return (
     <>
       <Layout title={`${title}`} description={intro} splash={img} itemtype="Article" {...article}>
-        <div data-aos="fade-right">
-          <article className="new-stack">
-            <div className="article__main article-shape">
-              <div className="container narrow">
-                <div className="article__details">
-                  <div className="article__categories">
-                    {categoriesList?.map((c) => (
-                      <Link key={c} href={`/blog?${c}`}>
-                        <a>
-                          <span itemProp="articleSection">{t(`categories.${c}`)}</span>
-                        </a>
-                      </Link>
-                    ))}
+        <div className="article-page">
+          <div data-aos="fade-right">
+            <article className="new-stack">
+              <div className="article__main article-shape">
+                <div className="container narrow">
+                  <div className="article__details">
+                    <div className="article__categories">
+                      {categoriesList?.map((c) => (
+                        <Link key={c} href={`/blog?${c}`}>
+                          <a>
+                            <span itemProp="articleSection">{t(`categories.${c}`)}</span>
+                          </a>
+                        </Link>
+                      ))}
+                    </div>
+                    <div>
+                      <time
+                        className="article__date"
+                        itemProp="datePublished"
+                        content={convertDate(published)}
+                        dateTime={convertDate(published)}
+                      >
+                        {t('blog.published')} {convertDate(published)}
+                      </time>
+                      <time
+                        className="article__date"
+                        itemProp="dateModified"
+                        content={convertDate(modified)}
+                        dateTime={convertDate(modified)}
+                      >
+                        {t('blog.modified')} {convertDate(modified)}
+                      </time>
+                    </div>
                   </div>
-                  <div>
-                    <time
-                      className="article__date"
-                      itemProp="datePublished"
-                      content={convertDate(published)}
-                      dateTime={convertDate(published)}
-                    >
-                      {t('blog.published')} {convertDate(published)}
-                    </time>
-                    <time
-                      className="article__date"
-                      itemProp="dateModified"
-                      content={convertDate(modified)}
-                      dateTime={convertDate(modified)}
-                    >
-                      {t('blog.modified')} {convertDate(modified)}
-                    </time>
+
+                  <div className="article__content mb-10" itemProp="articleBody">
+                    {children}
                   </div>
-                </div>
 
-                <div className="article__content mb-10" itemProp="articleBody">
-                  {children}
-                </div>
-
-                <div className="mb-15">
-                  <Link href="/blog">
-                    <a className="btn">
-                      <AiFillCaretLeft className="mr-1" />
-                      {t('blog.back')}
-                    </a>
-                  </Link>
-                </div>
-
-                {relatedLinks.length ? (
-                  <div>
-                    <h2 className="mb-5">{t('blog.suggested')}</h2>
-                    <Grid data={relatedLinks} className="mb-20" />
+                  <div className="mb-15">
+                    <Link href="/blog">
+                      <a className="btn">
+                        <AiFillCaretLeft className="mr-1" />
+                        {t('blog.back')}
+                      </a>
+                    </Link>
                   </div>
-                ) : null}
+
+                  {relatedLinks.length ? (
+                    <div>
+                      <h2 className="mb-5">{t('blog.suggested')}</h2>
+                      <Grid data={relatedLinks} className="mb-20" />
+                    </div>
+                  ) : null}
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </Layout>
     </>

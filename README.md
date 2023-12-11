@@ -37,8 +37,7 @@ This will trigger Github Action and deploy the changes to gh-pages.
   - suggestions
 
 - article image with credit
-  - link on image and/or link?
-  - modal for bigger image?
+  - link on image to image gallery
   - more Figures layouts
 - 404 to have more suggestions
 - rearange homepage: big pinned article (carousel??)
@@ -46,14 +45,8 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - image gallery page with links to articles
 - lang: check seo is good
 
-
 - review button design && moving shapes
-
 - TS?
-
-- goatcounter
-- domain
-- socials
 
 ## BLOG ARTICLES
 

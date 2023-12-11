@@ -27,24 +27,26 @@ export default function Blog({ title, description, splash, url, articles }) {
 
   return (
     <Layout title={title} description={description} splash={splash} url={url}>
-      <section className="container mt-3 blog-shape">
-        <p className="ch-80 mb-8">{t('blog.intro')}</p>
+      <div className="blog-page">
+        <section className="container mt-3 blog-shape">
+          <p className="ch-80 mb-8">{t('blog.intro')}</p>
 
-        <div className="blog__categories">
-          <Link href="/blog">
-            <a className={`btn ${query === '' ? 'active' : ''}`}>{t('blog.all')}</a>
-          </Link>
-          {categories.map((c) => (
-            <Link key={c} href={`?${c}`}>
-              <a className={`btn ${query === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
+          <div className="blog__categories">
+            <Link href="/blog">
+              <a className={`btn ${query === '' ? 'active' : ''}`}>{t('blog.all')}</a>
             </Link>
-          ))}
-        </div>
+            {categories.map((c) => (
+              <Link key={c} href={`?${c}`}>
+                <a className={`btn ${query === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
+              </Link>
+            ))}
+          </div>
 
-        <div data-aos="fade-right">
-          <Grid data={articlesFiltered} className="mt-6 mb-10" />
-        </div>
-      </section>
+          <div data-aos="fade-right">
+            <Grid data={articlesFiltered} className="mt-6 mb-10" />
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }
@@ -67,7 +69,8 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Blog',
-      description: 'My blog articles covering the web in general, especially the front-end development.',
+      description:
+        'Our blog articles covering all our different trips. Each post offers our unique point of view, including the best activities, hikes, stays, tips and more.',
       splash: '/images/lake.jpg',
       url: 'https://tripser.github.io/blog',
       articles: articles,

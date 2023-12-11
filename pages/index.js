@@ -12,45 +12,47 @@ export default function Home({ title, description, splash, articles }) {
 
   return (
     <Layout title={title} subtitle={t('subtitle')} description={description} splash={splash}>
-      <section id="blog" className="blog">
-        <div className="home-shapes"></div>
-        <div className="container mt-3" data-aos="fade-right">
-          <h2>{t('articles.latest-articles')}</h2>
-          <p className="mb-10">{t('articles.discover-articles')}</p>
-          <Grid data={articlesByLang.slice(0, 3)} className="mt-10 mb-10" />
-          <div className="btn-wrapper-right">
-            <Link href="/blog">
-              <a className="btn">
-                {t('articles.check-articles')}
-                <AiFillCaretRight className="ml-1" />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="about">
-        <div className="home-shapes"></div>
-        <div className="container" data-aos="fade-right">
-          <div className="cols cols-lg">
-            <div className="col centered-v">
-              <h2>{t('about.intro')}</h2>
-              <p dangerouslySetInnerHTML={{ __html: t('about.body') }} />
-            </div>
-
-            <div className="col centered-v">
-              <img
-                src="/images/exploring.svg"
-                alt="developer thinking next to a computer"
-                width="270"
-                height="112"
-                loading="lazy"
-                className="about__img mt-5 mb-5"
-              />
+      <div className="home-page">
+        <section id="blog" className="blog">
+          <div className="home-shapes"></div>
+          <div className="container mt-3" data-aos="fade-right">
+            <h2>{t('articles.latest-articles')}</h2>
+            <p className="mb-10">{t('articles.discover-articles')}</p>
+            <Grid data={articlesByLang.slice(0, 3)} className="mt-10 mb-10" />
+            <div className="btn-wrapper-right">
+              <Link href="/blog">
+                <a className="btn">
+                  {t('articles.check-articles')}
+                  <AiFillCaretRight className="ml-1" />
+                </a>
+              </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section id="about" className="about">
+          <div className="home-shapes"></div>
+          <div className="container" data-aos="fade-right">
+            <div className="cols cols-lg">
+              <div className="col centered-v">
+                <h2>{t('about.intro')}</h2>
+                <p dangerouslySetInnerHTML={{ __html: t('about.body') }} />
+              </div>
+
+              <div className="col centered-v">
+                <img
+                  src="/images/exploring.svg"
+                  alt="developer thinking next to a computer"
+                  width="270"
+                  height="112"
+                  loading="lazy"
+                  className="about__img mt-5 mb-5"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }
