@@ -1,6 +1,10 @@
-import PropTypes from 'prop-types';
+type SplashCompType = {
+  title: string;
+  subtitle?: string;
+  splash: string;
+};
 
-export default function Splash({ title, subtitle, splash }) {
+export default function Splash({ title, subtitle, splash }: SplashCompType) {
   return (
     <>
       <div className="splash" data-aos="fade-up">
@@ -13,5 +17,3 @@ export default function Splash({ title, subtitle, splash }) {
     </>
   );
 }
-
-Splash.propTypes = { title: PropTypes.string, subtitle: PropTypes.string, splash: PropTypes.string };

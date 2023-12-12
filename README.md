@@ -44,9 +44,9 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - rework logo to svg + add on homepage?
 - image gallery page with links to articles
 - lang: check seo is good
+- issue with blog filters scrolling up
 
 - review button design && moving shapes
-- TS?
 
 ## BLOG ARTICLES
 

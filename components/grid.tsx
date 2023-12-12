@@ -1,7 +1,11 @@
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+import { ArticleType } from 'types';
 
-function GridItem({ item }) {
+type GridItemCompType = {
+  item: ArticleType;
+};
+
+function GridItem({ item }: GridItemCompType) {
   return (
     <Link href={item.link || ''}>
       <a title={item.title} className="card">
@@ -17,11 +21,12 @@ function GridItem({ item }) {
   );
 }
 
-GridItem.propTypes = {
-  item: PropTypes.object,
+type GridCompType = {
+  data: ArticleType[];
+  className?: string;
 };
 
-export default function Grid({ data, className }) {
+export default function Grid({ data, className }: GridCompType) {
   return (
     <div className={'grid ' + (className || '')}>
       {data.map((item) => {
@@ -30,8 +35,3 @@ export default function Grid({ data, className }) {
     </div>
   );
 }
-
-Grid.propTypes = {
-  data: PropTypes.array,
-  className: PropTypes.string,
-};

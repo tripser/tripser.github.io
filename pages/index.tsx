@@ -1,11 +1,18 @@
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretRight } from 'react-icons/ai';
 import Layout from '@components/layout';
 import Grid from '@components/grid';
+import { ArticleType } from 'types';
 
-export default function Home({ title, description, splash, articles }) {
+type HomePageType = {
+  title: string;
+  description: string;
+  splash: string;
+  articles: ArticleType[];
+};
+
+export default function Home({ title, description, splash, articles }: HomePageType) {
   const { t, i18n } = useTranslation();
 
   const articlesByLang = articles.filter((x) => x.lang === i18n.language);
@@ -57,15 +64,8 @@ export default function Home({ title, description, splash, articles }) {
   );
 }
 
-Home.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  splash: PropTypes.string,
-  articles: PropTypes.array,
-};
-
 export async function getStaticProps() {
-  const articles = require('@data/articles');
+  const articles = require('@data/articles') as ArticleType[];
 
   return {
     props: {

@@ -1,25 +1,31 @@
+import { ReactChild } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
+// @ts-ignore
 import articles from '@data/articles';
 import Layout from '@components/layout';
 import Grid from '@components/grid';
+import { ArticleType } from 'types';
+
+type BlogLayoutCompType = {
+  children: ReactChild;
+};
 
 const convertDate = (d) =>
   d === '' ? 'No date' : `${new Date(d).getDate()}.${new Date(d).getMonth() + 1}.${new Date(d).getFullYear()}`;
 
-export default function BlogLayout({ children }) {
+export default function BlogLayout({ children }: BlogLayoutCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  const article = articles.find((p) => p.slug === router.pathname.replace('/blog/', ''));
+  const article = articles.find((p) => p.slug === router.pathname.replace('/blog/', '')) as ArticleType;
   const { title, intro, img, published, modified, categories } = article;
 
   const categoriesList = categories?.split(', ').filter((x) => x);
 
-  const articlesByLang = articles.filter((x) => x.lang === i18n.language);
+  const articlesByLang = articles.filter((x) => x.lang === i18n.language) as ArticleType[];
   const nextLink = articlesByLang[articlesByLang.findIndex((x) => x.title === title) + 1] || articlesByLang[0];
   const previousLink =
     articlesByLang[articlesByLang.findIndex((x) => x.title === title) - 1] || articlesByLang[articlesByLang.length - 1];
@@ -45,20 +51,10 @@ export default function BlogLayout({ children }) {
                       ))}
                     </div>
                     <div>
-                      <time
-                        className="article__date"
-                        itemProp="datePublished"
-                        content={convertDate(published)}
-                        dateTime={convertDate(published)}
-                      >
+                      <time className="article__date" itemProp="datePublished" dateTime={convertDate(published)}>
                         {t('blog.published')} {convertDate(published)}
                       </time>
-                      <time
-                        className="article__date"
-                        itemProp="dateModified"
-                        content={convertDate(modified)}
-                        dateTime={convertDate(modified)}
-                      >
+                      <time className="article__date" itemProp="dateModified" dateTime={convertDate(modified)}>
                         {t('blog.modified')} {convertDate(modified)}
                       </time>
                     </div>
@@ -92,7 +88,3 @@ export default function BlogLayout({ children }) {
     </>
   );
 }
-
-BlogLayout.propTypes = {
-  children: PropTypes.node,
-};

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { AppProps } from 'next/app';
 import { useTranslation } from 'react-i18next';
 import Head from 'next/head';
 import AOS from 'aos';
@@ -11,13 +12,13 @@ import 'public/styles/style.scss';
 
 // This default export is required in a new `pages/_app.js` file.
 // eslint-disable-next-line react/prop-types
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.goatcounter) {
-      window.goatcounter.count({
+    if (typeof window !== 'undefined' && window['goatcounter']) {
+      window['goatcounter'].count({
         path: router.asPath,
         // path: location.pathname + location.search + location.hash
       });
@@ -34,7 +35,7 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const localLang = window.localStorage.getItem('lang');
-      const userLang = window.navigator.language || window.navigator.userLanguage;
+      const userLang = window.navigator.language || window.navigator['userLanguage'];
       if (['en', 'fr'].includes(localLang)) {
         i18n.changeLanguage(localLang);
       } else if (['en', 'fr'].includes(userLang)) {

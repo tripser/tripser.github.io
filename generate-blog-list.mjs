@@ -26,21 +26,26 @@ export const getArticles = () => {
       };
     })
     .filter((x) => x.title);
-  return allArticlesData.sort((a, b) => new Date(b.published) - new Date(a.published));
+  return allArticlesData.sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
 };
 
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const articles = getArticles();
 
-  const fileContent = `const articles = ${JSON.stringify(articles)}; module.exports = articles;`;
+  const fileContent = `
+    import { ArticleType } from 'types';
+
+    const articles = ${JSON.stringify(articles)}; 
+    
+    module.exports = articles as ArticleType[];`;
 
   const formatted = prettier.format(fileContent, {
     ...prettierConfig,
-    parser: 'babel',
+    parser: 'typescript',
   });
 
-  writeFileSync('data/articles.js', formatted);
+  writeFileSync('data/articles.ts', formatted);
 }
 
 generate();
