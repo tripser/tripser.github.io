@@ -1,11 +1,25 @@
-import { useEffect, useState } from 'react';
+import { ReactChild, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 import Header from '@components/header';
 import Footer from '@components/footer';
 import Splash from './splash';
-// import MobileNav from '@components/mobileNav';
+
+type LayoutCompType = {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  img?: string;
+  splash: string;
+  url?: string;
+  children: ReactChild;
+  itemtype?: string;
+  published?: string;
+  modified?: string;
+  lang?: string;
+  en?: string;
+  fr?: string;
+};
 
 export default function Layout({
   title,
@@ -21,8 +35,8 @@ export default function Layout({
   lang,
   en,
   fr,
-}) {
-  const [theme, setTheme] = useState('');
+}: LayoutCompType) {
+  const [theme, setTheme] = useState<string>('');
   const router = useRouter();
 
   useEffect(() => {
@@ -88,26 +102,9 @@ export default function Layout({
         <div className="body">{children}</div>
       </div>
       <Footer />
-      {/* <MobileNav /> */}
       <div id="ie-banner">
         Please open this website with a recent browser for the best experience. Avoid Internet Explorer at all costs.
       </div>
     </main>
   );
 }
-
-Layout.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  description: PropTypes.string,
-  img: PropTypes.string,
-  splash: PropTypes.string,
-  url: PropTypes.string,
-  children: PropTypes.node,
-  itemtype: PropTypes.string,
-  published: PropTypes.string,
-  modified: PropTypes.string,
-  lang: PropTypes.string,
-  en: PropTypes.string,
-  fr: PropTypes.string,
-};

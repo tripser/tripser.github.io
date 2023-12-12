@@ -4,6 +4,7 @@
     // https://nextjs.org/docs/basic-features/eslint
     "react/no-unescaped-entities": "off",
     "@next/next/no-img-element": "off",
-    "react/prop-types": 1
+    "react/prop-types": 0,
+    "react-hooks/exhaustive-deps": "off"
   }
 }

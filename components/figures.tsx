@@ -1,7 +1,9 @@
-import PropTypes from 'prop-types';
+type FiguresCompType = {
+  data: { src: string; caption: string }[];
+};
 
 // TODO: .figures .col-2 or .col-1-2 or col-2-1 ...
-export default function Figures({ data }) {
+export default function Figures({ data }: FiguresCompType) {
   const cols = data.length % 2 === 0;
   return (
     <div className={`figures ${cols ? 'figures2' : ''}`}>
@@ -14,7 +16,3 @@ export default function Figures({ data }) {
     </div>
   );
 }
-
-Figures.propTypes = {
-  data: PropTypes.arrayOf({ src: PropTypes.string, caption: PropTypes.string }),
-};

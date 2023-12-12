@@ -1,16 +1,24 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Layout from '@components/layout';
 import Grid from '@components/grid';
+import { ArticleType } from 'types';
 
-export default function Blog({ title, description, splash, url, articles }) {
+type BlogPageType = {
+  title: string;
+  description: string;
+  splash: string;
+  url: string;
+  articles: ArticleType[];
+};
+
+export default function Blog({ title, description, splash, url, articles }: BlogPageType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
-  const [articlesFiltered, setArticlesFiltered] = useState([]);
-  const [query, setQuery] = useState('');
+  const [articlesFiltered, setArticlesFiltered] = useState<ArticleType[]>([]);
+  const [query, setQuery] = useState<string>('');
 
   useEffect(() => {
     // the regex replace removes all characters before '?' to get only the query parameters
@@ -51,20 +59,8 @@ export default function Blog({ title, description, splash, url, articles }) {
   );
 }
 
-Blog.defaultProps = {
-  title: 'Blog',
-};
-
-Blog.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  splash: PropTypes.string,
-  url: PropTypes.string,
-  articles: PropTypes.array,
-};
-
 export async function getStaticProps() {
-  const articles = require('@data/articles');
+  const articles = require('@data/articles') as ArticleType[];
 
   return {
     props: {

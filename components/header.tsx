@@ -1,8 +1,10 @@
+import { MouseEventHandler } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
+
+type HeaderCompType = { theme: string; onClick: MouseEventHandler; en?: string; fr?: string };
 
 export const links = [
   {
@@ -13,9 +15,9 @@ export const links = [
   //   text: 'Photos',
   //   link: '/photos',
   // },
-];
+] as { text: string; link: string }[];
 
-export default function Header({ onClick, theme, ...props }) {
+export default function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
@@ -43,7 +45,7 @@ export default function Header({ onClick, theme, ...props }) {
               i18n.changeLanguage(newLang);
               window.localStorage.setItem('lang', newLang);
               if (router.pathname.includes('/blog/')) {
-                router.push(`/blog/${props[newLang]}`);
+                router.push(`/blog/${newLang === 'en' ? en : fr}`);
               }
             }}
           >
@@ -53,8 +55,8 @@ export default function Header({ onClick, theme, ...props }) {
           <button
             onClick={onClick}
             className="btn"
-            title={theme == 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            aria-label={theme == 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {theme === 'dark' ? (
               <MdDarkMode title="Dark mode" aria-labelledby="Dark mode" />
@@ -67,10 +69,3 @@ export default function Header({ onClick, theme, ...props }) {
     </header>
   );
 }
-
-Header.propTypes = {
-  onClick: PropTypes.func,
-  theme: PropTypes.string,
-  en: PropTypes.string,
-  fr: PropTypes.string,
-};

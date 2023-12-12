@@ -1,3 +1,5 @@
+import { ArticleType } from 'types';
+
 const articles = [
   {
     slug: 'drome-and-vercors',
@@ -58,4 +60,5 @@ const articles = [
     url: 'https://tripser.github.io/blog/weekend-in-luxembourg',
   },
 ];
-module.exports = articles;
+
+module.exports = articles as ArticleType[];
