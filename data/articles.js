@@ -1,5 +1,3 @@
-import { ArticleType } from 'types';
-
 const articles = [
   {
     slug: 'drome-and-vercors',
@@ -61,4 +59,4 @@ const articles = [
   },
 ];
 
-module.exports = articles as ArticleType[];
+module.exports = articles;

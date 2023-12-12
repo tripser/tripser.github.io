@@ -34,18 +34,16 @@ async function generate() {
   const articles = getArticles();
 
   const fileContent = `
-    import { ArticleType } from 'types';
-
     const articles = ${JSON.stringify(articles)}; 
     
-    module.exports = articles as ArticleType[];`;
+    module.exports = articles;`;
 
   const formatted = prettier.format(fileContent, {
     ...prettierConfig,
     parser: 'typescript',
   });
 
-  writeFileSync('data/articles.ts', formatted);
+  writeFileSync('data/articles.js', formatted);
 }
 
 generate();
