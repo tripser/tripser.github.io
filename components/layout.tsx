@@ -1,4 +1,4 @@
-import { ReactChild, useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '@components/header';
@@ -12,7 +12,7 @@ type LayoutCompType = {
   img?: string;
   splash: string;
   url?: string;
-  children: ReactChild;
+  children: ReactElement;
   itemtype?: string;
   published?: string;
   modified?: string;

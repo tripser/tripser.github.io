@@ -72,7 +72,7 @@ export async function getStaticProps() {
       title: 'Tripser',
       description:
         'Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.',
-      splash: '/images/mountain.jpg',
+      splash: '/images/vercors.jpg',
       articles: articles,
     },
   };

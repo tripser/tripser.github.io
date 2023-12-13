@@ -61,7 +61,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Page Not Found',
-      splash: '/images/beach.jpg',
+      splash: '/images/cahuita.jpg',
       articles: articles,
     },
   };

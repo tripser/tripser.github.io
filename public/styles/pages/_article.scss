@@ -112,26 +112,6 @@
           grid-template-columns: 1fr 1fr;
         }
       }
-
-      figure {
-        position: relative;
-
-        img {
-          border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
-          pointer-events: none;
-        }
-
-        figcaption {
-          position: absolute;
-          bottom: 0;
-          z-index: 11;
-          padding: 0.25rem 0.5rem;
-          margin-top: -1rem;
-          color: var(--text);
-          font-size: 0.875rem;
-          background: var(--bg80);
-        }
-      }
     }
 
     hr {

@@ -1,4 +1,4 @@
-import { ReactChild } from 'react';
+import { ReactElement } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
@@ -10,7 +10,7 @@ import Grid from '@components/grid';
 import { ArticleType } from 'types';
 
 type BlogLayoutCompType = {
-  children: ReactChild;
+  children: ReactElement;
 };
 
 const convertDate = (d) =>

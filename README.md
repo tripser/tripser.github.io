@@ -67,7 +67,7 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - Write the article with keywords, speaking with we, giving lots of details on itinerary, location, hotels, restaurants, activities
 - Affiliation??
 - Review spell on https://languagetool.org/
-- Find splash image and upload in  /public/images/articles/(articleName).jpg
+- Find splash image, compress on https://compressjpeg.com/ and upload in /public/images/articles/(articleName).jpg
 - Find content images, resize to 800x450, compress on https://compressjpeg.com/ and upload in /public/images/content/(articleName)/(name).jpg
 
 ## SOCIALS
