@@ -157,3 +157,24 @@ button,
     background-color: rgba(256, 256, 256, 0);
   }
 }
+
+figure {
+  position: relative;
+  border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+  overflow: hidden;
+
+  img {
+    pointer-events: none;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+    padding: 0.25rem 0.5rem;
+    margin-top: -1rem;
+    color: var(--text);
+    font-size: 0.875rem;
+    background: var(--bg80);
+  }
+}
