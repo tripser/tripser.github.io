@@ -26,7 +26,7 @@ export default function Header({ onClick, theme, en, fr }: HeaderCompType) {
       <div className="container">
         <Link href="/">
           <a className="logo">
-            <img src="/images/logo.png" alt="Tripser logo" title="Home" width="30" height="30" />
+            <img src="/images/logo.png" alt="Tripser logo" title="Home" width="36" height="36" />
           </a>
         </Link>
 
@@ -48,6 +48,9 @@ export default function Header({ onClick, theme, en, fr }: HeaderCompType) {
                 router.push(`/blog/${newLang === 'en' ? en : fr}`);
               }
             }}
+            className="btn"
+            title={i18n.language === 'en' ? 'Switch to French' : 'Switch to English'}
+            aria-label={i18n.language === 'en' ? 'Switch to French' : 'Switch to English'}
           >
             {i18n.language}
           </button>

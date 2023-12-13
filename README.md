@@ -33,19 +33,30 @@ This will trigger Github Action and deploy the changes to gh-pages.
 ## TODO
 
 - Articles
-  - intra links
-  - suggestions
+  - cote d'opale
+  - baie de somme
+  - bordeaux
+  - gorges du verdon et jura
+  - costa
+  - croatie monténégro
+  - ...
 
-- article image with credit
-  - link on image to image gallery
-  - more Figures layouts
+- links between articles
+- suggestions when article >= 3
 - 404 to have more suggestions
-- rearange homepage: big pinned article (carousel??)
-- rework logo to svg + add on homepage?
-- image gallery page with links to articles
+
+- https://codestitch.app/page-speed-handbook
+- https://pagespeed.web.dev/
+- different image formats (especially for splash!!)
+- lighthouse check
+- seo check
 - lang: check seo is good
+
 - issue with blog filters scrolling up
 
+- more Figures layouts
+- rearange homepage: big pinned article (carousel??)
+- rework logo to svg + add on homepage?
 - review button design && moving shapes
 
 ## BLOG ARTICLES

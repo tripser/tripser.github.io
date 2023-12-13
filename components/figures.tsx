@@ -9,7 +9,7 @@ export default function Figures({ data }: FiguresCompType) {
     <div className={`figures ${cols ? 'figures2' : ''}`}>
       {data.map((fig) => (
         <figure key={fig.caption}>
-          <img src={fig.src} alt={fig.caption} />
+          <img src={fig.src} alt={fig.caption} width="260" height="146" loading="lazy" />
           <figcaption>{fig.caption}</figcaption>
         </figure>
       ))}

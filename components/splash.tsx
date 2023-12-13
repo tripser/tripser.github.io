@@ -8,7 +8,7 @@ export default function Splash({ title, subtitle, splash }: SplashCompType) {
   return (
     <>
       <div className="splash" data-aos="fade-up">
-        <img src={splash} alt={title} width="300" height="150" itemProp="image" />
+        <img src={splash} alt={title} width="320" height="168" itemProp="image" />
         <div className="splash__headings">
           <h1 itemProp="headline name">{title}</h1>
           {subtitle ? <p>{subtitle}</p> : null}
