@@ -19,6 +19,13 @@
   </url>
 
   <url>
+    <loc>https://tripser.github.io/photos</loc>
+    <lastmod>2023-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://tripser.github.io/blog/drome-and-vercors</loc>
     <lastmod>2023-12-06</lastmod>
     <changefreq>monthly</changefreq>
