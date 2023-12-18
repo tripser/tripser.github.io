@@ -11,10 +11,10 @@ export const links = [
     text: 'Blog',
     link: '/blog',
   },
-  // {
-  //   text: 'Photos',
-  //   link: '/photos',
-  // },
+  {
+    text: 'Photos',
+    link: '/photos',
+  },
 ] as { text: string; link: string }[];
 
 export default function Header({ onClick, theme, en, fr }: HeaderCompType) {

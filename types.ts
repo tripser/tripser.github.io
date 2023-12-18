@@ -12,3 +12,11 @@ export type ArticleType = {
   link: string;
   url: string;
 };
+
+export type PhotoType = {
+  src: string;
+  caption: string;
+  title: string;
+  lang: string;
+  link: string;
+};

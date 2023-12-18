@@ -1,0 +1,41 @@
+.modal {
+  padding: 4px;
+  border: none;
+  border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+  background: var(--primary);
+  background: linear-gradient(-45deg, var(--primary), var(--secondary));
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  width: calc(100% - 2rem);
+  max-width: calc(800px + 8px);
+
+  .content {
+    position: relative;
+    border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
+    background-color: var(--bg);
+    transition: all var(--transition);
+
+    .close {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      padding: 0.5rem;
+      line-height: 1;
+      background-color: var(--bg40);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--bg80);
+      }
+    }
+
+
+  }
+
+  &[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+}
