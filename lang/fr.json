@@ -17,6 +17,9 @@
     "back": "Retour à la liste des articles",
     "suggested": "Articles suggerés"
   },
+  "photos": {
+    "intro": "Voici la liste de toutes les photos partagées dans nos articles. Clique sur une photo pour avoir une meilleure vue et clique à nouveau pour voyager vers l'article correspondant"
+  },
   "categories": {
     "voyage": "voyage",
     "europe": "europe",

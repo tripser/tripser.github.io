@@ -17,6 +17,9 @@
     "back": "Back to blog listing",
     "suggested": "Suggested articles"
   },
+  "photos": {
+    "intro": "Here the a list of all the pictures we shared in our articles. Click on a photo to have a better view and click again to travel to the related piece of blog."
+  },
   "categories": {
     "voyage": "voyage",
     "europe": "europe",
