@@ -6,23 +6,37 @@
 >
   <url>
     <loc>https://tripser.github.io</loc>
-    <lastmod>2023-12-18</lastmod>
+    <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://tripser.github.io/blog</loc>
-    <lastmod>2023-12-18</lastmod>
+    <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://tripser.github.io/photos</loc>
-    <lastmod>2023-12-18</lastmod>
+    <lastmod>2023-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.github.io/blog/alsace-and-christmas-markets</loc>
+    <lastmod>2023-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.github.io/blog/alsace-et-marches-noel</loc>
+    <lastmod>2023-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
