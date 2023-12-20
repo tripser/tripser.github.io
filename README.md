@@ -33,6 +33,7 @@ This will trigger Github Action and deploy the changes to gh-pages.
 ## TODO
 
 - Articles
+  - Alsace marchés de noel
   - cote d'opale
   - baie de somme
   - bordeaux
@@ -41,9 +42,12 @@ This will trigger Github Action and deploy the changes to gh-pages.
   - croatie monténégro
   - ...
 
+- draw itinerary maps
 - links between articles
 - suggestions when article >= 3
 - 404 to have more suggestions
+
+- move out of github because of stealing threat?
 
 - https://codestitch.app/page-speed-handbook
 - https://pagespeed.web.dev/
@@ -78,8 +82,9 @@ This will trigger Github Action and deploy the changes to gh-pages.
 - Write the article with keywords, speaking with we, giving lots of details on itinerary, location, hotels, restaurants, activities
 - Affiliation??
 - Review spell on https://languagetool.org/
-- Find splash image, compress on https://compressjpeg.com/ and upload in /public/images/articles/(articleName).jpg
-- Find content images, resize to 800x450, compress on https://compressjpeg.com/ and upload in /public/images/content/(articleName)/(name).jpg
+- Find splash image, 1920x compress on https://compressjpeg.com/ and upload in /public/images/articles/(articleName).jpg
+- Find content images, 800x450, compress on https://compressjpeg.com/ and upload in /public/images/content/(articleName)/(name).jpg
+- Create itinerary image from https://pebblar.com/, 800x450, compress on https://compressjpeg.com/ and upload in /public/images/maps/(name).jpg
 
 ## SOCIALS
 

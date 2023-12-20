@@ -1,5 +1,35 @@
 const articles = [
   {
+    slug: 'alsace-and-christmas-markets',
+    title: 'Discover Alsace and its Christmas markets',
+    intro:
+      'How to spend a long weekend of 3, 4 days in Alsace to discover Christmas mgic, its typical dishes and its unique architecture?',
+    img: '/images/articles/alsace-and-christmas-markets.jpg',
+    published: '2023-12-20',
+    modified: '2023-12-20',
+    lang: 'en',
+    en: '',
+    fr: 'alsace-et-marches-noel',
+    categories: 'voyage, europe, christmas',
+    link: '/blog/alsace-and-christmas-markets',
+    url: 'https://tripser.github.io/blog/alsace-and-christmas-markets',
+  },
+  {
+    slug: 'alsace-et-marches-noel',
+    title: "Découvrir l'Alsace et ses marchés de Noël",
+    intro:
+      'Comment passer on long weekend de 3, 4 jours en Alsace pour y découvrir la magie de Noël, ses plats typiques et son architecture unique ?',
+    img: '/images/articles/alsace-et-marches-noel.jpg',
+    published: '2023-12-20',
+    modified: '2023-12-20',
+    lang: 'fr',
+    en: 'alsace-and-christmas-markets',
+    fr: '',
+    categories: 'voyage, europe, christmas',
+    link: '/blog/alsace-et-marches-noel',
+    url: 'https://tripser.github.io/blog/alsace-et-marches-noel',
+  },
+  {
     slug: 'drome-and-vercors',
     title: 'A Journey through Drome and Vercors',
     intro:

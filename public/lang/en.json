@@ -27,7 +27,8 @@
     "america": "america",
     "asia": "asia",
     "hike": "hike",
-    "city-trip": "city-trip"
+    "city-trip": "city-trip",
+    "christmas": "christmas"
   },
   "contact": "Feel free to get in touch and stay connected with us via these different channels.",
   "404": { "title": "Page not found", "back": "Go back home", "try": "Recommended articles" }
