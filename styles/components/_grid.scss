@@ -13,7 +13,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    &:not(.grid-2) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 
