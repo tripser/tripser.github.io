@@ -33,7 +33,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
 ## TODO
 
 - Articles
-  - Alsace marchés de noel
   - cote d'opale
   - baie de somme
   - bordeaux
@@ -44,7 +43,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
 
 - draw itinerary maps
 - links between articles
-- suggestions when article >= 3
 - 404 to have more suggestions
 
 - move out of github because of stealing threat?

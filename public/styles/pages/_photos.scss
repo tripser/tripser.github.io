@@ -2,6 +2,7 @@
   .img-container {
     border-radius: var(--radius-lg) 0 var(--radius-lg) 0;
     overflow: hidden;
+    box-shadow: var(--shadow);
 
     img {
       transition: var(--transition);

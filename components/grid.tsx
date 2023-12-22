@@ -23,12 +23,13 @@ function GridItem({ item }: GridItemCompType) {
 
 type GridCompType = {
   data: ArticleType[];
+  count?: number;
   className?: string;
 };
 
-export default function Grid({ data, className }: GridCompType) {
+export default function Grid({ data, count, className }: GridCompType) {
   return (
-    <div className={'grid ' + (className || '')}>
+    <div className={`grid ${count ? `grid-${count}` : ''} ${className || ''}`}>
       {data.map((item) => {
         return <GridItem key={item.title} item={item} />;
       })}

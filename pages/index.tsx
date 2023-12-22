@@ -43,7 +43,7 @@ export default function Home({ title, description, splash, articles }: HomePageT
             <div className="cols cols-lg">
               <div className="col centered-v">
                 <h2>{t('about.intro')}</h2>
-                <p dangerouslySetInnerHTML={{ __html: t('about.body') }} />
+                <div dangerouslySetInnerHTML={{ __html: t('about.body') }} />
               </div>
 
               <div className="col centered-v">

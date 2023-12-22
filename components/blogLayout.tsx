@@ -29,8 +29,7 @@ export default function BlogLayout({ children }: BlogLayoutCompType) {
   const nextLink = articlesByLang[articlesByLang.findIndex((x) => x.title === title) + 1] || articlesByLang[0];
   const previousLink =
     articlesByLang[articlesByLang.findIndex((x) => x.title === title) - 1] || articlesByLang[articlesByLang.length - 1];
-  const relatedLinks = [];
-  // const relatedLinks = [previousLink, nextLink];
+  const relatedLinks = [previousLink, nextLink];
 
   return (
     <>
@@ -76,7 +75,7 @@ export default function BlogLayout({ children }: BlogLayoutCompType) {
                   {relatedLinks.length ? (
                     <div>
                       <h2 className="mb-5">{t('blog.suggested')}</h2>
-                      <Grid data={relatedLinks} className="mb-20" />
+                      <Grid data={relatedLinks} count={2} className="mb-20" />
                     </div>
                   ) : null}
                 </div>
