@@ -41,7 +41,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
   - croatie monténégro
   - ...
 
-- draw itinerary maps
 - links between articles
 - 404 to have more suggestions
 
