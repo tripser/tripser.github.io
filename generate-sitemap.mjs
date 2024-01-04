@@ -4,7 +4,7 @@ import articles from './data/articles.js';
 
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
-  const baseUrl = 'https://tripser.github.io';
+  const baseUrl = 'https://tripser.blog';
   const today = `${new Date().getFullYear()}-${(new Date().getMonth() + 1).toString().padStart(2, '0')}-${new Date()
     .getDate()
     .toString()

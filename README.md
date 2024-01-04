@@ -19,20 +19,21 @@ npm run dev
 yarn dev
 ```
 
-needs node v14
+needs node v18.17.0
 
 ## DEPLOY
 
 Also make sure your linter is error-free with `npm run lint` or `yarn lint`
 
-Deployment should be managed by the pipeline (`npm run deploy` or `yarn deploy`)
+Deployment should be managed with `npm run deploy` or `yarn deploy`
 
 Commit and Push your changes to master.
-This will trigger Github Action and deploy the changes to gh-pages.
+<!-- This will trigger Github Action and deploy the changes to firebase and tripser.blog -->
 
 ## TODO
 
 - Articles
+  - best christmas markets
   - cote d'opale
   - baie de somme
   - bordeaux
@@ -43,8 +44,6 @@ This will trigger Github Action and deploy the changes to gh-pages.
 
 - links between articles
 - 404 to have more suggestions
-
-- move out of github because of stealing threat?
 
 - https://codestitch.app/page-speed-handbook
 - https://pagespeed.web.dev/

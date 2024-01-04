@@ -68,7 +68,7 @@ export async function getStaticProps() {
       description:
         'Our blog articles covering all our different trips. Each post offers our unique point of view, including the best activities, hikes, stays, tips and more.',
       splash: '/images/jura.jpg',
-      url: 'https://tripser.github.io/blog',
+      url: 'https://tripser.blog/blog',
       articles: articles,
     },
   };

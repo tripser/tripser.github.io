@@ -22,7 +22,7 @@ export const getArticles = () => {
         fr: data.fr || '',
         categories: data.categories || '',
         link: `/blog/${slug}`,
-        url: `https://tripser.github.io/blog/${slug}`,
+        url: `https://tripser.blog/blog/${slug}`,
       };
     })
     .filter((x) => x.title);

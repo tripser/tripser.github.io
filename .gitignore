@@ -1,4 +1,5 @@
 node_modules
 .next
+.firebase
 *.log
 .DS_Store

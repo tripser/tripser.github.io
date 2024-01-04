@@ -48,7 +48,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   const title = `Tripser | Voyage blog`;
   const desc = `Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.`;
-  const url = `https://tripser.github.io`;
+  const url = `https://tripser.blog`;
   const imgUrl = `${url}/images/tripser.jpg`;
 
   return (
