@@ -91,6 +91,8 @@ export default function Layout({
 
         {published ? <meta property="article:published_time" content={published} /> : null}
         {modified ? <meta property="article:modified_time" content={modified} /> : null}
+
+        <link rel="canonical" href={url || 'https://tripser.blog'} />
       </Head>
       <Header onClick={switchTheme} theme={theme} en={en} fr={fr} />
       <div className="new-stack">

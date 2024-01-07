@@ -25,7 +25,7 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
   // real lazy loading
 
   return (
-    <Layout title={title} description={description} splash={splash}>
+    <Layout title={title} description={description} splash={splash} url="https://tripser.blog/photos">
       <div className="photos-page">
         <section>
           <div className="container mt-3" data-aos="fade-right">

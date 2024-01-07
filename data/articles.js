@@ -12,7 +12,7 @@ const articles = [
     fr: 'alsace-et-marches-noel',
     categories: 'voyage, europe, christmas',
     link: '/blog/alsace-and-christmas-markets',
-    url: 'https://tripser.github.io/blog/alsace-and-christmas-markets',
+    url: 'https://tripser.blog/blog/alsace-and-christmas-markets',
   },
   {
     slug: 'alsace-et-marches-noel',
@@ -27,7 +27,7 @@ const articles = [
     fr: '',
     categories: 'voyage, europe, christmas',
     link: '/blog/alsace-et-marches-noel',
-    url: 'https://tripser.github.io/blog/alsace-et-marches-noel',
+    url: 'https://tripser.blog/blog/alsace-et-marches-noel',
   },
   {
     slug: 'drome-and-vercors',
@@ -42,7 +42,7 @@ const articles = [
     fr: 'drome-et-vercors',
     categories: 'voyage, europe, hike',
     link: '/blog/drome-and-vercors',
-    url: 'https://tripser.github.io/blog/drome-and-vercors',
+    url: 'https://tripser.blog/blog/drome-and-vercors',
   },
   {
     slug: 'drome-et-vercors',
@@ -57,7 +57,7 @@ const articles = [
     fr: '',
     categories: 'voyage, europe, hike',
     link: '/blog/drome-et-vercors',
-    url: 'https://tripser.github.io/blog/drome-et-vercors',
+    url: 'https://tripser.blog/blog/drome-et-vercors',
   },
   {
     slug: 'weekend-au-luxembourg',
@@ -71,7 +71,7 @@ const articles = [
     fr: '',
     categories: 'voyage, europe, hike, city-trip',
     link: '/blog/weekend-au-luxembourg',
-    url: 'https://tripser.github.io/blog/weekend-au-luxembourg',
+    url: 'https://tripser.blog/blog/weekend-au-luxembourg',
   },
   {
     slug: 'weekend-in-luxembourg',
@@ -85,7 +85,7 @@ const articles = [
     fr: 'weekend-au-luxembourg',
     categories: 'voyage, europe, hike, city-trip',
     link: '/blog/weekend-in-luxembourg',
-    url: 'https://tripser.github.io/blog/weekend-in-luxembourg',
+    url: 'https://tripser.blog/blog/weekend-in-luxembourg',
   },
 ];
 
