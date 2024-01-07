@@ -1,42 +1,42 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }}
-    runs-on: ubuntu-latest
+# name: Build and Deploy
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   build-and-deploy:
+#     concurrency: ci-${{ github.ref }}
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#         with:
+#           persist-credentials: false
 
-      # - name: Cache
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: ${{ github.workspace }}/.next/cache
-      #     key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
-      - name: Install and Build
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-          cache: 'npm'
-      - run: npm install
-      - run: npm run blog
-      - run: npm run photos
-      - run: npm run sitemap
-      - run: npm run build
-      - run: npm run export
-        env:
-          CI: true
-      - run: touch out/.nojekyll
+#       # - name: Cache
+#       #   uses: actions/cache@v2
+#       #   with:
+#       #     path: ${{ github.workspace }}/.next/cache
+#       #     key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+#       - name: Install and Build
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 14
+#           cache: 'npm'
+#       - run: npm install
+#       - run: npm run blog
+#       - run: npm run photos
+#       - run: npm run sitemap
+#       - run: npm run build
+#       - run: npm run export
+#         env:
+#           CI: true
+#       - run: touch out/.nojekyll
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          token: ${{ secrets.TRIPSER }}
-          branch: gh-pages
-          folder: out
+#       - name: Deploy
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           token: ${{ secrets.TRIPSER }}
+#           branch: gh-pages
+#           folder: out
