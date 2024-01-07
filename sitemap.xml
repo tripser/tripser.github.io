@@ -5,63 +5,63 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://tripser.github.io</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>https://tripser.blog</loc>
+    <lastmod>2024-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>https://tripser.blog/blog</loc>
+    <lastmod>2024-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/photos</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>https://tripser.blog/photos</loc>
+    <lastmod>2024-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/alsace-and-christmas-markets</loc>
+    <loc>https://tripser.blog/blog/alsace-and-christmas-markets</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/alsace-et-marches-noel</loc>
+    <loc>https://tripser.blog/blog/alsace-et-marches-noel</loc>
     <lastmod>2023-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/drome-and-vercors</loc>
+    <loc>https://tripser.blog/blog/drome-and-vercors</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/drome-et-vercors</loc>
+    <loc>https://tripser.blog/blog/drome-et-vercors</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/weekend-au-luxembourg</loc>
+    <loc>https://tripser.blog/blog/weekend-au-luxembourg</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://tripser.github.io/blog/weekend-in-luxembourg</loc>
+    <loc>https://tripser.blog/blog/weekend-in-luxembourg</loc>
     <lastmod>2023-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
