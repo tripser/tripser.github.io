@@ -44,7 +44,7 @@ export default function Blog({ title, description, splash, url, articles }: Blog
               <a className={`btn ${query === '' ? 'active' : ''}`}>{t('blog.all')}</a>
             </Link>
             {categories.map((c) => (
-              <Link key={c} href={`?${c}`}>
+              <Link key={c} href={`?${c}`} scroll={false}>
                 <a className={`btn ${query === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
               </Link>
             ))}

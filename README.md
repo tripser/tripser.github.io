@@ -52,8 +52,6 @@ Commit and Push your changes to master.
 - seo check
 - lang: check seo is good
 
-- issue with blog filters scrolling up
-
 - more Figures layouts
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
