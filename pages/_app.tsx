@@ -75,7 +75,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
         <meta name="google-site-verification" content="z2hRht9XAlPwzcTZ_4eqa9-fBU4ZQTIalemhd4_2m8Y" />
 
-        <meta name="theme-color" content="#009688" key="theme-color" />
+        <meta name="theme-color" content="#85c2ff" key="theme-color" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <Component {...pageProps} />

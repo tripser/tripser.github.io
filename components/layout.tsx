@@ -52,7 +52,11 @@ export default function Layout({
     setTheme(newTheme);
   };
 
-  const fullImageUrl = img ? (img.startsWith('http') ? img : `https://tripser.blog${img}`) : null;
+  const fullImageUrl = img
+    ? img.startsWith('http')
+      ? img
+      : `https://raw.githubusercontent.com/tripser/tripser.github.io/main/public${img}`
+    : 'https://tripser.blog/images/tripser.jpg';
 
   const OGLocales = {
     en: 'en_GB',
@@ -74,7 +78,7 @@ export default function Layout({
         <meta property="og:title" content={`${title}${router.pathname !== '/' ? ' | Tripser' : ''}`} key="og:title" />
         <meta property="og:description" content={description} key="og:description" />
         <meta property="og:url" content={url || 'https://tripser.blog'} key="og:url" />
-        <meta property="og:image" content={fullImageUrl || 'https://tripser.blog/images/tripser.jpg'} key="og:image" />
+        <meta property="og:image" content={fullImageUrl} key="og:image" />
 
         <meta
           property="twitter:title"
@@ -83,11 +87,7 @@ export default function Layout({
         />
         <meta property="twitter:description" content={description} key="twitter:description" />
         <meta property="twitter:url" content={url || 'https://tripser.blog'} key="twitter:url" />
-        <meta
-          property="twitter:image"
-          content={fullImageUrl || 'https://tripser.blog/images/tripser.jpg'}
-          key="twitter:image"
-        />
+        <meta property="twitter:image" content={fullImageUrl} key="twitter:image" />
 
         {published ? <meta property="article:published_time" content={published} /> : null}
         {modified ? <meta property="article:modified_time" content={modified} /> : null}

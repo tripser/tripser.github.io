@@ -10,7 +10,7 @@ function GridItem({ item }: GridItemCompType) {
     <Link href={item.link || ''}>
       <a title={item.title} className="card">
         <div className="card__img">
-          <img src={item.img} alt={item.title} width="260" height="146" loading="lazy" />
+          <img src={item.mini || item.img} alt={item.title} width="260" height="146" loading="lazy" />
         </div>
         <div className="card__data">
           <h2 className="card__title t-ellipsis">{item.title}</h2>

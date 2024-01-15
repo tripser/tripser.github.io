@@ -9,12 +9,14 @@ export const getArticles = () => {
     .map((file) => {
       const slug = file.replace('.mdx', '');
       const fileContents = fs.readFileSync(path.join(`pages/blog/${file}`), 'utf8');
+      const imgFolder = 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/';
       const { data } = matter(fileContents);
       return {
         slug,
         title: data.title,
         intro: data.intro || '',
-        img: `/images/articles/${slug}.jpg`,
+        img: `${imgFolder}${data.en || slug}.jpg`,
+        mini: `${imgFolder}${data.en || slug}-mini.jpg`,
         published: data.published || '',
         modified: data.modified || '',
         lang: data.lang || 'en',
