@@ -22,7 +22,7 @@ export const getPhotos = () => {
       const captionMatch = ddd.match(/caption: '([^']+)'/);
       if (srcMatch[1].includes('/maps/')) return;
       return {
-        src: srcMatch ? `${imgFolder}srcMatch[1]` : '',
+        src: srcMatch ? `${imgFolder}${srcMatch[1]}` : '',
         caption: captionMatch ? captionMatch[1] : '',
         title: article.title,
         lang: article.lang,
