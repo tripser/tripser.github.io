@@ -2,12 +2,12 @@ import fs, { writeFileSync } from 'fs';
 import path from 'path';
 import prettier from 'prettier';
 import articles from './data/articles.js';
+import IMG_FOLDER from './data/utils.js';
 
 export const getPhotos = () => {
   const files = fs.readdirSync(path.join('pages/blog')).filter((file) => file.endsWith('.mdx'));
 
   const figuresRegex = /<Figures\b[^>]*\/>/g;
-  const imgFolder = 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public';
 
   const allPictures = files.map((file) => {
     const filePath = path.join('pages/blog', file);
@@ -22,7 +22,7 @@ export const getPhotos = () => {
       const captionMatch = ddd.match(/caption: '([^']+)'/);
       if (srcMatch[1].includes('/maps/')) return;
       return {
-        src: srcMatch ? `${imgFolder}${srcMatch[1]}` : '',
+        src: srcMatch ? `${IMG_FOLDER}${srcMatch[1]}` : '',
         caption: captionMatch ? captionMatch[1] : '',
         title: article.title,
         lang: article.lang,

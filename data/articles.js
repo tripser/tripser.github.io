@@ -1,5 +1,37 @@
 const articles = [
   {
+    slug: 'cote-opale-trip',
+    title: "Côte d'Opale, 3 days of escape",
+    intro:
+      "How to experience the Côte d'Opale marvels in 3 days? A guide through Boulogne-sur-Mer, Nausicaa, Le Touquet and Stella.",
+    img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/cote-opale-trip.jpg',
+    mini: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/cote-opale-trip-mini.jpg',
+    published: '2024-01-20',
+    modified: '2024-01-21',
+    lang: 'en',
+    en: '',
+    fr: 'cote-opale-voyage',
+    categories: 'voyage, europe, beach, france',
+    link: '/blog/cote-opale-trip',
+    url: 'https://tripser.blog/blog/cote-opale-trip',
+  },
+  {
+    slug: 'cote-opale-voyage',
+    title: "Côte d'Opale, 3 Jours d'Évasion",
+    intro:
+      "Comment expérimenter les merveilles de la Côte d'Opale en 3 jours ? Un guide au travers de Boulogne-sur-Mer, Nausicaa, Le Touquet et Stella.",
+    img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/cote-opale-trip.jpg',
+    mini: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/cote-opale-trip-mini.jpg',
+    published: '2024-01-20',
+    modified: '2024-01-21',
+    lang: 'fr',
+    en: 'cote-opale-trip',
+    fr: '',
+    categories: 'voyage, europe, beach, france',
+    link: '/blog/cote-opale-voyage',
+    url: 'https://tripser.blog/blog/cote-opale-voyage',
+  },
+  {
     slug: 'alsace-and-christmas-markets',
     title: 'Discover Alsace and its Christmas markets',
     intro:

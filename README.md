@@ -34,7 +34,6 @@ Commit and Push your changes to master.
 
 - Articles
   - best christmas markets
-  - cote d'opale
   - baie de somme
   - bordeaux
   - gorges du verdon et jura
@@ -52,10 +51,12 @@ Commit and Push your changes to master.
 - seo check
 - lang: check seo is good
 
+- add framed text, quotes, highlighted words, 
 - more Figures layouts
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
 - review button design && moving shapes
+- add a map of destinations
 
 ## BLOG ARTICLES
 

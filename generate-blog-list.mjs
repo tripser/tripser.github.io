@@ -2,6 +2,7 @@ import fs, { writeFileSync } from 'fs';
 import path from 'path';
 import prettier from 'prettier';
 import matter from 'gray-matter';
+import IMG_FOLDER from './data/utils.js';
 
 export const getArticles = () => {
   const files = fs.readdirSync(path.join('pages/blog'));
@@ -9,7 +10,7 @@ export const getArticles = () => {
     .map((file) => {
       const slug = file.replace('.mdx', '');
       const fileContents = fs.readFileSync(path.join(`pages/blog/${file}`), 'utf8');
-      const imgFolder = 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/';
+      const imgFolder = `${IMG_FOLDER}/images/articles/`;
       const { data } = matter(fileContents);
       return {
         slug,

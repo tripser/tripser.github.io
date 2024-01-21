@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from '@components/header';
 import Footer from '@components/footer';
 import Splash from './splash';
+import IMG_FOLDER from '../data/utils';
 
 type LayoutCompType = {
   title: string;
@@ -55,7 +56,7 @@ export default function Layout({
   const fullImageUrl = img
     ? img.startsWith('http')
       ? img
-      : `https://raw.githubusercontent.com/tripser/tripser.github.io/main/public${img}`
+      : `${IMG_FOLDER}${img}`
     : 'https://tripser.blog/images/tripser.jpg';
 
   const OGLocales = {

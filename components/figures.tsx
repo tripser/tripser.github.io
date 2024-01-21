@@ -1,3 +1,5 @@
+import IMG_FOLDER from '../data/utils';
+
 type FiguresCompType = {
   data: { src: string; caption: string }[];
 };
@@ -9,9 +11,7 @@ export default function Figures({ data }: FiguresCompType) {
   return (
     <div className={`figures ${cols ? 'figures2' : ''}`}>
       {data.map((fig) => {
-        const fullFigUrl = fig.src.startsWith('http')
-          ? fig.src
-          : `https://raw.githubusercontent.com/tripser/tripser.github.io/main/public${fig.src}`;
+        const fullFigUrl = fig.src.startsWith('http') ? fig.src : `${IMG_FOLDER}${fig.src}`;
 
         return (
           <figure key={fig.caption}>

@@ -1,3 +1,5 @@
+import IMG_FOLDER from '../data/utils';
+
 type SplashCompType = {
   title: string;
   subtitle?: string;
@@ -5,9 +7,7 @@ type SplashCompType = {
 };
 
 export default function Splash({ title, subtitle, splash }: SplashCompType) {
-  const fullSplashUrl = splash.startsWith('http')
-    ? splash
-    : `https://raw.githubusercontent.com/tripser/tripser.github.io/main/public${splash}`;
+  const fullSplashUrl = splash.startsWith('http') ? splash : `${IMG_FOLDER}${splash}`;
 
   return (
     <>
