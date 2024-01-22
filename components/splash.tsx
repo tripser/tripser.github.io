@@ -12,7 +12,16 @@ export default function Splash({ title, subtitle, splash }: SplashCompType) {
   return (
     <>
       <div className="splash" data-aos="fade-up">
-        <img src={fullSplashUrl} alt={title} width="320" height="168" itemProp="image" />
+        <img
+          srcSet={`${fullSplashUrl.replace('.jpg', '-mini.jpg')} 800w, ${fullSplashUrl} 1920w`}
+          src={fullSplashUrl}
+          sizes="(max-width: 800px) 100vw, 1920px"
+          alt={title}
+          width="320"
+          height="168"
+          itemProp="image"
+        />
+
         <div className="splash__headings">
           <h1 itemProp="headline name">{title}</h1>
           {subtitle ? <p>{subtitle}</p> : null}

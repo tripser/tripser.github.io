@@ -25,7 +25,7 @@ export default function Home({ title, description, splash, articles }: HomePageT
           <div className="container mt-3" data-aos="fade-right">
             <h2>{t('articles.latest-articles')}</h2>
             <p className="mb-10">{t('articles.discover-articles')}</p>
-            <Grid data={articlesByLang.slice(0, 3)} className="mt-10 mb-10" />
+            <Grid data={articlesByLang.slice(0, 6)} className="mt-10 mb-10" />
             <div className="btn-wrapper-right">
               <Link href="/blog">
                 <a className="btn">
