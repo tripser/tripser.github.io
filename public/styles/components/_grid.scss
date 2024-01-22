@@ -65,13 +65,18 @@
     bottom: 0;
     width: 100%;
     padding: 0.5rem 1rem;
-    height: calc(3rem - 3px);
     border-radius: 1rem 0 1rem 0;
     overflow: hidden;
     transition: all var(--transition);
 
     .card__title {
       margin-bottom: 0;
+    }
+
+    .card__categories {
+      opacity: 0;
+      height: 0;
+      transition: all var(--transition);
     }
   }
 
@@ -90,8 +95,12 @@
     }
 
     .card__data {
-      height: 4.5rem;
-      color: var(--text)
+      color: var(--text);
+
+      .card__categories {
+        opacity: 1;
+        height: 1.375rem;
+      }
     }
   }
 
@@ -104,8 +113,12 @@
     }
 
     .card__data {
-      height: 4.5rem;
-      color: var(--text)
+      color: var(--text);
+
+      .card__categories {
+        opacity: 1;
+        height: 1.375rem;
+      }
     }
   }
 }

@@ -13,8 +13,8 @@ function GridItem({ item }: GridItemCompType) {
           <img src={item.mini || item.img} alt={item.title} width="260" height="146" loading="lazy" />
         </div>
         <div className="card__data">
-          <h2 className="card__title t-ellipsis">{item.title}</h2>
-          <p>{item.categories}</p>
+          <h2 className="card__title">{item.title}</h2>
+          <p className="card__categories">{item.categories}</p>
         </div>
       </a>
     </Link>

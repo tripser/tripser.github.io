@@ -11,7 +11,7 @@
     "local": "npm run blog && npm run photos && next build && next start",
     "analyze": "cross-env ANALYZE=true next build",
     "export": "next export",
-    "deploy": "npm run blog && npm run photos && npm run sitemap && firebase deploy",
+    "deploy": "set PROD=true && npm run blog && npm run photos && npm run sitemap && firebase deploy",
     "sitemap": "node ./generate-sitemap.mjs",
     "blog": "node ./generate-blog-list.mjs",
     "photos": "node ./generate-photos-list.mjs",

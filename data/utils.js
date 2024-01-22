@@ -1,4 +1,3 @@
-const IMG_FOLDER = 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public';
-// const IMG_FOLDER = '';
+const IMG_FOLDER = process.env.PROD ? 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public' : '';
 
 module.exports = IMG_FOLDER;
