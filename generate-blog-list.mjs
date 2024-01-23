@@ -17,7 +17,6 @@ export const getArticles = () => {
         title: data.title,
         intro: data.intro || '',
         img: `${imgFolder}${data.en || slug}.jpg`,
-        mini: `${imgFolder}${data.en || slug}-mini.jpg`,
         published: data.published || '',
         modified: data.modified || '',
         lang: data.lang || 'en',

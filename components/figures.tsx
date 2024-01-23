@@ -1,4 +1,4 @@
-import IMG_FOLDER from '../data/utils';
+import IMG_FOLDER from '@data/utils';
 
 type FiguresCompType = {
   data: { src: string; caption: string }[];
@@ -15,7 +15,16 @@ export default function Figures({ data }: FiguresCompType) {
 
         return (
           <figure key={fig.caption}>
-            <img src={fullFigUrl} alt={fig.caption} width="260" height="146" loading="lazy" />
+            <img
+              srcSet={`${fullFigUrl.replace('.jpg', '-400.jpg')} 400w, ${fullFigUrl} 800w`}
+              src={fullFigUrl}
+              sizes="calc(100vw - 2rem)"
+              alt={fig.caption}
+              width="260"
+              height="146"
+              itemProp="image"
+              loading="lazy"
+            />
             <figcaption>{fig.caption}</figcaption>
           </figure>
         );

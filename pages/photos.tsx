@@ -21,7 +21,6 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
   // fancier grid?
   // carousel?
   // filter by article?
-  // only my pics?
   // real lazy loading
 
   return (
@@ -37,14 +36,32 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
                   key={photo.src}
                   trigger={
                     <div className="img-container" title="Zoom on image">
-                      <img src={photo.src} alt={photo.caption} width="260" height="146" loading="lazy" />
+                      <img
+                        srcSet={`${photo.src.replace('.jpg', '-400.jpg')} 400w, ${photo.src} 800w`}
+                        src={photo.src}
+                        sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1199px) calc(50vw - 2rem), calc(33.33vw - 2rem)"
+                        alt={photo.caption}
+                        width="260"
+                        height="146"
+                        itemProp="image"
+                        loading="lazy"
+                      />
                     </div>
                   }
                 >
                   <Link href={photo.link}>
                     <a title={photo.title}>
                       <figure>
-                        <img src={photo.src} alt={photo.caption} width="260" height="146" loading="lazy" />
+                        <img
+                          srcSet={`${photo.src.replace('.jpg', '-400.jpg')} 400w, ${photo.src} 800w`}
+                          src={photo.src}
+                          sizes="calc(100vw - 2rem)"
+                          alt={photo.caption}
+                          width="260"
+                          height="146"
+                          itemProp="image"
+                          loading="lazy"
+                        />
                         <figcaption>{photo.caption}</figcaption>
                       </figure>
                     </a>

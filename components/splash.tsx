@@ -1,4 +1,4 @@
-import IMG_FOLDER from '../data/utils';
+import IMG_FOLDER from '@data/utils';
 
 type SplashCompType = {
   title: string;
@@ -13,9 +13,12 @@ export default function Splash({ title, subtitle, splash }: SplashCompType) {
     <>
       <div className="splash" data-aos="fade-up">
         <img
-          srcSet={`${fullSplashUrl.replace('.jpg', '-mini.jpg')} 800w, ${fullSplashUrl} 1920w`}
+          srcSet={`${fullSplashUrl.replace('.jpg', '-400.jpg')} 400w, ${fullSplashUrl.replace(
+            '.jpg',
+            '-800.jpg'
+          )} 800w, ${fullSplashUrl} 1920w`}
           src={fullSplashUrl}
-          sizes="(max-width: 800px) 100vw, 1920px"
+          sizes="100vw"
           alt={title}
           width="320"
           height="168"

@@ -1,3 +1,4 @@
+import IMG_FOLDER from '@data/utils';
 import Link from 'next/link';
 import { ArticleType } from 'types';
 
@@ -6,11 +7,26 @@ type GridItemCompType = {
 };
 
 function GridItem({ item }: GridItemCompType) {
+  const img = item.img;
+  const fullImageUrl = img.startsWith('http') ? img : `${IMG_FOLDER}${img}`;
+
   return (
     <Link href={item.link || ''}>
       <a title={item.title} className="card">
         <div className="card__img">
-          <img src={item.mini || item.img} alt={item.title} width="260" height="146" loading="lazy" />
+          <img
+            srcSet={`${fullImageUrl.replace('.jpg', '-400.jpg')} 400w, ${fullImageUrl.replace(
+              '.jpg',
+              '-800.jpg'
+            )} 800w, ${fullImageUrl} 1920w`}
+            src={fullImageUrl}
+            sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1199px) calc(50vw - 2rem), calc(33.33vw - 2rem)"
+            alt={item.title}
+            width="260"
+            height="146"
+            itemProp="image"
+            loading="lazy"
+          />
         </div>
         <div className="card__data">
           <h2 className="card__title">{item.title}</h2>

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Header from '@components/header';
 import Footer from '@components/footer';
 import Splash from './splash';
-import IMG_FOLDER from '../data/utils';
+import IMG_FOLDER from '@data/utils';
 
 type LayoutCompType = {
   title: string;
