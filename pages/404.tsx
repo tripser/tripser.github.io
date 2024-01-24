@@ -27,8 +27,10 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
 
   useEffect(() => {
     const articlesByLang = articles.filter((x) => x.lang === i18n.language);
-    const randomPost = articlesByLang[Math.floor(Math.random() * articlesByLang.length)];
-    setRandom([randomPost]);
+    const randomPosts = [...Array(3)].map(
+      () => articlesByLang.splice(Math.floor(Math.random() * articlesByLang.length), 1)[0]
+    );
+    setRandom(randomPosts);
   }, [i18n.language]);
 
   if (!router.pathname.endsWith('/')) {

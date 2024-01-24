@@ -42,15 +42,14 @@ Commit and Push your changes to master.
   - ...
 
 - links between articles
-- 404 to have more suggestions
 
 - https://codestitch.app/page-speed-handbook
 - https://pagespeed.web.dev/
-- different image formats (especially for splash!!)
-- lighthouse check
 - seo check
 - lang: check seo is good
 
+- search in site
+- section bon plans
 - add framed text, quotes, highlighted words, 
 - more Figures layouts
 - rearange homepage: big pinned article (carousel??)
