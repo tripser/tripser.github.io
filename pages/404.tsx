@@ -18,13 +18,6 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
   const { t, i18n } = useTranslation();
   const [random, setRandom] = useState<ArticleType[]>([]);
 
-  // fix for trailling slash URL error from Github pages
-  useEffect(() => {
-    if (router.pathname.endsWith('/')) {
-      router.replace(router.pathname.replace(/\/$/, ''));
-    }
-  }, [router]);
-
   useEffect(() => {
     const articlesByLang = articles.filter((x) => x.lang === i18n.language);
     const randomPosts = [...Array(3)].map(
@@ -33,28 +26,24 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
     setRandom(randomPosts);
   }, [i18n.language]);
 
-  if (!router.pathname.endsWith('/')) {
-    return (
-      <Layout title={t('404.title') || title} splash={splash}>
-        <div className="container error-shape">
-          <section data-aos="fade-right">
-            <h2 className="mb-10">{t('404.try')}</h2>
-            <Grid data={random} />
-          </section>
-          <div>
-            <Link href="/">
-              <a className="btn mb-20">
-                <AiFillCaretLeft className="mr-1" />
-                {t('404.back')}
-              </a>
-            </Link>
-          </div>
+  return (
+    <Layout title={t('404.title') || title} splash={splash}>
+      <div className="container error-shape">
+        <section data-aos="fade-right">
+          <h2 className="mb-10">{t('404.try')}</h2>
+          <Grid data={random} />
+        </section>
+        <div>
+          <Link href="/">
+            <a className="btn mb-20">
+              <AiFillCaretLeft className="mr-1" />
+              {t('404.back')}
+            </a>
+          </Link>
         </div>
-      </Layout>
-    );
-  }
-
-  return null;
+      </div>
+    </Layout>
+  );
 }
 
 export async function getStaticProps() {

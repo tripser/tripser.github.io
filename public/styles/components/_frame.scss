@@ -1,0 +1,21 @@
+.frame {
+  --width: 3px;
+  position: relative;
+  border-radius: 0.5rem 0 0.5rem 0;
+  margin: calc(1rem + var(--width)) var(--width);
+  padding: 1rem;
+  background: var(--bg80);
+  font-size: 1.25rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--width) * -1);
+    right: calc(var(--width) * -1);
+    bottom: calc(var(--width) * -1);
+    left: calc(var(--width) * -1);
+    background: linear-gradient(-45deg, var(--primary), var(--secondary));
+    border-radius: 0.75rem 0 0.75rem 0;
+    z-index: -1;
+  }
+}
