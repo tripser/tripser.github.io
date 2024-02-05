@@ -21,6 +21,7 @@ const conf = {
     return config;
   },
   reactStrictMode: true,
+  transpilePackages: ['@mdxeditor/editor'],
   eslint: {
     ignoreDuringBuilds: true,
   },

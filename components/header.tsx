@@ -15,6 +15,10 @@ export const links = [
     text: 'Photos',
     link: '/photos',
   },
+  {
+    text: 'Write',
+    link: '/write',
+  },
 ] as { text: string; link: string }[];
 
 export default function Header({ onClick, theme, en, fr }: HeaderCompType) {

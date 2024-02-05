@@ -120,6 +120,19 @@ figure {
   margin: 0;
 }
 
+input {
+  display: block;
+  width: 100%;
+  background: var(--bg);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--bg3);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all var(--transition);
+}
+
 button {
   border: none;
   background: none;
