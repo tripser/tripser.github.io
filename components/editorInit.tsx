@@ -26,24 +26,30 @@ import {
   type MDXEditorProps,
 } from '@mdxeditor/editor';
 
+interface EditorInitProps extends MDXEditorProps {
+  editorRef: ForwardedRef<MDXEditorMethods> | null;
+  handleImageFile?: (file: File) => Promise<string>;
+}
+
 export default function InitializedMDXEditor({
   editorRef,
+  handleImageFile,
   ...props
-}: { editorRef: ForwardedRef<MDXEditorMethods> | null } & MDXEditorProps) {
+}: { editorRef: ForwardedRef<MDXEditorMethods> | null } & EditorInitProps) {
   return (
     <MDXEditor
       plugins={[
         headingsPlugin({ allowedHeadingLevels: [2, 3, 4] }),
         listsPlugin(),
         quotePlugin(),
+        // https://mdxeditor.dev/editor/docs/jsx
+        // <a href="_blank"></a>, <Figures />, <Frame />
         linkPlugin(),
         linkDialogPlugin(),
         frontmatterPlugin(),
         thematicBreakPlugin(),
         markdownShortcutPlugin(),
-        // https://mdxeditor.dev/editor/docs/images
-        // handle image uploads => call node to save image (compress? & resize?) and return the url
-        imagePlugin(),
+        imagePlugin(handleImageFile ? { imageUploadHandler: handleImageFile } : {}),
         thematicBreakPlugin(),
         tablePlugin(),
         diffSourcePlugin({ viewMode: 'rich-text' }),

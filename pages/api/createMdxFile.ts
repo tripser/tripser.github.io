@@ -12,6 +12,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         res.status(500).json({ message: 'An error occurred while creating the file.' });
       } else {
         res.status(200).json({ message: 'File created successfully.' });
+        return `/blog/${slug}.mdx`;
       }
     });
   } else {

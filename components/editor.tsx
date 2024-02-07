@@ -6,8 +6,9 @@ const Editorsk = dynamic(() => import('./editorInit'), {
   ssr: false,
 });
 
-export const Editor = forwardRef<MDXEditorMethods, MDXEditorProps>((props, ref) => (
-  <Editorsk {...props} editorRef={ref} />
-));
+export const Editor = forwardRef<
+  MDXEditorMethods,
+  MDXEditorProps & { handleImageFile: (image: File) => Promise<string> }
+>((props, ref) => <Editorsk {...props} editorRef={ref} />);
 
 Editor.displayName = 'ForwardRefEditor';

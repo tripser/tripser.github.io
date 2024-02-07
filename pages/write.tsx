@@ -5,6 +5,7 @@ import { PhotoType } from 'types';
 import { Editor } from '@components/editor';
 import { MDXEditorMethods } from '@mdxeditor/editor';
 import { handleMdxFile } from 'services/handleMdxFile';
+import { handleImageFile } from 'services/handleImageFile';
 
 type WritePageType = {
   title: string;
@@ -69,24 +70,32 @@ export default function Write({ title, description, splash }: WritePageType) {
       <div className="write-page">
         <section>
           <div className="container narrow mt-3" data-aos="fade-right">
+            <p>SLUG</p>
+            <input placeholder="slug" onChange={(e) => setSlug(e.currentTarget.value)} className="mb-4" autoFocus />
+
             {/* TODO: style the RTE elements as an article page */}
+
+            <p className={slug ? '' : 'hidden'}>EDITOR</p>
             <Editor
               ref={editorRef}
               markdown={i18n.language === 'en' ? baseEditorEN : baseEditorFR}
               contentEditableClassName="article__content"
-              className="mb-4"
+              className={slug ? 'mb-4' : 'mb-4 hidden'}
+              handleImageFile={(e) => handleImageFile(e, `content/${slug}`)}
             />
-            <input placeholder="slug" onChange={(e) => setSlug(e.currentTarget.value)} className="mb-4" />
-            <button
-              className="btn btn-primary"
-              onClick={() =>
-                editorRef.current?.getMarkdown()
-                  ? handleMdxFile(slug, editorRef.current?.getMarkdown())
-                  : alert('Invalid Markdown')
-              }
-            >
-              {t('save')}
-            </button>
+
+            {slug ? (
+              <button
+                className="btn btn-primary"
+                onClick={() =>
+                  editorRef.current?.getMarkdown()
+                    ? handleMdxFile(slug, editorRef.current?.getMarkdown())
+                    : alert('Invalid Markdown')
+                }
+              >
+                {t('save')}
+              </button>
+            ) : null}
           </div>
         </section>
       </div>
