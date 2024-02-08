@@ -6,7 +6,7 @@ import {
   thematicBreakPlugin,
   markdownShortcutPlugin,
   frontmatterPlugin,
-  linkPlugin,
+  // linkPlugin,
   linkDialogPlugin,
   toolbarPlugin,
   diffSourcePlugin,
@@ -17,19 +17,26 @@ import {
   UndoRedo,
   BoldItalicUnderlineToggles,
   BlockTypeSelect,
-  CreateLink,
+  // CreateLink,
   InsertImage,
   InsertFrontmatter,
   InsertThematicBreak,
   InsertTable,
   type MDXEditorMethods,
   type MDXEditorProps,
+  jsxPlugin,
+  JsxComponentDescriptor,
+  Separator,
 } from '@mdxeditor/editor';
+import { InsertMdxLink, mdxLink } from './editorLink';
+import { InsertFrame, frame } from './editorFrame';
 
 interface EditorInitProps extends MDXEditorProps {
   editorRef: ForwardedRef<MDXEditorMethods> | null;
   handleImageFile?: (file: File) => Promise<string>;
 }
+
+const jsxComponentDescriptors: JsxComponentDescriptor[] = [mdxLink, frame];
 
 export default function InitializedMDXEditor({
   editorRef,
@@ -42,9 +49,7 @@ export default function InitializedMDXEditor({
         headingsPlugin({ allowedHeadingLevels: [2, 3, 4] }),
         listsPlugin(),
         quotePlugin(),
-        // https://mdxeditor.dev/editor/docs/jsx
-        // <a href="_blank"></a>, <Figures />, <Frame />
-        linkPlugin(),
+        // linkPlugin(),
         linkDialogPlugin(),
         frontmatterPlugin(),
         thematicBreakPlugin(),
@@ -52,19 +57,23 @@ export default function InitializedMDXEditor({
         imagePlugin(handleImageFile ? { imageUploadHandler: handleImageFile } : {}),
         thematicBreakPlugin(),
         tablePlugin(),
+        jsxPlugin({ jsxComponentDescriptors: jsxComponentDescriptors }),
         diffSourcePlugin({ viewMode: 'rich-text' }),
         toolbarPlugin({
           toolbarContents: () => (
             <>
               <DiffSourceToggleWrapper>
                 <UndoRedo />
+                <Separator />
                 <BoldItalicUnderlineToggles />
                 <BlockTypeSelect />
-                <CreateLink />
+                {/* <CreateLink /> */}
                 <InsertImage />
-                <InsertFrontmatter />
                 <InsertThematicBreak />
                 <InsertTable />
+                <InsertMdxLink />
+                <InsertFrame />
+                <InsertFrontmatter />
               </DiffSourceToggleWrapper>
             </>
           ),

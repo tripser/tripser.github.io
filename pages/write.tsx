@@ -31,7 +31,6 @@ paragraph
 **bold**
 *italic*
 <u>underline</u>
-[link](https://tripser.blog)
 ***
 - list
 > quote
@@ -54,7 +53,6 @@ paragraphe
 **gras**
 *italique*
 <u>souligné</u>
-[lien](https://tripser.blog)
 ***
 - liste
 > citation
@@ -69,7 +67,7 @@ export default function Write({ title, description, splash }: WritePageType) {
     <Layout title={title} description={description} splash={splash} url="https://tripser.blog/photos">
       <div className="write-page">
         <section>
-          <div className="container narrow mt-3" data-aos="fade-right">
+          <div className="container mt-3" data-aos="fade-right" style={{ maxWidth: 'calc(800px + 1.5rem + 2px)' }}>
             <p>SLUG</p>
             <input placeholder="slug" onChange={(e) => setSlug(e.currentTarget.value)} className="mb-4" autoFocus />
 
