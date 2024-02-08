@@ -5,7 +5,7 @@ type FiguresCompType = {
 };
 
 // TODO: .figures .col-2 or .col-1-2 or col-2-1 ...
-export default function Figures({ data }: FiguresCompType) {
+export function Figures({ data }: FiguresCompType) {
   const cols = data.length % 2 === 0;
 
   return (

@@ -21,7 +21,7 @@ export const links = [
   },
 ] as { text: string; link: string }[];
 
-export default function Header({ onClick, theme, en, fr }: HeaderCompType) {
+export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 

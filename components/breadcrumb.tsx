@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { AiFillCaretRight } from 'react-icons/ai';
 
-export default function Breadcrumb() {
+export function Breadcrumb() {
   const router = useRouter();
 
   const route = router.pathname;

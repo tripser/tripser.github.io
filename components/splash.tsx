@@ -6,7 +6,7 @@ type SplashCompType = {
   splash: string;
 };
 
-export default function Splash({ title, subtitle, splash }: SplashCompType) {
+export function Splash({ title, subtitle, splash }: SplashCompType) {
   const fullSplashUrl = splash.startsWith('http') ? splash : `${IMG_FOLDER}${splash}`;
 
   return (

@@ -1,9 +1,9 @@
 import { ReactElement, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Header from '@components/header';
-import Footer from '@components/footer';
-import Splash from './splash';
+import { Header } from '@components/header';
+import { Footer } from '@components/footer';
+import { Splash } from './splash';
 import IMG_FOLDER from '@data/utils';
 
 type LayoutCompType = {
@@ -22,7 +22,7 @@ type LayoutCompType = {
   fr?: string;
 };
 
-export default function Layout({
+export function Layout({
   title,
   subtitle,
   description,

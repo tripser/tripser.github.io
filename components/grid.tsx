@@ -43,7 +43,7 @@ type GridCompType = {
   className?: string;
 };
 
-export default function Grid({ data, count, className }: GridCompType) {
+export function Grid({ data, count, className }: GridCompType) {
   return (
     <div className={`grid ${count ? `grid-${count}` : ''} ${className || ''}`}>
       {data.map((item) => {

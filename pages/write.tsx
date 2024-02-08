@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Layout from '@components/layout';
+import { Layout } from '@components/layout';
 import { PhotoType } from 'types';
 import { Editor } from '@components/editor';
 import { MDXEditorMethods } from '@mdxeditor/editor';

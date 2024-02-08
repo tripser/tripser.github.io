@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { IconType } from 'react-icons';
 import { SiGmail, SiInstagram, SiPinterest } from 'react-icons/si';
-import Breadcrumb from './breadcrumb';
+import { Breadcrumb } from './breadcrumb';
 
 const footerLinks = [
   {
@@ -21,7 +21,7 @@ const footerLinks = [
   },
 ] as { link: string; title: string; icon: IconType }[];
 
-export default function Footer() {
+export function Footer() {
   const { t } = useTranslation();
 
   return (
