@@ -14,6 +14,7 @@ export const handleMdxFile = async (slug: string, content: string) => {
 
     const data = await response.json();
     console.log(data.message);
+    return data.filePath;
   } catch (err) {
     console.error(err);
     console.log('An error occurred while creating the file.');

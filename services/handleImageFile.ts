@@ -1,10 +1,11 @@
-export const handleImageFile = async (image: File, slug?: string, isSplash?: boolean) => {
+export const handleImageFile = async (image: File, name?: string, path?: string, isSplash?: boolean) => {
   const formData = new FormData() as any;
   formData.append('image', image);
-  if (slug) formData.append('slug', slug);
+  if (name) formData.append('name', name);
+  if (path) formData.append('path', path);
   if (isSplash) formData.append('isSplash', isSplash.toString());
 
-  // slug must contain /articles|content|maps
+  // path must contain /articles|content|maps
 
   try {
     const response = await fetch('/api/createImageFile', {

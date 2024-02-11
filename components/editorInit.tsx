@@ -54,7 +54,11 @@ export default function InitializedMDXEditor({
         frontmatterPlugin(),
         thematicBreakPlugin(),
         markdownShortcutPlugin(),
-        imagePlugin(handleImageFile ? { imageUploadHandler: handleImageFile } : {}),
+        imagePlugin(
+          handleImageFile
+            ? { imageUploadHandler: handleImageFile, disableImageResize: true }
+            : { disableImageResize: true }
+        ),
         thematicBreakPlugin(),
         tablePlugin(),
         jsxPlugin({ jsxComponentDescriptors: jsxComponentDescriptors }),

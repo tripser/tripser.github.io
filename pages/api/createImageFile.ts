@@ -37,10 +37,11 @@ export default async function handler(req: MulterRequest, res: NextApiResponse) 
         return;
       }
 
+      const fileName = req.body.name || req.file.originalname;
       const tempPath = req.file.path;
-      const targetDir = path.join('public/images/', req.body.slug || '');
-      const targetPath = path.join(targetDir, req.file.originalname);
-      const filePath = path.join('/images/', req.body.slug || '', req.file.originalname);
+      const targetDir = path.join('public/images/', req.body.path || '');
+      const targetPath = path.join(targetDir, fileName);
+      const filePath = path.join('/images/', req.body.path || '', fileName);
 
       // TODO: compress image and resize and save to 800 and 400
 

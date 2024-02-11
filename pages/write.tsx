@@ -1,11 +1,13 @@
 import { useRef, useState } from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import { Layout } from '@components/layout';
-import { PhotoType } from 'types';
-import { Editor } from '@components/editor';
 import { MDXEditorMethods } from '@mdxeditor/editor';
+import { Layout } from '@components/layout';
+import { Editor } from '@components/editor';
+import { UploadImage } from '@components/uploadImage';
 import { handleMdxFile } from 'services/handleMdxFile';
 import { handleImageFile } from 'services/handleImageFile';
+import { PhotoType } from 'types';
 
 type WritePageType = {
   title: string;
@@ -59,9 +61,11 @@ paragraphe
 `;
 
 export default function Write({ title, description, splash }: WritePageType) {
+  const router = useRouter();
   const { t, i18n } = useTranslation();
   const editorRef = useRef<MDXEditorMethods>(null);
   const [slug, setSlug] = useState('');
+  const [file, setFile] = useState<string>(null);
 
   return (
     <Layout title={title} description={description} splash={splash} url="https://tripser.blog/photos">
@@ -71,6 +75,29 @@ export default function Write({ title, description, splash }: WritePageType) {
             <p>SLUG</p>
             <input placeholder="slug" onChange={(e) => setSlug(e.currentTarget.value)} className="mb-4" autoFocus />
 
+            {slug ? (
+              <>
+                <p>IMAGE</p>
+                <UploadImage
+                  file={file}
+                  setFile={setFile}
+                  onChange={async (e) => {
+                    if (e.target.files[0]) {
+                      const f = await handleImageFile(
+                        e.target.files[0],
+                        `${slug}.${e.target.files[0].name.split('.').pop()}`,
+                        `articles`
+                      );
+                      if (f) setFile(f);
+                    } else {
+                      setFile(null);
+                    }
+                  }}
+                  className="mb-4"
+                />
+              </>
+            ) : null}
+
             {/* TODO: style the RTE elements as an article page */}
 
             <p className={slug ? '' : 'hidden'}>EDITOR</p>
@@ -79,17 +106,21 @@ export default function Write({ title, description, splash }: WritePageType) {
               markdown={i18n.language === 'en' ? baseEditorEN : baseEditorFR}
               contentEditableClassName="article__content"
               className={slug ? 'mb-4' : 'mb-4 hidden'}
-              handleImageFile={(e) => handleImageFile(e, `content/${slug}`)}
+              handleImageFile={(e) => handleImageFile(e, null, `content/${slug}`)}
             />
 
             {slug ? (
               <button
                 className="btn btn-primary"
-                onClick={() =>
-                  editorRef.current?.getMarkdown()
-                    ? handleMdxFile(slug, editorRef.current?.getMarkdown())
-                    : alert('Invalid Markdown')
-                }
+                onClick={async () => {
+                  const getMarkdown = editorRef.current?.getMarkdown();
+                  if (getMarkdown) {
+                    const url = await handleMdxFile(slug, editorRef.current?.getMarkdown());
+                    router.push(url);
+                  } else {
+                    alert('Invalid Markdown');
+                  }
+                }}
               >
                 {t('save')}
               </button>
