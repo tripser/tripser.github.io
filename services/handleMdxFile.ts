@@ -13,7 +13,7 @@ export const handleMdxFile = async (slug: string, content: string) => {
     }
 
     const data = await response.json();
-    console.log(data.message);
+    console.log(data);
     return data.filePath;
   } catch (err) {
     console.error(err);

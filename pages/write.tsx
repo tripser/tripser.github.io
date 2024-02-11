@@ -66,6 +66,10 @@ export default function Write({ title, description, splash }: WritePageType) {
   const editorRef = useRef<MDXEditorMethods>(null);
   const [slug, setSlug] = useState('');
   const [file, setFile] = useState<string>(null);
+  const [newUrl, setNewUrl] = useState('');
+
+  // TODO: add loading state
+  // TODO: handle title passed in editor photo upload
 
   return (
     <Layout title={title} description={description} splash={splash} url="https://tripser.blog/photos">
@@ -109,20 +113,26 @@ export default function Write({ title, description, splash }: WritePageType) {
               handleImageFile={(e) => handleImageFile(e, null, `content/${slug}`)}
             />
 
-            {slug ? (
+            {slug && !newUrl ? (
               <button
                 className="btn btn-primary"
                 onClick={async () => {
                   const getMarkdown = editorRef.current?.getMarkdown();
                   if (getMarkdown) {
                     const url = await handleMdxFile(slug, editorRef.current?.getMarkdown());
-                    router.push(url);
+                    setNewUrl(url);
                   } else {
                     alert('Invalid Markdown');
                   }
                 }}
               >
                 {t('save')}
+              </button>
+            ) : null}
+
+            {newUrl ? (
+              <button className="btn btn-primary" onClick={() => router.push(newUrl)}>
+                Check out your new article
               </button>
             ) : null}
           </div>
