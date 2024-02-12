@@ -15,11 +15,13 @@ export const links = [
     text: 'Photos',
     link: '/photos',
   },
-  {
+] as { text: string; link: string }[];
+
+if (process.env.NODE_ENV === 'development')
+  links.push({
     text: 'Write',
     link: '/write',
-  },
-] as { text: string; link: string }[];
+  });
 
 export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();

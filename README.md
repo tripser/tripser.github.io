@@ -50,10 +50,9 @@ Commit and Push your changes to master.
 - lang: check seo is good
 
 - build mdx editor
-  - handle images upload (+compress +resize)
-  - handle custom components
-  - handle saving
-  - handle translation
+  - handle images +compress +resize +jpg
+  - handle translation?
+  - edit existing articles
 - add framed text, quotes, highlighted words, 
 - script an image compressor and resizer (based on original image => save new smaller and lighter images)
 - search in site

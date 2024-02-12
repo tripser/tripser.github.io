@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { MDXEditorMethods } from '@mdxeditor/editor';
@@ -66,10 +66,16 @@ export default function Write({ title, description, splash }: WritePageType) {
   const editorRef = useRef<MDXEditorMethods>(null);
   const [slug, setSlug] = useState('');
   const [file, setFile] = useState<string>(null);
-  const [newUrl, setNewUrl] = useState('');
+  const [response, setResponse] = useState('');
+
+  useEffect(() => {
+    process.env.NODE_ENV !== 'development' && router.push('/404');
+  }, []);
 
   // TODO: add loading state
   // TODO: handle title passed in editor photo upload
+
+  if (process.env.NODE_ENV !== 'development') return null;
 
   return (
     <Layout title={title} description={description} splash={splash} url="https://tripser.blog/photos">
@@ -113,25 +119,28 @@ export default function Write({ title, description, splash }: WritePageType) {
               handleImageFile={(e) => handleImageFile(e, null, `content/${slug}`)}
             />
 
-            {slug && !newUrl ? (
+            {slug && !response ? (
               <button
                 className="btn btn-primary"
                 onClick={async () => {
                   const getMarkdown = editorRef.current?.getMarkdown();
                   if (getMarkdown) {
+                    setResponse('saving');
                     const url = await handleMdxFile(slug, editorRef.current?.getMarkdown());
-                    setNewUrl(url);
+                    setResponse(url);
                   } else {
                     alert('Invalid Markdown');
                   }
                 }}
               >
-                {t('save')}
+                save
               </button>
             ) : null}
 
-            {newUrl ? (
-              <button className="btn btn-primary" onClick={() => router.push(newUrl)}>
+            {response === 'saving' ? <p>Saving...</p> : null}
+
+            {response && response !== 'saving' ? (
+              <button className="btn btn-primary" onClick={() => router.push(response)}>
                 Check out your new article
               </button>
             ) : null}
