@@ -19,8 +19,8 @@ export const links = [
 
 if (process.env.NODE_ENV === 'development')
   links.push({
-    text: 'Write',
-    link: '/write',
+    text: 'Admin',
+    link: '/admin',
   });
 
 export function Header({ onClick, theme, en, fr }: HeaderCompType) {

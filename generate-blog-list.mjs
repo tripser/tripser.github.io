@@ -23,6 +23,7 @@ export const getArticles = () => {
         en: data.en || '',
         fr: data.fr || '',
         categories: data.categories || '',
+        state: data.state || '',
         link: `/blog/${slug}`,
         url: `https://tripser.blog/blog/${slug}`,
       };

@@ -51,8 +51,11 @@ Commit and Push your changes to master.
 
 - build mdx editor
   - handle images +compress +resize +jpg
-  - handle translation?
   - edit existing articles
+    - admin for articles ? draft and published states
+  - handle some frontmatter outside the editor: categories, lang, en-fr, ...?
+  - handle translation?
+
 - add framed text, quotes, highlighted words, 
 - script an image compressor and resizer (based on original image => save new smaller and lighter images)
 - search in site

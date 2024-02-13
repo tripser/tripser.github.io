@@ -49,7 +49,7 @@ export default function Home({ title, description, splash, articles }: HomePageT
               <div className="col centered-v">
                 <img
                   src="/images/exploring.svg"
-                  alt="developer thinking next to a computer"
+                  alt="Illustration of an adventurer going on a journey of travels and trips"
                   width="270"
                   height="112"
                   loading="lazy"

@@ -7,13 +7,11 @@ import { Editor } from '@components/editor';
 import { UploadImage } from '@components/uploadImage';
 import { handleMdxFile } from 'services/handleMdxFile';
 import { handleImageFile } from 'services/handleImageFile';
-import { PhotoType } from 'types';
 
 type WritePageType = {
   title: string;
   description: string;
   splash: string;
-  photos: PhotoType[];
 };
 
 const baseEditorEN = `
@@ -78,10 +76,10 @@ export default function Write({ title, description, splash }: WritePageType) {
   if (process.env.NODE_ENV !== 'development') return null;
 
   return (
-    <Layout title={title} description={description} splash={splash} url="https://tripser.blog/photos">
+    <Layout title={title} description={description} splash={splash} url="https://tripser.blog/admin/write">
       <div className="write-page">
         <section>
-          <div className="container mt-3" data-aos="fade-right" style={{ maxWidth: 'calc(800px + 1.5rem + 2px)' }}>
+          <div className="container mt-3" style={{ maxWidth: 'calc(800px + 1.5rem + 2px)' }}>
             <p>SLUG</p>
             <input placeholder="slug" onChange={(e) => setSlug(e.currentTarget.value)} className="mb-4" autoFocus />
 

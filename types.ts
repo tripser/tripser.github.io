@@ -12,6 +12,7 @@ export type ArticleType = {
   categories: string;
   link: string;
   url: string;
+  state: 'draft' | 'published';
 };
 
 export type PhotoType = {
