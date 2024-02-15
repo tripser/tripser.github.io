@@ -121,6 +121,15 @@ input {
   border-radius: 0.5rem;
   outline: none;
   transition: all var(--transition);
+
+  &[type='file'] {
+    cursor: copy;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
 
 button {

@@ -45,7 +45,7 @@ export default function Admin({ title, description, articles }: AdminPageType) {
         <section className="py-5">
           <div className="container mt-3">
             <div className="space-between-x mb-4">
-              <Link href="/admin/write">
+              <Link href="/admin/new">
                 <a className="btn">Write an article</a>
               </Link>
               <button onClick={reset} className="btn">
@@ -55,47 +55,53 @@ export default function Admin({ title, description, articles }: AdminPageType) {
 
             <div className="table-responsive">
               <table>
-                <tr>
-                  <th>Title</th>
-                  <th>Pub</th>
-                  <th>Mod</th>
-                  <th onClick={() => setLang((c) => (c < LANGS.length - 1 ? c + 1 : 0))}>Lang ({LANGS[lang]})</th>
-                  <th onClick={() => setState((c) => (c < STATES.length - 1 ? c + 1 : 0))}>State ({STATES[state]})</th>
-                  <th style={{ width: '5.5rem' }}>Action</th>
-                </tr>
-                {filteredArticles?.length
-                  ? filteredArticles.map((a) => (
-                      <tr key={a.slug}>
-                        <td>{a.title}</td>
-                        <td>{a.published}</td>
-                        <td>{a.modified}</td>
-                        <td>{a.lang}</td>
-                        <td>{a.state}</td>
-                        <td>
-                          <Link href={`/admin/write/${a.slug}`}>
-                            <a>
-                              <MdEdit size={20} />
-                            </a>
-                          </Link>{' '}
-                          <Link href={a.link}>
-                            <a>
-                              <MdCode size={20} />
-                            </a>
-                          </Link>{' '}
-                          {a.state === 'published' ? (
-                            <Link href={a.url}>
-                              <a target="_blank">
-                                <MdPublic size={20} />
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Pub</th>
+                    <th>Mod</th>
+                    <th onClick={() => setLang((c) => (c < LANGS.length - 1 ? c + 1 : 0))}>Lang ({LANGS[lang]})</th>
+                    <th onClick={() => setState((c) => (c < STATES.length - 1 ? c + 1 : 0))}>
+                      State ({STATES[state]})
+                    </th>
+                    <th style={{ width: '5.5rem' }}>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredArticles?.length
+                    ? filteredArticles.map((a) => (
+                        <tr key={a.slug}>
+                          <td>{a.title}</td>
+                          <td>{a.published}</td>
+                          <td>{a.modified}</td>
+                          <td>{a.lang}</td>
+                          <td>{a.state}</td>
+                          <td>
+                            <Link href={`/admin/${a.slug}`}>
+                              <a>
+                                <MdEdit size={20} />
                               </a>
-                            </Link>
-                          ) : null}
-                        </td>
-                      </tr>
-                    ))
-                  : null}
-                <tr>
-                  <td colSpan={6}>{filteredArticles?.length || 0} articles</td>
-                </tr>
+                            </Link>{' '}
+                            <Link href={a.link}>
+                              <a>
+                                <MdCode size={20} />
+                              </a>
+                            </Link>{' '}
+                            {a.state === 'published' ? (
+                              <Link href={a.url}>
+                                <a target="_blank">
+                                  <MdPublic size={20} />
+                                </a>
+                              </Link>
+                            ) : null}
+                          </td>
+                        </tr>
+                      ))
+                    : null}
+                  <tr>
+                    <td colSpan={6}>{filteredArticles?.length || 0} articles</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

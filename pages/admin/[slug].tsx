@@ -7,64 +7,28 @@ import { Editor } from '@components/editor';
 import { UploadImage } from '@components/uploadImage';
 import { handleMdxFile } from 'services/handleMdxFile';
 import { handleImageFile } from 'services/handleImageFile';
+import { baseEditorEN, baseEditorFR } from '@data/editorDefaults';
+import { ArticleType } from 'types';
+
+import fs from 'fs';
+import path from 'path';
 
 type WritePageType = {
   title: string;
   description: string;
-  splash: string;
+  article: ArticleType;
+  articleContent: any;
 };
 
-const baseEditorEN = `
----
-title: 'Title'
-intro: 'Intro'
-published: '2024-01-15'
-modified: '2024-01-15'
-lang: 'en'
-fr: 'slug-fr'
-categories: 'voyage, europe, france, hike, beach, christmas, city-trip'
----
-
-## Heading 2
-### Heading 3
-paragraph
-**bold**
-*italic*
-<u>underline</u>
-***
-- list
-> quote
-`;
-
-const baseEditorFR = `
----
-title: 'Titre'
-intro: 'Intro'
-published: '2024-01-15'
-modified: '2024-01-15'
-lang: 'fr'
-en: 'slug-en'
-categories: 'voyage, europe, france, hike, beach, christmas, city-trip'
----
-
-## Titre 2
-### Titre 3
-paragraphe
-**gras**
-*italique*
-<u>souligné</u>
-***
-- liste
-> citation
-`;
-
-export default function Write({ title, description, splash }: WritePageType) {
+export default function Write({ title, description, article, articleContent }: WritePageType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
   const editorRef = useRef<MDXEditorMethods>(null);
-  const [slug, setSlug] = useState('');
-  const [file, setFile] = useState<string>(null);
+  const [slug, setSlug] = useState(article?.slug || '');
+  const [file, setFile] = useState<string>(article?.img || null);
   const [response, setResponse] = useState('');
+
+  const isNew = !article;
 
   useEffect(() => {
     process.env.NODE_ENV !== 'development' && router.push('/404');
@@ -73,15 +37,35 @@ export default function Write({ title, description, splash }: WritePageType) {
   // TODO: add loading state
   // TODO: handle title passed in editor photo upload
 
+  const defaultMarkdown = i18n.language === 'fr' ? baseEditorFR : baseEditorEN;
+  const markdown = isNew ? defaultMarkdown : articleContent;
+  const mdx = markdown
+    .replace(/{\/\*\s?/g, '<MdxComment>\n')
+    .replace(/\s?\*\/}/g, '\n</MdxComment>')
+    .replace(/<a/g, '<MdxLink')
+    .replace(/<\/a>/g, '</MdxLink>')
+    .replace(/target="_blank"/g, '')
+    .replace(
+      /<Figures\s+data={\s*\[\s*{\s*src:\s*"([^"]*)",\s*caption:\s*"([^"]*)",?\s*},?\s*\]\s*}\s*\/>/gs,
+      '![$2]($1)'
+    );
+
   if (process.env.NODE_ENV !== 'development') return null;
 
   return (
-    <Layout title={title} description={description} splash={splash} url="https://tripser.blog/admin/write">
+    <Layout title={title} description={description} url="https://tripser.blog/admin/write">
       <div className="write-page">
-        <section>
+        <section className="py-5">
           <div className="container mt-3" style={{ maxWidth: 'calc(800px + 1.5rem + 2px)' }}>
             <p>SLUG</p>
-            <input placeholder="slug" onChange={(e) => setSlug(e.currentTarget.value)} className="mb-4" autoFocus />
+            <input
+              placeholder="slug"
+              value={slug}
+              onChange={(e) => setSlug(e.currentTarget.value)}
+              className="mb-4"
+              autoFocus
+              disabled={!isNew}
+            />
 
             {slug ? (
               <>
@@ -111,7 +95,7 @@ export default function Write({ title, description, splash }: WritePageType) {
             <p className={slug ? '' : 'hidden'}>EDITOR</p>
             <Editor
               ref={editorRef}
-              markdown={i18n.language === 'en' ? baseEditorEN : baseEditorFR}
+              markdown={mdx}
               contentEditableClassName="article__content"
               className={slug ? 'mb-4' : 'mb-4 hidden'}
               handleImageFile={(e) => handleImageFile(e, null, `content/${slug}`)}
@@ -122,9 +106,10 @@ export default function Write({ title, description, splash }: WritePageType) {
                 className="btn btn-primary"
                 onClick={async () => {
                   const getMarkdown = editorRef.current?.getMarkdown();
+                  console.log(getMarkdown);
                   if (getMarkdown) {
                     setResponse('saving');
-                    const url = await handleMdxFile(slug, editorRef.current?.getMarkdown());
+                    const url = await handleMdxFile(slug, getMarkdown);
                     setResponse(url);
                   } else {
                     alert('Invalid Markdown');
@@ -149,12 +134,27 @@ export default function Write({ title, description, splash }: WritePageType) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  const articles = require('@data/articles') as ArticleType[];
+  const article = articles.find((p) => p.slug === context.params.slug) || null;
+  const articleContent = article ? fs.readFileSync(path.join(`pages/blog/${article.slug}.mdx`), 'utf8') : null;
+
   return {
     props: {
-      title: 'Write',
+      title: article ? `Edit: ${article.title}` : 'Write new Article',
       description: '',
-      splash: '/images/kotor.jpg',
+      article,
+      articleContent,
     },
+  };
+}
+
+export async function getStaticPaths() {
+  const articles = require('@data/articles') as ArticleType[];
+  const paths = articles.map((a) => ({ params: { slug: a.slug } }));
+
+  return {
+    paths: [...paths, { params: { slug: 'new' } }],
+    fallback: false,
   };
 }

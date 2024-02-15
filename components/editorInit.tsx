@@ -30,13 +30,14 @@ import {
 } from '@mdxeditor/editor';
 import { InsertMdxLink, mdxLink } from './editorLink';
 import { InsertFrame, frame } from './editorFrame';
+import { InsertMdxComment, mdxComment } from './editorComment';
 
 interface EditorInitProps extends MDXEditorProps {
   editorRef: ForwardedRef<MDXEditorMethods> | null;
   handleImageFile?: (file: File) => Promise<string>;
 }
 
-const jsxComponentDescriptors: JsxComponentDescriptor[] = [mdxLink, frame];
+const jsxComponentDescriptors: JsxComponentDescriptor[] = [mdxLink, frame, mdxComment];
 
 export default function InitializedMDXEditor({
   editorRef,
@@ -77,6 +78,7 @@ export default function InitializedMDXEditor({
                 <InsertTable />
                 <InsertMdxLink />
                 <InsertFrame />
+                <InsertMdxComment />
                 <InsertFrontmatter />
               </DiffSourceToggleWrapper>
             </>

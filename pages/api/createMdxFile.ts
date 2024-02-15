@@ -19,7 +19,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     // replace ![]() with <Figures data={[{src: "", caption: ""}]} />
     let withFigures = withLayout.replace(/!\[(.*?)\]\((.*?)(?: "(.*?)")?\)/g, (_, alt, src) => {
       src = src.replace(/\\/g, '/');
-      return `<Figures data={[{ src: '${src}', caption: '${alt}'}]} />\n\n`;
+      return `<Figures data={[{ src: "${src}", caption: "${alt}"}]} />\n\n`;
     });
 
     if (withFigures.includes('<Figures')) {
