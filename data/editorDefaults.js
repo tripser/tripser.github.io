@@ -7,6 +7,7 @@ modified: 2024-01-15
 lang: en
 fr: slug-fr
 categories: voyage, europe, france, hike, beach, christmas, city-trip
+state: draft
 ---
 
 ## Heading 2
@@ -29,6 +30,7 @@ modified: 2024-01-15
 lang: fr
 en: slug-en
 categories: voyage, europe, france, hike, beach, christmas, city-trip
+state: draft
 ---
 
 ## Titre 2

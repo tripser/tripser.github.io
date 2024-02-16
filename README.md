@@ -43,6 +43,8 @@ Commit and Push your changes to master.
   - ...
 
 - links between articles
+- add affiliate links of hotels, cars, activities, ...
+- add alternative stays?
 
 - https://codestitch.app/page-speed-handbook
 - https://pagespeed.web.dev/
