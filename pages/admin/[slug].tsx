@@ -35,7 +35,7 @@ export default function Write({ title, description, article, articleContent }: W
   }, []);
 
   // TODO: add loading state
-  // TODO: handle title passed in editor photo upload
+  // TODO: handle title passed in editor photo upload to use it as file name?
 
   const defaultMarkdown = i18n.language === 'fr' ? baseEditorFR : baseEditorEN;
   const markdown = isNew ? defaultMarkdown : articleContent;

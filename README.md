@@ -53,8 +53,7 @@ Commit and Push your changes to master.
 
 - build mdx editor
   - handle images +compress +resize +jpg
-  - edit existing articles
-    - admin for articles ? draft and published states
+  - FIX!! => API resolved without sending a response for /api/createMdxFile, this may result in stalled requests.
   - handle some frontmatter outside the editor: categories, lang, en-fr, ...?
   - handle translation?
 

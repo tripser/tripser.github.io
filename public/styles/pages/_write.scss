@@ -5,3 +5,10 @@
     background: var(--bg);
   }
 }
+
+// prevents breaking mdx-editor property popover
+[data-radix-popper-content-wrapper] table {
+  width: unset;
+  border-collapse: unset;
+  margin-bottom: unset;
+}
