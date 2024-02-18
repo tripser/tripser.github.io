@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
-import Layout from '@components/layout';
-import Grid from '@components/grid';
+import { Layout } from '@components/layout';
+import { Grid } from '@components/grid';
 import { ArticleType } from 'types';
 
 type Custom404PageType = {

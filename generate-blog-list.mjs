@@ -4,6 +4,15 @@ import prettier from 'prettier';
 import matter from 'gray-matter';
 import IMG_FOLDER from './data/utils.js';
 
+function handleDate(date) {
+  if (typeof date === 'string') {
+    return date;
+  } else if (date instanceof Date) {
+    return new Date(date).toISOString().split('T')[0];
+  }
+  return '';
+}
+
 export const getArticles = () => {
   const files = fs.readdirSync(path.join('pages/blog'));
   const allArticlesData = files
@@ -17,12 +26,13 @@ export const getArticles = () => {
         title: data.title,
         intro: data.intro || '',
         img: `${imgFolder}${data.en || slug}.jpg`,
-        published: data.published || '',
-        modified: data.modified || '',
+        published: handleDate(data.published),
+        modified: handleDate(data.modified),
         lang: data.lang || 'en',
         en: data.en || '',
         fr: data.fr || '',
         categories: data.categories || '',
+        state: data.state || '',
         link: `/blog/${slug}`,
         url: `https://tripser.blog/blog/${slug}`,
       };

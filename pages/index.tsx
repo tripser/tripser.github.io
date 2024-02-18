@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretRight } from 'react-icons/ai';
-import Layout from '@components/layout';
-import Grid from '@components/grid';
+import { Layout } from '@components/layout';
+import { Grid } from '@components/grid';
 import { ArticleType } from 'types';
 
 type HomePageType = {
@@ -49,7 +49,7 @@ export default function Home({ title, description, splash, articles }: HomePageT
               <div className="col centered-v">
                 <img
                   src="/images/exploring.svg"
-                  alt="developer thinking next to a computer"
+                  alt="Illustration of an adventurer going on a journey of travels and trips"
                   width="270"
                   height="112"
                   loading="lazy"

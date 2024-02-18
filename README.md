@@ -33,6 +33,7 @@ Commit and Push your changes to master.
 ## TODO
 
 - Articles
+  - via ferrata saint julien en vercors
   - best christmas markets
   - baie de somme
   - bordeaux
@@ -42,19 +43,27 @@ Commit and Push your changes to master.
   - ...
 
 - links between articles
+- add affiliate links of hotels, cars, activities, ...
+- add alternative stays?
 
 - https://codestitch.app/page-speed-handbook
 - https://pagespeed.web.dev/
 - seo check
 - lang: check seo is good
 
-- search in site
-- section bon plans
+- build mdx editor
+  - handle images +compress +resize +jpg
+  - FIX!! => API resolved without sending a response for /api/createMdxFile, this may result in stalled requests.
+  - handle some frontmatter outside the editor: categories, lang, en-fr, ...?
+  - handle translation?
+
 - add framed text, quotes, highlighted words, 
+- script an image compressor and resizer (based on original image => save new smaller and lighter images)
+- search in site
 - more Figures layouts
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
-- review button design && moving shapes
+- section bon plans
 - add a map of destinations
 
 ## BLOG ARTICLES

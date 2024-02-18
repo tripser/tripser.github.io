@@ -1,0 +1,22 @@
+.upload-image {
+  .input-container {
+    position: relative;
+
+    .input-clear {
+      position: absolute;
+      top: 50%;
+      right: 0.5rem;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--danger);
+      }
+    }
+  }
+
+  img {
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+  }
+}

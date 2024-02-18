@@ -6,7 +6,7 @@ import Head from 'next/head';
 import AOS from 'aos';
 import 'public/lang/i18n';
 
-import 'public/styles/font-import.css';
+import 'public/styles/imports.css';
 import 'aos/dist/aos.css';
 import 'public/styles/style.scss';
 

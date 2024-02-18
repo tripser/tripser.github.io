@@ -18,8 +18,8 @@ export const getPhotos = () => {
 
     const pictures = Array.from(mdxContent.matchAll(figuresRegex), (match) => {
       const ddd = match[0].trim();
-      const srcMatch = ddd.match(/src: '([^']+)'/);
-      const captionMatch = ddd.match(/caption: '([^']+)'/);
+      const srcMatch = ddd.match(/src: "([^"]+)"/);
+      const captionMatch = ddd.match(/caption: "([^"]+)"/);
       if (srcMatch[1].includes('/maps/')) return;
       return {
         src: srcMatch ? `${IMG_FOLDER}${srcMatch[1]}` : '',

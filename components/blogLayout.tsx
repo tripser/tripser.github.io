@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
 // @ts-ignore
 import articles from '@data/articles';
-import Layout from '@components/layout';
-import Grid from '@components/grid';
+import { Layout } from '@components/layout';
+import { Grid } from '@components/grid';
 import { ArticleType } from 'types';
 
 type BlogLayoutCompType = {
@@ -16,7 +16,7 @@ type BlogLayoutCompType = {
 const convertDate = (d) =>
   d === '' ? 'No date' : `${new Date(d).getDate()}.${new Date(d).getMonth() + 1}.${new Date(d).getFullYear()}`;
 
-export default function BlogLayout({ children }: BlogLayoutCompType) {
+export function BlogLayout({ children }: BlogLayoutCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 

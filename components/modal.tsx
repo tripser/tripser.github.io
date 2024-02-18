@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 
-export default function Dialog({ children, trigger }) {
+export function Dialog({ children, trigger }) {
   const dialogRef = useRef(null);
 
   return (

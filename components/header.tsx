@@ -17,7 +17,13 @@ export const links = [
   },
 ] as { text: string; link: string }[];
 
-export default function Header({ onClick, theme, en, fr }: HeaderCompType) {
+if (process.env.NODE_ENV === 'development')
+  links.push({
+    text: 'Admin',
+    link: '/admin',
+  });
+
+export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 

@@ -3,6 +3,10 @@
   height: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .ch-80 {
   max-width: 80ch;
 }
@@ -135,4 +139,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+}
+
+.table-responsive {
+  overflow-x: auto;
 }

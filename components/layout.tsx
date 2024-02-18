@@ -1,9 +1,9 @@
 import { ReactElement, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Header from '@components/header';
-import Footer from '@components/footer';
-import Splash from './splash';
+import { Header } from '@components/header';
+import { Footer } from '@components/footer';
+import { Splash } from './splash';
 import IMG_FOLDER from '@data/utils';
 
 type LayoutCompType = {
@@ -11,7 +11,7 @@ type LayoutCompType = {
   subtitle?: string;
   description?: string;
   img?: string;
-  splash: string;
+  splash?: string;
   url?: string;
   children: ReactElement;
   itemtype?: string;
@@ -22,7 +22,7 @@ type LayoutCompType = {
   fr?: string;
 };
 
-export default function Layout({
+export function Layout({
   title,
   subtitle,
   description,
@@ -64,6 +64,8 @@ export default function Layout({
     fr: 'fr_FR',
   };
 
+  const isAdmin = router.pathname.includes('/admin');
+
   return (
     <main
       className={theme}
@@ -97,10 +99,20 @@ export default function Layout({
       </Head>
       <Header onClick={switchTheme} theme={theme} en={en} fr={fr} />
       <div className="new-stack">
-        <Splash title={title} subtitle={subtitle} splash={splash} />
-        <div className="body">{children}</div>
+        {!isAdmin ? (
+          <>
+            <Splash title={title} subtitle={subtitle} splash={splash} />
+            <div className="body body-splash">{children}</div>
+          </>
+        ) : (
+          <>
+            <h1 itemProp="headline name">{title}</h1>
+            {subtitle ? <p>{subtitle}</p> : null}
+            <div className="body">{children}</div>
+          </>
+        )}
       </div>
-      <Footer />
+      <Footer isAdmin={isAdmin} />
       <div id="ie-banner">
         Please open this website with a recent browser for the best experience. Avoid Internet Explorer at all costs.
       </div>

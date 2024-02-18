@@ -4,5 +4,13 @@
   "singleQuote": true,
   "tabWidth": 2,
   "useTabs": false,
-  "printWidth": 120
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": "*.mdx",
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
 }

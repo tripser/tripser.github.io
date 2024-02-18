@@ -1,0 +1,14 @@
+.write-page {
+  .mdxeditor {
+    border: solid 1px var(--bg3);
+    border-radius: var(--radius-medium);
+    background: var(--bg);
+  }
+}
+
+// prevents breaking mdx-editor property popover
+[data-radix-popper-content-wrapper] table {
+  width: unset;
+  border-collapse: unset;
+  margin-bottom: unset;
+}
