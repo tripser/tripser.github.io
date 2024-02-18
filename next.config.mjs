@@ -25,7 +25,10 @@ const conf = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  pageExtensions:
+    process.env.NODE_ENV !== 'development'
+      ? ['prod.ts', 'prod.tsx', 'md', 'mdx']
+      : ['prod.ts', 'prod.tsx', 'dev.ts', 'dev.tsx', 'md', 'mdx'],
 };
 
 export default conf;

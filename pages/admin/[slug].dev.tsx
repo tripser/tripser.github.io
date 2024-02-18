@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { MDXEditorMethods } from '@mdxeditor/editor';
@@ -29,10 +29,6 @@ export default function Write({ title, description, article, articleContent }: W
   const [response, setResponse] = useState('');
 
   const isNew = !article;
-
-  useEffect(() => {
-    process.env.NODE_ENV !== 'development' && router.push('/404');
-  }, []);
 
   // TODO: add loading state
   // TODO: handle title passed in editor photo upload to use it as file name?

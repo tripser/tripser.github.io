@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { MdCode, MdEdit, MdPublic } from 'react-icons/md';
 import { Layout } from '@components/layout';
@@ -12,14 +11,9 @@ type AdminPageType = {
 };
 
 export default function Admin({ title, description, articles }: AdminPageType) {
-  const router = useRouter();
   const [filteredArticles, setFilteredArticles] = useState(articles);
   const [lang, setLang] = useState(0);
   const [state, setState] = useState(0);
-
-  useEffect(() => {
-    process.env.NODE_ENV !== 'development' && router.push('/404');
-  }, []);
 
   const LANGS = ['', 'en', 'fr'];
   const STATES = ['', 'draft', 'published'];
