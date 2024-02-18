@@ -35,6 +35,13 @@ const photos = [
     link: '/blog/alsace-and-christmas-markets',
   },
   {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/grande-roue.jpg',
+    caption: 'Colmar Big wheel ©tripser',
+    title: 'Discover Alsace and its Christmas markets',
+    lang: 'en',
+    link: '/blog/alsace-and-christmas-markets',
+  },
+  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/eguisheim.jpg',
     caption: 'Eguisheim ©tripser',
     title: 'Discover Alsace and its Christmas markets',
@@ -84,6 +91,13 @@ const photos = [
     link: '/blog/alsace-et-marches-noel',
   },
   {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/grande-roue.jpg',
+    caption: 'Colmar grande roue ©tripser',
+    title: "Découvrir l'Alsace et ses marchés de Noël",
+    lang: 'fr',
+    link: '/blog/alsace-et-marches-noel',
+  },
+  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/eguisheim.jpg',
     caption: 'Eguisheim ©tripser',
     title: "Découvrir l'Alsace et ses marchés de Noël",
@@ -113,7 +127,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/seal.jpg',
-    caption: '',
+    caption: "Baby seal at the Baie d'Otie @tripser",
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -155,14 +169,14 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/seal.jpg',
-    caption: '',
+    caption: "Bébé phoque à la Baie d'Otie @tripser",
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/nausicaa.jpg',
-    caption: '',
+    caption: "Raie Manta à l'aquarium de Nausicaa @nausicaa.fr",
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
@@ -259,6 +273,13 @@ const photos = [
     link: '/blog/drome-and-vercors',
   },
   {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mont-aiguille.jpg',
+    caption: 'View of the Mont Aiguille ©tripser',
+    title: 'A Journey through Drome and Vercors',
+    lang: 'en',
+    link: '/blog/drome-and-vercors',
+  },
+  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/monteynard.jpg',
     caption: 'The Hymalayan footbridges ©trieves-vercors.fr',
     title: 'A Journey through Drome and Vercors',
@@ -350,6 +371,13 @@ const photos = [
     link: '/blog/drome-et-vercors',
   },
   {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mont-aiguille.jpg',
+    caption: 'Vue du Mont Aiguille ©tripser',
+    title: 'Un voyage dans la Drome et le Vercors',
+    lang: 'fr',
+    link: '/blog/drome-et-vercors',
+  },
+  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/monteynard.jpg',
     caption: 'Les passerelles Hymalayennes ©trieves-vercors.fr',
     title: 'Un voyage dans la Drome et le Vercors',
@@ -392,8 +420,15 @@ const photos = [
     link: '/blog/weekend-au-luxembourg',
   },
   {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/scheissendempel.jpg',
+    caption: 'Cascade Scheissendempel dans le Mullerthal ©researchluxembourg.org',
+    title: 'Un court weekend au Luxembourg',
+    lang: 'fr',
+    link: '/blog/weekend-au-luxembourg',
+  },
+  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/echternach.jpg',
-    caption: '',
+    caption: "Ville d'Echternach ©visitluxembourg.com",
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
     link: '/blog/weekend-au-luxembourg',
@@ -401,6 +436,13 @@ const photos = [
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/city.jpg',
     caption: 'Luxembourg ville ©tripser',
+    title: 'Un court weekend au Luxembourg',
+    lang: 'fr',
+    link: '/blog/weekend-au-luxembourg',
+  },
+  {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/bridge.jpg',
+    caption: 'Le pont Adolf ©tripser',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
     link: '/blog/weekend-au-luxembourg',
@@ -434,6 +476,13 @@ const photos = [
     link: '/blog/weekend-in-luxembourg',
   },
   {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/scheissendempel.jpg',
+    caption: 'Scheissendempel waterfall in Mullerthal ©researchluxembourg.org',
+    title: 'A short weekend in Luxembourg',
+    lang: 'en',
+    link: '/blog/weekend-in-luxembourg',
+  },
+  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/echternach.jpg',
     caption: 'Echternach city ©visitluxembourg.com',
     title: 'A short weekend in Luxembourg',
@@ -443,6 +492,13 @@ const photos = [
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/city.jpg',
     caption: 'Luxembourg city ©tripser',
+    title: 'A short weekend in Luxembourg',
+    lang: 'en',
+    link: '/blog/weekend-in-luxembourg',
+  },
+  {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/bridge.jpg',
+    caption: 'Adolf bridge ©tripser',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
     link: '/blog/weekend-in-luxembourg',
