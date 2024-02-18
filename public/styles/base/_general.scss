@@ -209,14 +209,24 @@ table {
     border: solid 1px var(--bg3);
   }
 
-  tr:nth-child(odd) {
+  th {
+    border-bottom: solid 2px var(--bg3);
+  }
+
+  tbody tr:nth-child(odd) {
     background-color: var(--bg2);
   }
 
-  td[colspan] {
-    text-align: center;
-    border-top: solid 2px var(--bg3);
-    font-size: 0.75rem;
-    text-transform: uppercase;
+  tfoot {
+    tr {
+      background-color: transparent;
+    }
+
+    td {
+      text-align: center;
+      border: none;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
   }
 }

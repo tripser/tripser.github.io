@@ -98,10 +98,12 @@ export default function Admin({ title, description, articles }: AdminPageType) {
                         </tr>
                       ))
                     : null}
+                </tbody>
+                <tfoot>
                   <tr>
                     <td colSpan={6}>{filteredArticles?.length || 0} articles</td>
                   </tr>
-                </tbody>
+                </tfoot>
               </table>
             </div>
           </div>
