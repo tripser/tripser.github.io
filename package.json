@@ -14,8 +14,7 @@
     "deploy": "set PROD=true && npm run blog && npm run photos && npm run sitemap && firebase deploy",
     "sitemap": "node ./generate-sitemap.mjs",
     "blog": "node ./generate-blog-list.mjs",
-    "photos": "node ./generate-photos-list.mjs",
-    "optimize": "node ./optimize-image.js"
+    "photos": "node ./generate-photos-list.mjs"
   },
   "keywords": [],
   "license": "ISC",

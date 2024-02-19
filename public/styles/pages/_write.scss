@@ -4,6 +4,12 @@
     border-radius: var(--radius-medium);
     background: var(--bg);
   }
+
+  .mdxeditor-rich-text-editor {
+    max-height: calc(100vh - 10rem);
+    overflow: auto;
+    resize: vertical;
+  }
 }
 
 // prevents breaking mdx-editor property popover

@@ -52,15 +52,12 @@ Commit and Push your changes to master.
 - lang: check seo is good
 
 - build mdx editor
-  - handle images +compress +resize +jpg
   - handle some frontmatter outside the editor: categories, lang, en-fr, ...?
   - handle translation?
   - FIX? => API resolved without sending a response for /api/createMdxFile, this may result in stalled requests.
 
 - add framed text, quotes, highlighted words, 
-- script an image compressor and resizer (based on original image => save new smaller and lighter images)
 - search in site
-- more Figures layouts
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
 - section bon plans

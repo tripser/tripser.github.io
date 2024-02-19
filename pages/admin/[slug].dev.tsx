@@ -52,7 +52,7 @@ export default function Write({ title, description, article, articleContent }: W
     <Layout title={title} description={description} url="https://tripser.blog/admin/write">
       <div className="write-page">
         <section className="py-5">
-          <div className="container mt-3" style={{ maxWidth: 'calc(800px + 1.5rem + 2px)' }}>
+          <div className="container mt-3" style={{ maxWidth: 'calc(800px + 1.5rem + 19px)' }}>
             <p>SLUG</p>
             <input
               placeholder="slug"
@@ -89,7 +89,7 @@ export default function Write({ title, description, article, articleContent }: W
 
             {/* TODO: style the RTE elements as an article page */}
 
-            <p className={slug ? '' : 'hidden'}>EDITOR</p>
+            <p className={slug ? 'mb-2' : 'mb-2 hidden'}>EDITOR</p>
             <Editor
               ref={editorRef}
               markdown={mdx}
