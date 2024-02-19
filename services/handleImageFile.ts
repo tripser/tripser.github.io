@@ -1,9 +1,9 @@
-export const handleImageFile = async (image: File, name?: string, path?: string, isSplash?: boolean) => {
+export const handleImageFile = async (image: File, name?: string, path?: string, sizes?: number[]) => {
   const formData = new FormData() as any;
   formData.append('image', image);
   if (name) formData.append('name', name);
   if (path) formData.append('path', path);
-  if (isSplash) formData.append('isSplash', isSplash.toString());
+  if (sizes.length) formData.append('sizes', sizes);
 
   // path must contain /articles|content|maps
 

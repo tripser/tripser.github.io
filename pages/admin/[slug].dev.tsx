@@ -74,7 +74,8 @@ export default function Write({ title, description, article, articleContent }: W
                       const f = await handleImageFile(
                         e.target.files[0],
                         `${slug}.${e.target.files[0].name.split('.').pop()}`,
-                        `articles`
+                        `articles`,
+                        [800, 400]
                       );
                       if (f) setFile(f);
                     } else {

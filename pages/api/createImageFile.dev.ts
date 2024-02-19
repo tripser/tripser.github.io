@@ -2,6 +2,32 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import multer, { Multer } from 'multer';
 import fs from 'fs';
 import path from 'path';
+import sharp from 'sharp';
+
+async function createOptimizedVersions(imagePath, sizes = [400]) {
+  const directory = path.dirname(imagePath);
+  const extension = path.extname(imagePath);
+  const filename = path.basename(imagePath, extension);
+
+  // optimize original image
+  const outputPathTemp = path.join(directory, `${filename}-temp${extension}`);
+  await sharp(imagePath).jpeg({ quality: 70 }).toFile(outputPathTemp);
+  fs.rename(outputPathTemp, imagePath, async (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      // resize and save to 800 and 400
+      if (sizes.includes(800)) {
+        const outputPath800 = path.join(directory, `${filename}-800${extension}`);
+        await sharp(imagePath).resize(800, 450).toFile(outputPath800);
+      }
+      if (sizes.includes(400)) {
+        const outputPath400 = path.join(directory, `${filename}-400${extension}`);
+        await sharp(imagePath).resize(400, 225).toFile(outputPath400);
+      }
+    }
+  });
+}
 
 interface MulterRequest extends NextApiRequest {
   file: Multer.File;
@@ -37,6 +63,8 @@ export default async function handler(req: MulterRequest, res: NextApiResponse) 
         return;
       }
 
+      console.log('File created successfully.');
+
       const fileName = req.body.name || req.file.originalname;
       const tempPath = req.file.path;
       const targetDir = path.join('public/images/', req.body.path || '');
@@ -52,7 +80,16 @@ export default async function handler(req: MulterRequest, res: NextApiResponse) 
           res.status(500).json({ message: 'Error moving file.' });
           return;
         }
-        res.status(200).json({ message: 'File uploaded and moved successfully.', filePath: filePath });
+        console.log('File moved successfully.');
+        createOptimizedVersions(targetPath, req.body.sizes ? req.body.sizes.split(',').map((s) => parseInt(s)) : [400])
+          .then(() => {
+            console.log('File optimized successfully.');
+            res.status(200).json({ message: 'File uploaded, moved and optimized successfully.', filePath: filePath });
+          })
+          .catch((err) => {
+            console.error(err);
+            res.status(500).json({ message: 'Error optimizing file.' });
+          });
       });
     });
   } else {
