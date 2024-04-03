@@ -21,7 +21,7 @@ const conf = {
     return config;
   },
   reactStrictMode: true,
-  transpilePackages: ['@mdxeditor/editor'],
+  transpilePackages: process.env.NODE_ENV !== 'development' ? [] : ['@mdxeditor/editor'],
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -1,6 +1,6 @@
 {
   "name": "tripser",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Tripser...",
   "scripts": {
     "dev": "npm run blog && npm run photos && next dev",
@@ -21,7 +21,6 @@
   "dependencies": {
     "@mdx-js/loader": "2.1.5",
     "@mdx-js/react": "2.1.5",
-    "@mdxeditor/editor": "2.7.0",
     "@next/mdx": "13.0.2",
     "aos": "2.3.4",
     "cross-env": "7.0.3",
@@ -43,6 +42,7 @@
     "sharp": "0.32.1"
   },
   "devDependencies": {
+    "@mdxeditor/editor": "2.7.0",
     "@types/node": "14.18.3",
     "@types/react": "18.2.51",
     "@types/react-dom": "18.2.18",

@@ -11,6 +11,7 @@ import { Editor } from '@components/editor';
 import { Layout } from '@components/layout';
 import { UploadImage } from '@components/uploadImage';
 import { ArticleType } from '@types';
+import '@mdxeditor/editor/style.css';
 
 type WritePageType = {
   title: string;
