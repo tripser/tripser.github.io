@@ -5,6 +5,7 @@
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
       "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
       "@types": ["types"]
     },
     "target": "ES6",

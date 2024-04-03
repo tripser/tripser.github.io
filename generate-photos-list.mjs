@@ -2,7 +2,7 @@ import fs, { writeFileSync } from 'fs';
 import path from 'path';
 import prettier from 'prettier';
 import articles from './data/articles.js';
-import IMG_FOLDER from './data/utils.js';
+import IMG_FOLDER from './utils/img-folder.js';
 
 export const getPhotos = () => {
   const files = fs.readdirSync(path.join('pages/blog')).filter((file) => file.endsWith('.mdx'));

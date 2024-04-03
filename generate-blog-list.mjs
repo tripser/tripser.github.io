@@ -1,8 +1,8 @@
 import fs, { writeFileSync } from 'fs';
 import path from 'path';
-import prettier from 'prettier';
 import matter from 'gray-matter';
-import IMG_FOLDER from './data/utils.js';
+import prettier from 'prettier';
+import IMG_FOLDER from './utils/img-folder.js';
 
 function handleDate(date) {
   if (typeof date === 'string') {

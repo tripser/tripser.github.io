@@ -1,4 +1,4 @@
-import IMG_FOLDER from '@data/utils';
+import IMG_FOLDER from '@utils/img-folder';
 
 type SplashCompType = {
   title: string;

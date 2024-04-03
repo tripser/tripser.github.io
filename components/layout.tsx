@@ -1,7 +1,7 @@
 import { ReactElement, useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import IMG_FOLDER from '@data/utils';
+import IMG_FOLDER from '@utils/img-folder';
 import { Footer } from './footer';
 import { Header } from './header';
 import { Splash } from './splash';
