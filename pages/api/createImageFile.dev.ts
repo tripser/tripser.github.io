@@ -1,7 +1,7 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import multer, { Multer } from 'multer';
 import fs from 'fs';
 import path from 'path';
+import multer, { Multer } from 'multer';
+import type { NextApiRequest, NextApiResponse } from 'next';
 import sharp from 'sharp';
 
 async function createOptimizedVersions(imagePath, sizes = [400]) {

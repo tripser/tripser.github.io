@@ -1,13 +1,12 @@
 import { ReactElement } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
-// @ts-ignore
 import articles from '@data/articles';
-import { Layout } from '@components/layout';
-import { Grid } from '@components/grid';
-import { ArticleType } from 'types';
+import { ArticleType } from '@types';
+import { Grid } from './grid';
+import { Layout } from './layout';
 
 type BlogLayoutCompType = {
   children: ReactElement;

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretRight } from 'react-icons/ai';
-import { Layout } from '@components/layout';
 import { Grid } from '@components/grid';
-import { ArticleType } from 'types';
+import { Layout } from '@components/layout';
+import { ArticleType } from '@types';
 
 type HomePageType = {
   title: string;

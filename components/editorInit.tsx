@@ -28,9 +28,9 @@ import {
   JsxComponentDescriptor,
   Separator,
 } from '@mdxeditor/editor';
-import { InsertMdxLink, mdxLink } from './editorLink';
-import { InsertFrame, frame } from './editorFrame';
 import { InsertMdxComment, mdxComment } from './editorComment';
+import { InsertFrame, frame } from './editorFrame';
+import { InsertMdxLink, mdxLink } from './editorLink';
 
 interface EditorInitProps extends MDXEditorProps {
   editorRef: ForwardedRef<MDXEditorMethods> | null;

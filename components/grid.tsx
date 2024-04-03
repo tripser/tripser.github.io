@@ -1,6 +1,6 @@
-import IMG_FOLDER from '@data/utils';
 import Link from 'next/link';
-import { ArticleType } from 'types';
+import IMG_FOLDER from '@data/utils';
+import { ArticleType } from '@types';
 
 type GridItemCompType = {
   item: ArticleType;

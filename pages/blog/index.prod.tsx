@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import { Layout } from '@components/layout';
 import { Grid } from '@components/grid';
-import { ArticleType } from 'types';
+import { Layout } from '@components/layout';
+import { ArticleType } from '@types';
 
 type BlogPageType = {
   title: string;

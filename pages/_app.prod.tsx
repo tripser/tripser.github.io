@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 import { AppProps } from 'next/app';
-import { useTranslation } from 'react-i18next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import AOS from 'aos';
+import { useTranslation } from 'react-i18next';
 import 'public/lang/i18n';
 
 import 'public/styles/imports.css';

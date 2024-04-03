@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { MdCode, MdEdit, MdPublic } from 'react-icons/md';
 import { Layout } from '@components/layout';
-import { ArticleType } from 'types';
+import { ArticleType } from '@types';
 
 type AdminPageType = {
   title: string;

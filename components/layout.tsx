@@ -1,10 +1,10 @@
 import { ReactElement, useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { Header } from '@components/header';
-import { Footer } from '@components/footer';
-import { Splash } from './splash';
+import { useRouter } from 'next/router';
 import IMG_FOLDER from '@data/utils';
+import { Footer } from './footer';
+import { Header } from './header';
+import { Splash } from './splash';
 
 type LayoutCompType = {
   title: string;

@@ -1,17 +1,16 @@
 import { useRef, useState } from 'react';
-import { useRouter } from 'next/router';
-import { useTranslation } from 'react-i18next';
-import { MDXEditorMethods } from '@mdxeditor/editor';
-import { Layout } from '@components/layout';
-import { Editor } from '@components/editor';
-import { UploadImage } from '@components/uploadImage';
-import { handleMdxFile } from 'services/handleMdxFile';
-import { handleImageFile } from 'services/handleImageFile';
-import { baseEditorEN, baseEditorFR } from '@data/editorDefaults';
-import { ArticleType } from 'types';
-
 import fs from 'fs';
 import path from 'path';
+import { useRouter } from 'next/router';
+import { MDXEditorMethods } from '@mdxeditor/editor';
+import { useTranslation } from 'react-i18next';
+import { baseEditorEN, baseEditorFR } from '@data/editorDefaults';
+import { handleImageFile } from '@services/handleImageFile';
+import { handleMdxFile } from '@services/handleMdxFile';
+import { Editor } from '@components/editor';
+import { Layout } from '@components/layout';
+import { UploadImage } from '@components/uploadImage';
+import { ArticleType } from '@types';
 
 type WritePageType = {
   title: string;
