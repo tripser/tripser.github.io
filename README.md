@@ -33,6 +33,12 @@ Commit and Push your changes to master.
 ## TODO
 
 - Articles
+  - reunion
+    - 3 semaines à l'île de la Réunion
+    - top 10 des choses à faire à l'île de la Réunion
+    - top 10 des randonnées à l'île de la Réunion
+    - top 10 des plages à l'île de la Réunion
+    - top 10 des cascades à l'île de la Réunion    
   - via ferrata saint julien en vercors
   - best christmas markets
   - baie de somme
@@ -56,8 +62,8 @@ Commit and Push your changes to master.
   - handle translation?
   - FIX? => API resolved without sending a response for /api/createMdxFile, this may result in stalled requests.
 
+- !! search in site
 - add framed text, quotes, highlighted words, 
-- search in site
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
 - section bon plans

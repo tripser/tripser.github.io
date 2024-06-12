@@ -30,7 +30,9 @@
     "city-trip": "city-trip",
     "christmas": "noël",
     "beach": "plage",
-    "france": "france"
+    "france": "france",
+    "reunion": "Reunion",
+    "island": "île"
   },
   "contact": "N'hésitez pas à nous contacter et à rester en contact avec nous via ces différents canaux.",
   "404": { "title": "Page introuvable", "back": "Retour à l'accueil", "try": "Recommandation d'articles" }

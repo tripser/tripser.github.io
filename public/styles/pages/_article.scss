@@ -34,14 +34,17 @@
       justify-content: space-between;
     }
 
-    .article__categories a {
-      font-size: 0.75rem;
-      cursor: pointer;
-      text-decoration: underline;
-      text-transform: uppercase;
+    .article__categories {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5rem;
 
-      &:not(:last-of-type) {
-        margin-right: 0.5rem;
+      a {
+        font-size: 0.75rem;
+        cursor: pointer;
+        text-decoration: underline;
+        text-transform: uppercase;
       }
     }
 

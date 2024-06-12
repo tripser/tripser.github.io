@@ -95,15 +95,14 @@ export default function Write({ title, description, article, articleContent }: W
               markdown={mdx}
               contentEditableClassName="article__content"
               className={slug ? 'mb-4' : 'mb-4 hidden'}
-              handleImageFile={(e) => handleImageFile(e, null, `content/${slug}`)}
+              handleImageFile={(e) => handleImageFile(e, null, `temp/${article.lang === 'en' ? slug : article.en}`)}
             />
 
-            {slug && !response ? (
+            {slug ? (
               <button
-                className="btn btn-primary"
+                className="btn btn-primary mr-2"
                 onClick={async () => {
                   const getMarkdown = editorRef.current?.getMarkdown();
-                  console.log(getMarkdown);
                   if (getMarkdown) {
                     setResponse('saving');
                     const url = await handleMdxFile(slug, getMarkdown);
@@ -116,6 +115,16 @@ export default function Write({ title, description, article, articleContent }: W
                 save
               </button>
             ) : null}
+
+            <button
+              className="btn mr-2"
+              onClick={async () => {
+                const getMarkdown = editorRef.current?.getMarkdown();
+                console.log(getMarkdown);
+              }}
+            >
+              log
+            </button>
 
             {response === 'saving' ? <p>Saving...</p> : null}
 

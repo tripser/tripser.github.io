@@ -3,7 +3,7 @@ export const handleImageFile = async (image: File, name?: string, path?: string,
   formData.append('image', image);
   if (name) formData.append('name', name);
   if (path) formData.append('path', path);
-  if (sizes.length) formData.append('sizes', sizes);
+  if (sizes?.length) formData.append('sizes', sizes);
 
   // path must contain /articles|content|maps
 
