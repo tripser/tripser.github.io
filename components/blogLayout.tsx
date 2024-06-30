@@ -20,7 +20,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
   const { t, i18n } = useTranslation();
 
   const article = articles.find((p) => p.slug === router.pathname.replace('/blog/', '')) as ArticleType;
-  const { title, intro, img, published, modified, categories } = article;
+  const { title, intro, img, published, modified, categories, slug } = article;
 
   const categoriesList = categories?.split(', ').filter((x) => x);
 
@@ -63,6 +63,11 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                   </div>
 
                   <div className="mb-15">
+                    {process.env.NODE_ENV === 'development' ? (
+                      <p className="mb-2">
+                        <Link href={`/admin/${slug}`}>Edit article</Link>
+                      </p>
+                    ) : null}
                     <Link href="/blog">
                       <a className="btn">
                         <AiFillCaretLeft className="mr-1" />

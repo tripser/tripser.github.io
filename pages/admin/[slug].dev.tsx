@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import fs from 'fs';
 import path from 'path';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { MDXEditorMethods } from '@mdxeditor/editor';
 import { useTranslation } from 'react-i18next';
@@ -99,39 +100,42 @@ export default function Write({ title, description, article, articleContent }: W
             />
 
             {slug ? (
-              <button
-                className="btn btn-primary mr-2"
-                onClick={async () => {
-                  const getMarkdown = editorRef.current?.getMarkdown();
-                  if (getMarkdown) {
-                    setResponse('saving');
-                    const url = await handleMdxFile(slug, getMarkdown);
-                    setResponse(url);
-                  } else {
-                    alert('Invalid Markdown');
-                  }
-                }}
-              >
-                save
-              </button>
-            ) : null}
+              <>
+                {response === 'saving' ? <p className="mb-2">Saving...</p> : null}
 
-            <button
-              className="btn mr-2"
-              onClick={async () => {
-                const getMarkdown = editorRef.current?.getMarkdown();
-                console.log(getMarkdown);
-              }}
-            >
-              log
-            </button>
+                {!isNew && response !== 'saving' ? (
+                  <p className="mb-2">
+                    <Link href={`/blog/${slug}`}>Check out the article</Link>
+                  </p>
+                ) : null}
 
-            {response === 'saving' ? <p>Saving...</p> : null}
+                <button
+                  className="btn btn-primary mr-2"
+                  onClick={async () => {
+                    const getMarkdown = editorRef.current?.getMarkdown();
+                    if (getMarkdown) {
+                      setResponse('saving');
+                      const url = await handleMdxFile(slug, getMarkdown);
+                      setResponse(url);
+                      window.location.reload();
+                    } else {
+                      alert('Invalid Markdown');
+                    }
+                  }}
+                >
+                  save
+                </button>
 
-            {response && response !== 'saving' ? (
-              <button className="btn btn-primary" onClick={() => router.push(response)}>
-                Check out your new article
-              </button>
+                <button
+                  className="btn mr-2"
+                  onClick={async () => {
+                    const getMarkdown = editorRef.current?.getMarkdown();
+                    console.log(getMarkdown);
+                  }}
+                >
+                  log
+                </button>
+              </>
             ) : null}
           </div>
         </section>

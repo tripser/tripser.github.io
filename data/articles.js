@@ -1,5 +1,37 @@
 const articles = [
   {
+    slug: '3-semaines-a-la-reunion',
+    title: "Comment passer 3 semaines de rêve à l'île de la Réunion",
+    intro:
+      "Le récit complet de notre voyage de 3 semaines à l'île de la Réunion, entre randonnées, plages, cascades et gastronomie créole.",
+    img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/3-weeks-in-la-reunion.jpg',
+    published: '2024-06-30',
+    modified: '2024-07-01',
+    lang: 'fr',
+    en: '3-weeks-in-la-reunion',
+    fr: '',
+    categories: 'voyage, reunion, island, hike, beach',
+    state: 'published',
+    link: '/blog/3-semaines-a-la-reunion',
+    url: 'https://tripser.blog/blog/3-semaines-a-la-reunion',
+  },
+  {
+    slug: '3-weeks-in-la-reunion',
+    title: 'How to spend 3 dream weeks in La Réunion',
+    intro:
+      'The complete story of our 3-week trip to the island of La Réunion, between hikes, beaches, waterfalls and Creole gastronomy.',
+    img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/3-weeks-in-la-reunion.jpg',
+    published: '2024-06-30',
+    modified: '2024-07-01',
+    lang: 'en',
+    en: '',
+    fr: '3-semaines-a-la-reunion',
+    categories: 'voyage, reunion, island, hike, beach',
+    state: 'published',
+    link: '/blog/3-weeks-in-la-reunion',
+    url: 'https://tripser.blog/blog/3-weeks-in-la-reunion',
+  },
+  {
     slug: 'cote-opale-trip',
     title: "Côte d'Opale, 3 days of escape",
     intro:
