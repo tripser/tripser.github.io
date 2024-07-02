@@ -34,7 +34,6 @@ Commit and Push your changes to master.
 
 - Articles
   - reunion
-    - 3 semaines à l'île de la Réunion
     - top 10 des choses à faire à l'île de la Réunion
     - top 10 des randonnées à l'île de la Réunion
     - top 10 des plages à l'île de la Réunion
