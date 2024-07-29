@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import { Dialog } from '@components/dialog';
 import { Layout } from '@components/layout';
-import { Dialog } from '@components/modal';
 import { PhotoType } from '@types';
 
 type PhotosPageType = {

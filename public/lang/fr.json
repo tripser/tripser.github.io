@@ -20,6 +20,13 @@
   "photos": {
     "intro": "Voici la liste de toutes les photos partagées dans nos articles. Clique sur une photo pour avoir une meilleure vue et clique à nouveau pour voyager vers l'article correspondant"
   },
+  "search": {
+    "title": "Recherche",
+    "intro": "Recherche tous les articles de voyage sur Tripser. Voyage, city-trips, randos, plages, montagnes, lacs, iles et beaucoup plus.",
+    "label": "Chercher sur Tripser",
+    "placeholder": "Plage, rando, mer, montagne, etc.",
+    "no-results": "Aucun résultat trouvé"
+  },
   "categories": {
     "voyage": "voyage",
     "europe": "europe",

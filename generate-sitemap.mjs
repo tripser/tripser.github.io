@@ -13,6 +13,7 @@ async function generate() {
     { link: '', modified: today, freq: 'weekly', prio: '1.0' },
     { link: '/blog', modified: today, freq: 'weekly', prio: '0.8' },
     { link: '/photos', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/search', modified: today, freq: 'weekly', prio: '0.6' },
   ];
 
   const sitemap = `

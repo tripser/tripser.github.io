@@ -1,15 +1,23 @@
 import { useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 
-export function Dialog({ children, trigger }) {
+type Props = {
+  children: React.ReactNode;
+  trigger: React.ReactNode;
+  triggerClass?: string;
+};
+
+export function Dialog({ children, trigger, triggerClass }: Props) {
   const dialogRef = useRef(null);
 
   return (
     <>
-      <button onClick={() => dialogRef.current?.showModal()}>{trigger}</button>
+      <button className={triggerClass || ''} onClick={() => dialogRef.current?.showModal()}>
+        {trigger}
+      </button>
       <dialog
         ref={dialogRef}
-        className="modal"
+        className="dialog"
         onClick={(e) => (e.target === dialogRef.current ? dialogRef.current?.close() : null)}
       >
         <div className="content">

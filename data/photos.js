@@ -134,7 +134,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/run-helico.jpg',
-    caption: "Vue d'un hélicoptère devant une cascade de la Réunion",
+    caption: "Vue d'un hélicoptère devant une cascade de la Réunion ©runhelico.com",
     title: "Comment passer 3 semaines de rêve à l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -274,7 +274,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/run-helico.jpg',
-    caption: 'View from a helicopter over a waterfall in La Réunion',
+    caption: 'View from a helicopter over a waterfall in La Réunion ©runhelico.com',
     title: 'How to spend 3 dream weeks in La Réunion',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',

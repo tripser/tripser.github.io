@@ -18,16 +18,12 @@ export default function Blog({ title, description, splash, url, articles }: Blog
   const router = useRouter();
   const { t, i18n } = useTranslation();
   const [articlesFiltered, setArticlesFiltered] = useState<ArticleType[]>([]);
-  const [query, setQuery] = useState<string>('');
+
+  const cat = (router.query.cat as string) || '';
 
   useEffect(() => {
-    // the regex replace removes all characters before '?' to get only the query parameters
-    setQuery(router.asPath.replace(/.*\?/g, '') === '/blog' ? '' : router.asPath.replace(/.*\?/g, ''));
-  }, [router.asPath]);
-
-  useEffect(() => {
-    setArticlesFiltered(articles.filter((x) => x.lang === i18n.language && x.categories.includes(query)));
-  }, [query, i18n.language]);
+    setArticlesFiltered(articles.filter((x) => x.lang === i18n.language && x.categories.includes(cat)));
+  }, [cat, i18n.language]);
 
   const categoriesAllRaw = articles.map((x) => x.categories.split(', '));
   const categoriesAll = [].concat(...categoriesAllRaw).filter((x) => x);
@@ -41,11 +37,11 @@ export default function Blog({ title, description, splash, url, articles }: Blog
 
           <div className="blog__categories">
             <Link href="/blog">
-              <a className={`btn ${query === '' ? 'active' : ''}`}>{t('blog.all')}</a>
+              <a className={`btn ${cat === '' ? 'active' : ''}`}>{t('blog.all')}</a>
             </Link>
             {categories.map((c) => (
-              <Link key={c} href={`?${c}`} scroll={false}>
-                <a className={`btn ${query === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
+              <Link key={c} href={`?cat=${c}`} scroll={false}>
+                <a className={`btn ${cat === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
               </Link>
             ))}
           </div>

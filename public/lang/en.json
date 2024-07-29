@@ -20,6 +20,13 @@
   "photos": {
     "intro": "Here the a list of all the pictures we shared in our articles. Click on a photo to have a better view and click again to travel to the related piece of blog."
   },
+  "search": {
+    "title": "Search",
+    "intro": "Search for any travel articles on Tripser. Voyages, city-trips, hikes, beaches, mountains, lakes, islands and much much more.",
+    "label": "Search on Tripser",
+    "placeholder": "Beach, hike, sea, mountain, etc.",
+    "no-results": "No results found"
+  },
   "categories": {
     "voyage": "voyage",
     "europe": "europe",

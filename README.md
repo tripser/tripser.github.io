@@ -27,23 +27,23 @@ Also make sure your linter is error-free with `npm run lint` or `yarn lint`
 
 Deployment should be managed with `npm run deploy` or `yarn deploy`
 
-Commit and Push your changes to master.
-<!-- This will trigger Github Action and deploy the changes to firebase and tripser.blog -->
+Commit and Push your changes to master once site is deployed.
 
 ## TODO
 
 - Articles
   - reunion
-    - top 10 des choses à faire à l'île de la Réunion
     - top 10 des randonnées à l'île de la Réunion
     - top 10 des plages à l'île de la Réunion
     - top 10 des cascades à l'île de la Réunion    
+    - top 10 des choses à faire à l'île de la Réunion
   - via ferrata saint julien en vercors
   - best christmas markets
+  - split drome and vercors
   - baie de somme
   - bordeaux
   - gorges du verdon et jura
-  - costa
+  - costa rica
   - croatie monténégro
   - ...
 
@@ -61,7 +61,6 @@ Commit and Push your changes to master.
   - handle translation?
   - FIX? => API resolved without sending a response for /api/createMdxFile, this may result in stalled requests.
 
-- !! search in site
 - add framed text, quotes, highlighted words, 
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?

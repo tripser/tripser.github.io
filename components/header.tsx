@@ -2,7 +2,7 @@ import { MouseEventHandler } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
-import { MdLightMode, MdDarkMode } from 'react-icons/md';
+import { MdLightMode, MdDarkMode, MdSearch } from 'react-icons/md';
 
 type HeaderCompType = { theme: string; onClick: MouseEventHandler; en?: string; fr?: string };
 
@@ -45,6 +45,15 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
         </div>
 
         <div className="actions">
+          <button
+            onClick={() => router.push('/search')}
+            className="btn"
+            title="Search on Tripser"
+            aria-label="Search on Tripser"
+          >
+            <MdSearch title="Search on Tripser" aria-labelledby="Search on Tripser" />
+          </button>
+
           <button
             onClick={() => {
               const newLang = i18n.language === 'en' ? 'fr' : 'en';
