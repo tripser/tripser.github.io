@@ -27,7 +27,7 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
   }, [i18n.language]);
 
   return (
-    <Layout title={t('404.title') || title} splash={splash}>
+    <Layout title={t('404.title') || title} splash={{ img: splash }}>
       <div className="container error-shape">
         <section data-aos="fade-right">
           <h2 className="mb-10">{t('404.try')}</h2>

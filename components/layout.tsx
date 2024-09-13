@@ -11,7 +11,7 @@ type LayoutCompType = {
   subtitle?: string;
   description?: string;
   img?: string;
-  splash?: string;
+  splash?: { txt?: string; img: string };
   url?: string;
   children: ReactElement;
   itemtype?: string;
@@ -101,7 +101,7 @@ export function Layout({
       <div className="new-stack">
         {!isAdmin ? (
           <>
-            <Splash title={title} subtitle={subtitle} splash={splash} />
+            <Splash title={splash.txt || title} subtitle={subtitle} splash={splash.img} />
             <div className="body body-splash">{children}</div>
           </>
         ) : (

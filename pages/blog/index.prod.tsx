@@ -30,7 +30,7 @@ export default function Blog({ title, description, splash, url, articles }: Blog
   const categories = [...new Set(categoriesAll)];
 
   return (
-    <Layout title={title} description={description} splash={splash} url={url}>
+    <Layout title={title} description={description} splash={{ img: splash }} url={url}>
       <div className="blog-page">
         <section className="container mt-3 blog-shape">
           <p className="ch-80 mb-8">{t('blog.intro')}</p>

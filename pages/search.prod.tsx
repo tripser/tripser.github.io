@@ -42,7 +42,7 @@ export default function Search({ title, description, splash, articles }: SearchP
     <Layout
       title={search ? `${t('search.title') || title}: ${search}` : t('search.title') || title}
       description={t('search.intro') || description}
-      splash={splash}
+      splash={{ img: splash }}
       url="https://tripser.blog/search"
     >
       <div className="search-page">

@@ -18,7 +18,7 @@ export default function Home({ title, description, splash, articles }: HomePageT
   const articlesByLang = articles.filter((x) => x.lang === i18n.language);
 
   return (
-    <Layout title={title} subtitle={t('subtitle')} description={description} splash={splash}>
+    <Layout title={title} subtitle={t('subtitle')} description={description} splash={{ txt: 'Tripser', img: splash }}>
       <div className="home-page">
         <section id="blog" className="blog">
           <div className="home-shapes"></div>

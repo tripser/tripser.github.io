@@ -32,7 +32,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
 
   return (
     <>
-      <Layout title={`${title}`} description={intro} splash={img} itemtype="Article" {...article}>
+      <Layout title={`${title}`} description={intro} splash={{ img }} itemtype="Article" {...article}>
         <div className="article-page">
           <div data-aos="fade-right">
             <article className="new-stack">
