@@ -11,9 +11,13 @@ async function generate() {
     .padStart(2, '0')}`;
   const pages = [
     { link: '', modified: today, freq: 'weekly', prio: '1.0' },
+    { link: '/fr', modified: today, freq: 'weekly', prio: '1.0' },
     { link: '/blog', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/fr/blog', modified: today, freq: 'weekly', prio: '0.8' },
     { link: '/photos', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/fr/photos', modified: today, freq: 'weekly', prio: '0.8' },
     { link: '/search', modified: today, freq: 'weekly', prio: '0.6' },
+    { link: '/fr/search', modified: today, freq: 'weekly', prio: '0.6' },
   ];
 
   const sitemap = `
@@ -26,7 +30,7 @@ async function generate() {
         .map((item) => {
           return `
             <url>
-              <loc>${baseUrl}${item.link}</loc>
+              <loc>${baseUrl}${item.lang === 'fr' ? '/fr' : ''}${item.link}</loc>
               <lastmod>${item.modified || '2023-11-15'}</lastmod>
               <changefreq>${item.freq || 'monthly'}</changefreq>
               <priority>${item.prio || '0.6'}</priority>

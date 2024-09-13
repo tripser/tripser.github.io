@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import IMG_FOLDER from '@utils/img-folder';
 import { ArticleType } from '@types';
+import { Linkk } from './link';
 
 type GridItemCompType = {
   item: ArticleType;
@@ -11,7 +11,7 @@ function GridItem({ item }: GridItemCompType) {
   const fullImageUrl = img.startsWith('http') ? img : `${IMG_FOLDER}${img}`;
 
   return (
-    <Link href={item.link || ''}>
+    <Linkk href={item.link || ''}>
       <a title={item.title} className="card">
         <div className="card__img">
           <img
@@ -33,7 +33,7 @@ function GridItem({ item }: GridItemCompType) {
           <p className="card__categories">{item.categories}</p>
         </div>
       </a>
-    </Link>
+    </Linkk>
   );
 }
 

@@ -1,20 +1,25 @@
-import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
+import photos from '@data/photos';
 import { Dialog } from '@components/dialog';
 import { Layout } from '@components/layout';
+import { Linkk } from '@components/link';
 import { PhotoType } from '@types';
 
-type PhotosPageType = {
-  title: string;
-  description: string;
-  splash: string;
-  photos: PhotoType[];
-};
+export default function Photos({ locale }: { locale: string }) {
+  return <PhotosPage locale={locale} />;
+}
 
-export default function Photos({ title, description, splash, photos }: PhotosPageType) {
+export function PhotosPage({ locale }: { locale: string }) {
   const { t, i18n } = useTranslation();
 
-  const photosByLang = photos.filter((x) => x.lang === i18n.language);
+  const title = locale === 'en' ? 'Photos' : 'Photos';
+
+  const description =
+    locale === 'en'
+      ? 'Find all photos from our exciting trips. The most iconic, beautiful and interesting views from the best destinations.'
+      : 'Retrouvez toutes les photos de nos voyages excitants. Les vues les plus emblématiques, belles et intéressantes des meilleures destinations.';
+
+  const photosByLang = photos.filter((x) => x.lang === i18n.language) as PhotoType[];
 
   // TODO:
   // randomize order?
@@ -24,7 +29,13 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
   // real lazy loading
 
   return (
-    <Layout title={title} description={description} splash={{ img: splash }} url="https://tripser.blog/photos">
+    <Layout
+      title={title}
+      description={description}
+      splash={{ img: '/images/kotor.jpg' }}
+      url="https://tripser.blog/photos"
+      lang={locale}
+    >
       <div className="photos-page">
         <section>
           <div className="container mt-3" data-aos="fade-right">
@@ -49,7 +60,7 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
                     </div>
                   }
                 >
-                  <Link href={photo.link}>
+                  <Linkk href={photo.link}>
                     <a title={photo.title}>
                       <figure>
                         <img
@@ -65,7 +76,7 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
                         <figcaption>{photo.caption}</figcaption>
                       </figure>
                     </a>
-                  </Link>
+                  </Linkk>
                 </Dialog>
               ))}
             </div>
@@ -76,16 +87,19 @@ export default function Photos({ title, description, splash, photos }: PhotosPag
   );
 }
 
-export async function getStaticProps() {
-  const photos = require('@data/photos') as PhotoType[];
+export async function getStaticPaths() {
+  return {
+    paths: ['en', 'fr'].map((locale) => ({
+      params: { locale },
+    })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const locale = params?.locale as string;
 
   return {
-    props: {
-      title: 'Photos',
-      description:
-        'Find all photos from our exciting trips. The most iconic, beautiful and interesting views from the best destinations.',
-      splash: '/images/kotor.jpg',
-      photos: photos,
-    },
+    props: { locale },
   };
 }

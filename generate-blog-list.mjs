@@ -14,11 +14,11 @@ function handleDate(date) {
 }
 
 export const getArticles = () => {
-  const files = fs.readdirSync(path.join('pages/blog'));
+  const files = fs.readdirSync(path.join('pages/[locale]/blog'));
   const allArticlesData = files
     .map((file) => {
       const slug = file.replace('.mdx', '');
-      const fileContents = fs.readFileSync(path.join(`pages/blog/${file}`), 'utf8');
+      const fileContents = fs.readFileSync(path.join(`pages/[locale]/blog/${file}`), 'utf8');
       const imgFolder = `${IMG_FOLDER}/images/articles/`;
       const { data } = matter(fileContents);
       return {

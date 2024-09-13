@@ -27,6 +27,8 @@ Also make sure your linter is error-free with `npm run lint` or `yarn lint`
 
 Deployment should be managed with `npm run deploy` or `yarn deploy`
 
+Site is deployed on Firebase Hosting: https://console.firebase.google.com/u/0/project/tripser-496d9/overview
+
 Commit and Push your changes to master once site is deployed.
 
 ## TODO
@@ -34,8 +36,12 @@ Commit and Push your changes to master once site is deployed.
 - Issue with SEO in french => non-blog pages are indexed in EN only as there is a single url => /fr/ 
   - https://nextjs.org/docs/pages/building-your-application/routing/internationalization#locale-strategies
   - https://locize.com/blog/next-i18n-static/
+- check /en /fr works
+- url metadata should be good
+- lang tag should be good
 
 - Articles
+  - gorges du verdon 
   - reunion
     - top 10 des randonnées à l'île de la Réunion
     - top 10 des plages à l'île de la Réunion

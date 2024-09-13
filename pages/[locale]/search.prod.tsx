@@ -1,22 +1,26 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
+import articles from '@data/articles';
 import { Grid } from '@components/grid';
 import { Layout } from '@components/layout';
 import { ArticleType } from '@types';
 
-type SearchPageType = {
-  title: string;
-  description: string;
-  splash: string;
-  articles: ArticleType[];
-};
+export default function Search({ locale }: { locale: string }) {
+  return <SearchPage locale={locale} />;
+}
 
-export default function Search({ title, description, splash, articles }: SearchPageType) {
+export function SearchPage({ locale }: { locale: string }) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
   const search = (router.query.s as string) || '';
   const [input, setInput] = useState(search);
+
+  const title = locale === 'en' ? 'Search' : 'Recherche';
+  const description =
+    locale === 'en'
+      ? 'Search for any travel articles on Tripser. Voyages, city-trips, hikes, beaches, mountains, lakes, islands and much much more.'
+      : 'Recherchez des articles de voyage sur Tripser. Voyages, city-trips, randonnées, plages, montagnes, lacs, îles et bien plus encore.';
 
   const normString = (s: string) =>
     s
@@ -24,7 +28,7 @@ export default function Search({ title, description, splash, articles }: SearchP
       .replace(/[\u0300-\u036f]/g, '')
       .toLowerCase();
 
-  const articlesLang = articles?.filter((a) => a.lang === i18n.language);
+  const articlesLang = articles?.filter((a) => a.lang === i18n.language) as ArticleType[];
 
   const articlesFiltered = articlesLang?.filter(
     (a) =>
@@ -35,15 +39,16 @@ export default function Search({ title, description, splash, articles }: SearchP
 
   function handleSubmit(e) {
     e.preventDefault();
-    input.length > 0 ? router.push(`/search?s=${input}`) : router.push('/search');
+    input.length > 0 ? router.push(`${locale}/search?s=${input}`) : router.push(`{locale}/search`);
   }
 
   return (
     <Layout
       title={search ? `${t('search.title') || title}: ${search}` : t('search.title') || title}
       description={t('search.intro') || description}
-      splash={{ img: splash }}
+      splash={{ img: '/images/lake.jpg' }}
       url="https://tripser.blog/search"
+      lang={locale}
     >
       <div className="search-page">
         <section>
@@ -92,16 +97,19 @@ export default function Search({ title, description, splash, articles }: SearchP
   );
 }
 
-export async function getStaticProps() {
-  const articles = require('@data/articles') as ArticleType[];
+export async function getStaticPaths() {
+  return {
+    paths: ['en', 'fr'].map((locale) => ({
+      params: { locale },
+    })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const locale = params?.locale as string;
 
   return {
-    props: {
-      title: 'Search',
-      description:
-        'Search for any travel articles on Tripser. Voyages, city-trips, hikes, beaches, mountains, lakes, islands and much much more.',
-      splash: '/images/lake.jpg',
-      articles: articles,
-    },
+    props: { locale },
   };
 }
