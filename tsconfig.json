@@ -8,7 +8,7 @@
       "@utils/*": ["utils/*"],
       "@types": ["types"]
     },
-    "target": "ES6",
+    "target": "es2018",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,

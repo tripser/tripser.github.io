@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
@@ -7,6 +6,7 @@ import articles from '@data/articles';
 import { ArticleType } from '@types';
 import { Grid } from './grid';
 import { Layout } from './layout';
+import { Linkk } from './link';
 
 type BlogLayoutCompType = {
   children: ReactElement;
@@ -19,7 +19,10 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  const article = articles.find((p) => p.slug === router.pathname.replace('/blog/', '')) as ArticleType;
+  const currPath = router.pathname.split('/').at(-1);
+
+  const article = articles.find((p) => p.slug === currPath) as ArticleType;
+
   const { title, intro, img, published, modified, categories, slug } = article;
 
   const categoriesList = categories?.split(', ').filter((x) => x);
@@ -41,11 +44,11 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                   <div className="article__details">
                     <div className="article__categories">
                       {categoriesList?.map((c) => (
-                        <Link key={c} href={`/blog?${c}`}>
+                        <Linkk key={c} href={`/blog?${c}`}>
                           <a>
                             <span itemProp="articleSection">{t(`categories.${c}`)}</span>
                           </a>
-                        </Link>
+                        </Linkk>
                       ))}
                     </div>
                     <div>
@@ -65,15 +68,15 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                   <div className="mb-15">
                     {process.env.NODE_ENV === 'development' ? (
                       <p className="mb-2">
-                        <Link href={`/admin/${slug}`}>Edit article</Link>
+                        <Linkk href={`/admin/${slug}`}>Edit article</Linkk>
                       </p>
                     ) : null}
-                    <Link href="/blog">
+                    <Linkk href="/blog">
                       <a className="btn">
                         <AiFillCaretLeft className="mr-1" />
                         {t('blog.back')}
                       </a>
-                    </Link>
+                    </Linkk>
                   </div>
 
                   {relatedLinks.length ? (

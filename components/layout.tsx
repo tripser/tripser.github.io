@@ -17,7 +17,7 @@ type LayoutCompType = {
   itemtype?: string;
   published?: string;
   modified?: string;
-  lang?: string;
+  lang: string;
   en?: string;
   fr?: string;
 };

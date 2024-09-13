@@ -1,8 +1,6 @@
 import { useRef, useState } from 'react';
 import fs from 'fs';
 import path from 'path';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { MDXEditorMethods } from '@mdxeditor/editor';
 import { useTranslation } from 'react-i18next';
 import { baseEditorEN, baseEditorFR } from '@data/editorDefaults';
@@ -10,6 +8,7 @@ import { handleImageFile } from '@services/handleImageFile';
 import { handleMdxFile } from '@services/handleMdxFile';
 import { Editor } from '@components/editor';
 import { Layout } from '@components/layout';
+import { Linkk } from '@components/link';
 import { UploadImage } from '@components/uploadImage';
 import { ArticleType } from '@types';
 import '@mdxeditor/editor/style.css';
@@ -22,7 +21,6 @@ type WritePageType = {
 };
 
 export default function Write({ title, description, article, articleContent }: WritePageType) {
-  const router = useRouter();
   const { t, i18n } = useTranslation();
   const editorRef = useRef<MDXEditorMethods>(null);
   const [slug, setSlug] = useState(article?.slug || '');
@@ -50,7 +48,7 @@ export default function Write({ title, description, article, articleContent }: W
   if (process.env.NODE_ENV !== 'development') return null;
 
   return (
-    <Layout title={title} description={description} url="https://tripser.blog/admin/write">
+    <Layout title={title} description={description} url="https://tripser.blog/admin/write" lang={'en'}>
       <div className="write-page">
         <section className="py-5">
           <div className="container mt-3" style={{ maxWidth: 'calc(800px + 1.5rem + 19px)' }}>
@@ -105,7 +103,7 @@ export default function Write({ title, description, article, articleContent }: W
 
                 {!isNew && response !== 'saving' ? (
                   <p className="mb-2">
-                    <Link href={`/blog/${slug}`}>Check out the article</Link>
+                    <Linkk href={`/blog/${slug}`}>Check out the article</Linkk>
                   </p>
                 ) : null}
 

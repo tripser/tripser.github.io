@@ -34,14 +34,13 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const localLang = window.localStorage.getItem('lang');
-      const userLang = window.navigator.language || window.navigator['userLanguage'];
-      if (['en', 'fr'].includes(localLang)) {
-        i18n.changeLanguage(localLang);
-      } else if (['en', 'fr'].includes(userLang)) {
-        i18n.changeLanguage(userLang);
+      const lang = window.localStorage.getItem('lang') || window.navigator.language || window.navigator['userLanguage'];
+      if (['en', 'fr'].includes(lang)) {
+        i18n.changeLanguage(lang);
+        router.pathname.replace('[locale]', lang);
       } else {
         i18n.changeLanguage('en');
+        router.pathname.replace('[locale]', 'en');
       }
     }
   }, []);

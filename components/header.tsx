@@ -1,8 +1,8 @@
 import { MouseEventHandler } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { MdLightMode, MdDarkMode, MdSearch } from 'react-icons/md';
+import { Linkk } from './link';
 
 type HeaderCompType = { theme: string; onClick: MouseEventHandler; en?: string; fr?: string };
 
@@ -27,26 +27,28 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
+  const locale = router.query.locale as string;
+
   return (
     <header className="header">
       <div className="container">
-        <Link href="/">
+        <Linkk href="/">
           <a className="logo">
             <img src="/images/logo-80.png" alt="Tripser logo" title="Home" width="36" height="36" />
           </a>
-        </Link>
+        </Linkk>
 
         <div className="links">
-          {links.map((n) => (
-            <Link href={n.link} key={n.text}>
-              <a>{n.text}</a>
-            </Link>
+          {links.map((link) => (
+            <Linkk href={`${link.link}`} key={link.text}>
+              <a>{link.text}</a>
+            </Linkk>
           ))}
         </div>
 
         <div className="actions">
           <button
-            onClick={() => router.push('/search')}
+            onClick={() => router.push(`/${locale}/search`)}
             className="btn"
             title="Search on Tripser"
             aria-label="Search on Tripser"
@@ -60,7 +62,9 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
               i18n.changeLanguage(newLang);
               window.localStorage.setItem('lang', newLang);
               if (router.pathname.includes('/blog/')) {
-                router.push(`/blog/${newLang === 'en' ? en : fr}`);
+                router.push(`/${newLang}/blog/${newLang === 'en' ? en : fr}`);
+              } else {
+                router.push(`/${newLang}`);
               }
             }}
             className="btn"

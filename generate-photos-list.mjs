@@ -5,12 +5,12 @@ import articles from './data/articles.js';
 import IMG_FOLDER from './utils/img-folder.js';
 
 export const getPhotos = () => {
-  const files = fs.readdirSync(path.join('pages/blog')).filter((file) => file.endsWith('.mdx'));
+  const files = fs.readdirSync(path.join('pages/[locale]/blog')).filter((file) => file.endsWith('.mdx'));
 
   const figuresRegex = /<Figures\b[^>]*\/>/g;
 
   const allPictures = files.map((file) => {
-    const filePath = path.join('pages/blog', file);
+    const filePath = path.join('pages/[locale]/blog', file);
     const mdxContent = fs.readFileSync(filePath, 'utf-8');
 
     const article = articles.find((x) => x.slug === file.replace('.mdx', ''));

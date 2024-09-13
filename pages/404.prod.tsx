@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
 import { Grid } from '@components/grid';
 import { Layout } from '@components/layout';
+import { Linkk } from '@components/link';
 import { ArticleType } from '@types';
 
 type Custom404PageType = {
@@ -18,6 +18,8 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
   const { t, i18n } = useTranslation();
   const [random, setRandom] = useState<ArticleType[]>([]);
 
+  const locale = (router.query.locale || 'en') as string;
+
   useEffect(() => {
     const articlesByLang = articles.filter((x) => x.lang === i18n.language);
     const randomPosts = [...Array(3)].map(
@@ -27,19 +29,19 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
   }, [i18n.language]);
 
   return (
-    <Layout title={t('404.title') || title} splash={{ img: splash }}>
+    <Layout title={t('404.title') || title} splash={{ img: splash }} lang={locale}>
       <div className="container error-shape">
         <section data-aos="fade-right">
           <h2 className="mb-10">{t('404.try')}</h2>
           <Grid data={random} />
         </section>
         <div>
-          <Link href="/">
+          <Linkk href="/">
             <a className="btn mb-20">
               <AiFillCaretLeft className="mr-1" />
               {t('404.back')}
             </a>
-          </Link>
+          </Linkk>
         </div>
       </div>
     </Layout>

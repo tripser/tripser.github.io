@@ -3,7 +3,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      // <Html lang="en">
+      <Html>
         <Head>
           {/* add "allow_local": true to data-goatcounter-settings to test in local env */}
           <script

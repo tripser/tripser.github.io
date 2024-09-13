@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { AiFillCaretRight } from 'react-icons/ai';
+import { Linkk } from './link';
 
 export function Breadcrumb() {
   const router = useRouter();
@@ -12,7 +12,7 @@ export function Breadcrumb() {
     <div className="breadcrumb">
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Linkk href="/">Home</Linkk>
         </li>
         {split.map((x, i) => (
           <li key={x}>
@@ -24,9 +24,9 @@ export function Breadcrumb() {
             ) : (
               <>
                 <AiFillCaretRight />
-                <Link href={`/${x}`}>
+                <Linkk href={`/${x}`}>
                   <a>{x.replace(/-/g, ' ')}</a>
-                </Link>
+                </Linkk>
               </>
             )}
           </li>
