@@ -31,6 +31,10 @@ Commit and Push your changes to master once site is deployed.
 
 ## TODO
 
+- Issue with SEO in french => non-blog pages are indexed in EN only as there is a single url => /fr/ 
+  - https://nextjs.org/docs/pages/building-your-application/routing/internationalization#locale-strategies
+  - https://locize.com/blog/next-i18n-static/
+
 - Articles
   - reunion
     - top 10 des randonnées à l'île de la Réunion
@@ -42,7 +46,7 @@ Commit and Push your changes to master once site is deployed.
   - split drome and vercors
   - baie de somme
   - bordeaux
-  - gorges du verdon et jura
+  - jura
   - costa rica
   - croatie monténégro
   - ...

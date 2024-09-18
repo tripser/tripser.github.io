@@ -6,29 +6,43 @@
 >
   <url>
     <loc>https://tripser.blog</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/photos</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/search</loc>
-    <lastmod>2024-07-29</lastmod>
+    <lastmod>2024-09-18</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.blog/blog/gorges-du-verdon</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://tripser.blog/blog/gorges-of-verdon</loc>
+    <lastmod>2024-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
@@ -48,56 +62,56 @@
 
   <url>
     <loc>https://tripser.blog/blog/cote-opale-trip</loc>
-    <lastmod>2024-02-11</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/cote-opale-voyage</loc>
-    <lastmod>2024-02-11</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/alsace-and-christmas-markets</loc>
-    <lastmod>2024-03-15</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/alsace-et-marches-noel</loc>
-    <lastmod>2024-03-15</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/drome-and-vercors</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/drome-et-vercors</loc>
-    <lastmod>2024-02-15</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/weekend-au-luxembourg</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://tripser.blog/blog/weekend-in-luxembourg</loc>
-    <lastmod>2024-02-18</lastmod>
+    <lastmod>2024-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

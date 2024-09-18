@@ -3,7 +3,6 @@ export type ArticleType = {
   title: string;
   intro: string;
   img: string;
-  mini: string;
   published: string;
   modified: string;
   lang: string;

@@ -18,29 +18,31 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // rename and move temp images to content
     let withImagesMoved = withLayout;
-    const images = withLayout.match(/!\[(.*?)\]\((.*?)(?: "(.*?)")?\)/g).filter((img) => img.includes('\\temp\\'));
-    for (const image of images) {
-      const match = image.match(/!\[(.*?)\]\((.*?)(?: "(.*?)")?\)/);
-      if (match) {
-        const alt = match[1];
-        const srcPath = match[2];
-        const title = match[3];
-        const destPath = srcPath
-          .replace('temp', 'content')
-          .replace(srcPath.split('\\')[4], (title || alt).replaceAll(' ', '-').toLowerCase() + '.jpg');
+    const images = withLayout.match(/!\[(.*?)\]\((.*?)(?: "(.*?)")?\)/g)?.filter((img) => img.includes('\\temp\\'));
+    if (images) {
+      for (const image of images) {
+        const match = image.match(/!\[(.*?)\]\((.*?)(?: "(.*?)")?\)/);
+        if (match) {
+          const alt = match[1];
+          const srcPath = match[2];
+          const title = match[3];
+          const destPath = srcPath
+            .replace('temp', 'content')
+            .replace(srcPath.split('\\')[4], (title || alt).replaceAll(' ', '-').toLowerCase() + '.jpg');
 
-        const srcFullPath = path.join(process.cwd(), 'public', srcPath);
-        const destFullPath = path.join(process.cwd(), 'public', destPath);
+          const srcFullPath = path.join(process.cwd(), 'public', srcPath);
+          const destFullPath = path.join(process.cwd(), 'public', destPath);
 
-        try {
-          await fs.promises.rename(srcFullPath, destFullPath);
-          console.log(`Moved file from ${srcFullPath} to ${destPath}`);
-          withImagesMoved = withImagesMoved.replace(srcPath, destPath);
+          try {
+            await fs.promises.rename(srcFullPath, destFullPath);
+            console.log(`Moved file from ${srcFullPath} to ${destPath}`);
+            withImagesMoved = withImagesMoved.replace(srcPath, destPath);
 
-          await fs.promises.rename(srcFullPath.replace('.jpg', '-400.jpg'), destFullPath.replace('.jpg', '-400.jpg'));
-          console.log(`Moved file-400 from ${srcFullPath} to ${destPath}`);
-        } catch (err) {
-          console.error(`Failed to move file.s: ${err}`);
+            await fs.promises.rename(srcFullPath.replace('.jpg', '-400.jpg'), destFullPath.replace('.jpg', '-400.jpg'));
+            console.log(`Moved file-400 from ${srcFullPath} to ${destPath}`);
+          } catch (err) {
+            console.error(`Failed to move file.s: ${err}`);
+          }
         }
       }
     }
