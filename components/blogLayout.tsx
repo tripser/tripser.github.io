@@ -41,7 +41,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                   <div className="article__details">
                     <div className="article__categories">
                       {categoriesList?.map((c) => (
-                        <Link key={c} href={`/blog?${c}`}>
+                        <Link key={c} href={`/blog?cat=${c}`}>
                           <a>
                             <span itemProp="articleSection">{t(`categories.${c}`)}</span>
                           </a>
