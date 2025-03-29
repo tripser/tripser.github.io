@@ -23,6 +23,7 @@
   position: relative;
   border-radius: var(--radius) 0 var(--radius) 0;
   box-shadow: var(--shadow);
+  container-type: inline-size;
   transition: all var(--transition);
 
   &::after {
@@ -70,7 +71,20 @@
     transition: all var(--transition);
 
     .card__title {
+      font-size: 1.375rem;
       margin-bottom: 0;
+    }
+
+    @container(min-width: 360px) {
+      .card__title {
+        font-size: 1.625rem;
+      }
+    }
+
+    @container(min-width: 420px) {
+      .card__title {
+        font-size: 1.75rem;
+      }
     }
 
     .card__categories {
@@ -97,10 +111,10 @@
     .card__data {
       color: var(--text);
 
-      .card__categories {
-        opacity: 1;
-        height: 1.375rem;
-      }
+      // .card__categories {
+      //   opacity: 1;
+      //   height: 1.375rem;
+      // }
     }
   }
 
@@ -115,10 +129,10 @@
     .card__data {
       color: var(--text);
 
-      .card__categories {
-        opacity: 1;
-        height: 1.375rem;
-      }
+      // .card__categories {
+      //   opacity: 1;
+      //   height: 1.375rem;
+      // }
     }
   }
 }
