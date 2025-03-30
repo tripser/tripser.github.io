@@ -12,7 +12,7 @@ const articles = [
     categories: 'voyage, europe, france, hike',
     state: 'published',
     link: '/blog/gorges-du-verdon',
-    url: 'https://tripser.blog/blog/gorges-du-verdon',
+    url: 'https://tripser.blog/fr/blog/gorges-du-verdon',
   },
   {
     slug: 'gorges-of-verdon',
@@ -27,7 +27,7 @@ const articles = [
     categories: 'voyage, europe, france, hike',
     state: 'published',
     link: '/blog/gorges-of-verdon',
-    url: 'https://tripser.blog/blog/gorges-of-verdon',
+    url: 'https://tripser.blog/en/blog/gorges-of-verdon',
   },
   {
     slug: '3-semaines-a-la-reunion',
@@ -43,7 +43,7 @@ const articles = [
     categories: 'voyage, reunion, island, hike, beach',
     state: 'published',
     link: '/blog/3-semaines-a-la-reunion',
-    url: 'https://tripser.blog/blog/3-semaines-a-la-reunion',
+    url: 'https://tripser.blog/fr/blog/3-semaines-a-la-reunion',
   },
   {
     slug: '3-weeks-in-la-reunion',
@@ -59,7 +59,7 @@ const articles = [
     categories: 'voyage, reunion, island, hike, beach',
     state: 'published',
     link: '/blog/3-weeks-in-la-reunion',
-    url: 'https://tripser.blog/blog/3-weeks-in-la-reunion',
+    url: 'https://tripser.blog/en/blog/3-weeks-in-la-reunion',
   },
   {
     slug: 'cote-opale-trip',
@@ -75,7 +75,7 @@ const articles = [
     categories: 'voyage, europe, beach, france',
     state: 'published',
     link: '/blog/cote-opale-trip',
-    url: 'https://tripser.blog/blog/cote-opale-trip',
+    url: 'https://tripser.blog/en/blog/cote-opale-trip',
   },
   {
     slug: 'cote-opale-voyage',
@@ -91,7 +91,7 @@ const articles = [
     categories: 'voyage, europe, beach, france',
     state: 'published',
     link: '/blog/cote-opale-voyage',
-    url: 'https://tripser.blog/blog/cote-opale-voyage',
+    url: 'https://tripser.blog/fr/blog/cote-opale-voyage',
   },
   {
     slug: 'alsace-and-christmas-markets',
@@ -107,7 +107,7 @@ const articles = [
     categories: 'voyage, europe, christmas',
     state: 'published',
     link: '/blog/alsace-and-christmas-markets',
-    url: 'https://tripser.blog/blog/alsace-and-christmas-markets',
+    url: 'https://tripser.blog/en/blog/alsace-and-christmas-markets',
   },
   {
     slug: 'alsace-et-marches-noel',
@@ -123,7 +123,7 @@ const articles = [
     categories: 'voyage, europe, christmas',
     state: 'published',
     link: '/blog/alsace-et-marches-noel',
-    url: 'https://tripser.blog/blog/alsace-et-marches-noel',
+    url: 'https://tripser.blog/fr/blog/alsace-et-marches-noel',
   },
   {
     slug: 'drome-and-vercors',
@@ -139,7 +139,7 @@ const articles = [
     categories: 'voyage, europe, france, hike',
     state: 'published',
     link: '/blog/drome-and-vercors',
-    url: 'https://tripser.blog/blog/drome-and-vercors',
+    url: 'https://tripser.blog/en/blog/drome-and-vercors',
   },
   {
     slug: 'drome-et-vercors',
@@ -155,7 +155,7 @@ const articles = [
     categories: 'voyage, europe, france, hike',
     state: 'published',
     link: '/blog/drome-et-vercors',
-    url: 'https://tripser.blog/blog/drome-et-vercors',
+    url: 'https://tripser.blog/fr/blog/drome-et-vercors',
   },
   {
     slug: 'weekend-au-luxembourg',
@@ -170,7 +170,7 @@ const articles = [
     categories: 'voyage, europe, hike, city-trip',
     state: 'published',
     link: '/blog/weekend-au-luxembourg',
-    url: 'https://tripser.blog/blog/weekend-au-luxembourg',
+    url: 'https://tripser.blog/fr/blog/weekend-au-luxembourg',
   },
   {
     slug: 'weekend-in-luxembourg',
@@ -185,7 +185,7 @@ const articles = [
     categories: 'voyage, europe, hike, city-trip',
     state: 'published',
     link: '/blog/weekend-in-luxembourg',
-    url: 'https://tripser.blog/blog/weekend-in-luxembourg',
+    url: 'https://tripser.blog/en/blog/weekend-in-luxembourg',
   },
 ];
 

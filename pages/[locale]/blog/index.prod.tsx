@@ -16,19 +16,17 @@ export function BlogPage({ locale }: { locale: string }) {
   const { t, i18n } = useTranslation();
   const [articlesFiltered, setArticlesFiltered] = useState<ArticleType[]>([]);
 
-  const title = locale === 'en' ? 'Blog' : 'Blog';
+  const title = locale === 'fr' ? 'Blog' : 'Blog';
   const description =
-    locale === 'en'
-      ? 'Our blog articles covering all our different trips. Each post offers our unique point of view, including the best activities, hikes, stays, tips and more.'
-      : 'Nos articles de blog couvrent tous nos différents voyages. Chaque publication offre notre point de vue unique, y compris les meilleures activités, randonnées, séjours, conseils et plus encore.';
+    locale === 'fr'
+      ? 'Nos articles de blog couvrent tous nos différents voyages. Chaque publication offre notre point de vue unique, y compris les meilleures activités, randonnées, séjours, conseils et plus encore.'
+      : 'Our blog articles covering all our different trips. Each post offers our unique point of view, including the best activities, hikes, stays, tips and more.';
 
   const cat = (router.query.cat as string) || '';
 
   useEffect(() => {
-    setArticlesFiltered(
-      articles.filter((x) => x.lang === i18n.language && x.categories.includes(cat)) as ArticleType[]
-    );
-  }, [cat, i18n.language]);
+    setArticlesFiltered(articles.filter((x) => x.lang === locale && x.categories.includes(cat)) as ArticleType[]);
+  }, [cat, locale]);
 
   const categoriesAllRaw = articles.map((x) => x.categories.split(', '));
   const categoriesAll = [].concat(...categoriesAllRaw).filter((x) => x);

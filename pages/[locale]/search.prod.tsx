@@ -28,7 +28,7 @@ export function SearchPage({ locale }: { locale: string }) {
       .replace(/[\u0300-\u036f]/g, '')
       .toLowerCase();
 
-  const articlesLang = articles?.filter((a) => a.lang === i18n.language) as ArticleType[];
+  const articlesLang = articles?.filter((a) => a.lang === locale) as ArticleType[];
 
   const articlesFiltered = articlesLang?.filter(
     (a) =>

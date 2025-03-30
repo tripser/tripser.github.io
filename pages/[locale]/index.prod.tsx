@@ -13,14 +13,14 @@ export default function Home({ locale }: { locale: string }) {
 export function HomePage({ locale }: { locale: string }) {
   const { t, i18n } = useTranslation();
 
-  const title = locale === 'en' ? 'Tripser, the voyage blog' : 'Tripser, le blog voyage';
+  const title = locale === 'fr' ? 'Tripser, le blog voyage' : 'Tripser, the voyage blog';
 
   const description =
-    locale === 'en'
-      ? 'Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.'
-      : 'Inspirez-vous de nos meilleurs voyages. Tripser est un blog dédié aux voyages. Découvrez nos plus beaux paysages, randonnées, séjours, activités et bien plus.';
+    locale === 'fr'
+      ? 'Inspirez-vous de nos meilleurs voyages. Tripser est un blog dédié aux voyages. Découvrez nos plus beaux paysages, randonnées, séjours, activités et bien plus.'
+      : 'Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.';
 
-  const articlesByLang = articles.filter((x) => x.lang === i18n.language) as ArticleType[];
+  const articlesByLang = articles.filter((x) => x.lang === locale) as ArticleType[];
 
   return (
     <Layout

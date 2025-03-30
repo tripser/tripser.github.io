@@ -27,7 +27,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
 
   const categoriesList = categories?.split(', ').filter((x) => x);
 
-  const articlesByLang = articles.filter((x) => x.lang === i18n.language) as ArticleType[];
+  const articlesByLang = articles.filter((x) => x.lang === article.lang) as ArticleType[];
   const nextLink = articlesByLang[articlesByLang.findIndex((x) => x.title === title) + 1] || articlesByLang[0];
   const previousLink =
     articlesByLang[articlesByLang.findIndex((x) => x.title === title) - 1] || articlesByLang[articlesByLang.length - 1];

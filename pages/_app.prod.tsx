@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import AOS from 'aos';
 import { useTranslation } from 'react-i18next';
+import useLocale from '@hooks/useLocale';
 import 'public/lang/i18n';
 
 import 'public/styles/imports.css';
@@ -15,16 +16,9 @@ import 'public/styles/style.scss';
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const locale = useLocale();
 
-  const lang =
-    typeof window !== 'undefined'
-      ? router.query.locale ||
-        window.localStorage.getItem('lang') ||
-        window.navigator.language ||
-        window.navigator['userLanguage']
-      : 'en';
-
-  const newLang = ['en', 'fr'].includes(lang) ? lang : 'en';
+  const newLang = ['en', 'fr'].includes(locale) ? locale : 'en';
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window['goatcounter']) {
@@ -46,7 +40,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       i18n.changeLanguage(newLang);
       document.documentElement.lang = newLang;
     }
-  }, [lang]);
+  }, [locale]);
 
   useEffect(() => {
     AOS.init({

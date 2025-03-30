@@ -2,6 +2,7 @@ import { MouseEventHandler } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { MdLightMode, MdDarkMode, MdSearch } from 'react-icons/md';
+import useLocale from '@hooks/useLocale';
 import { Linkk } from './link';
 
 type HeaderCompType = { theme: string; onClick: MouseEventHandler; en?: string; fr?: string };
@@ -26,8 +27,7 @@ if (process.env.NODE_ENV === 'development')
 export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
-
-  const locale = (router.query.locale || 'en') as string;
+  const locale = useLocale();
 
   return (
     <header className="header">
@@ -55,9 +55,8 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
 
           <button
             onClick={() => {
-              const newLang = i18n.language === 'en' ? 'fr' : 'en';
+              const newLang = locale === 'en' ? 'fr' : 'en';
               i18n.changeLanguage(newLang);
-              window.localStorage.setItem('lang', newLang);
               if (router.pathname.includes('/blog/')) {
                 router.push(`/${newLang}/blog/${newLang === 'en' ? en : fr}`);
               } else if (router.pathname.includes('[locale]/')) {
@@ -67,10 +66,10 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
               }
             }}
             className="btn"
-            title={i18n.language === 'en' ? 'Switch to French' : 'Switch to English'}
-            aria-label={i18n.language === 'en' ? 'Switch to French' : 'Switch to English'}
+            title={locale === 'en' ? 'Switch to French' : 'Switch to English'}
+            aria-label={locale === 'en' ? 'Switch to French' : 'Switch to English'}
           >
-            {i18n.language}
+            {locale}
           </button>
 
           <button

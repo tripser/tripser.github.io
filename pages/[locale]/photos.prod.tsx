@@ -12,14 +12,14 @@ export default function Photos({ locale }: { locale: string }) {
 export function PhotosPage({ locale }: { locale: string }) {
   const { t, i18n } = useTranslation();
 
-  const title = locale === 'en' ? 'Photos' : 'Photos';
+  const title = locale === 'fr' ? 'Photos' : 'Photos';
 
   const description =
-    locale === 'en'
-      ? 'Find all photos from our exciting trips. The most iconic, beautiful and interesting views from the best destinations.'
-      : 'Retrouvez toutes les photos de nos voyages excitants. Les vues les plus emblématiques, belles et intéressantes des meilleures destinations.';
+    locale === 'fr'
+      ? 'Retrouvez toutes les photos de nos voyages excitants. Les vues les plus emblématiques, belles et intéressantes des meilleures destinations.'
+      : 'Find all photos from our exciting trips. The most iconic, beautiful and interesting views from the best destinations.';
 
-  const photosByLang = photos.filter((x) => x.lang === i18n.language) as PhotoType[];
+  const photosByLang = photos.filter((x) => x.lang === locale) as PhotoType[];
 
   // TODO:
   // randomize order?

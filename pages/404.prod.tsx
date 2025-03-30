@@ -6,6 +6,7 @@ import sitemap from '@data/sitemap';
 import { Grid } from '@components/grid';
 import { Layout } from '@components/layout';
 import { Linkk } from '@components/link';
+import useLocale from '@hooks/useLocale';
 import { ArticleType } from '@types';
 
 type Custom404PageType = {
@@ -17,10 +18,10 @@ type Custom404PageType = {
 export default function Custom404({ title, splash, articles }: Custom404PageType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
+  const locale = useLocale();
   const [random, setRandom] = useState<ArticleType[]>([]);
 
   const baseUrl = 'https://tripser.blog';
-  const locale = (router.query.locale || 'en') as string;
 
   // redirect old url to new url with locale
   useEffect(() => {
@@ -33,12 +34,12 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
   }, []);
 
   useEffect(() => {
-    const articlesByLang = articles.filter((x) => x.lang === i18n.language);
+    const articlesByLang = articles.filter((x) => x.lang === locale);
     const randomPosts = [...Array(3)].map(
       () => articlesByLang.splice(Math.floor(Math.random() * articlesByLang.length), 1)[0]
     );
     setRandom(randomPosts);
-  }, [i18n.language]);
+  }, [locale]);
 
   return (
     <Layout title={t('404.title') || title} splash={{ img: splash }} lang={locale}>
