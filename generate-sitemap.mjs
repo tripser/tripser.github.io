@@ -11,14 +11,14 @@ async function generate() {
     .padStart(2, '0')}`;
   const pages = [
     { link: '', modified: today, freq: 'weekly', prio: '1.0' },
-    { link: '/en', modified: today, freq: 'weekly', prio: '1.0' },
-    { link: '/fr', modified: today, freq: 'weekly', prio: '1.0' },
-    { link: '/en/blog', modified: today, freq: 'weekly', prio: '0.8' },
-    { link: '/fr/blog', modified: today, freq: 'weekly', prio: '0.8' },
-    { link: '/en/photos', modified: today, freq: 'weekly', prio: '0.8' },
-    { link: '/fr/photos', modified: today, freq: 'weekly', prio: '0.8' },
-    { link: '/en/search', modified: today, freq: 'weekly', prio: '0.6' },
-    { link: '/fr/search', modified: today, freq: 'weekly', prio: '0.6' },
+    { link: '', lang: 'en', modified: today, freq: 'weekly', prio: '1.0' },
+    { link: '', lang: 'fr', modified: today, freq: 'weekly', prio: '1.0' },
+    { link: '/blog', lang: 'en', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/blog', lang: 'fr', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/photos', lang: 'en', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/photos', lang: 'fr', modified: today, freq: 'weekly', prio: '0.8' },
+    { link: '/search', lang: 'en', modified: today, freq: 'weekly', prio: '0.6' },
+    { link: '/search', lang: 'fr', modified: today, freq: 'weekly', prio: '0.6' },
   ];
 
   const sitemap = `
@@ -48,6 +48,22 @@ async function generate() {
   });
 
   writeFileSync('public/sitemap.xml', formatted);
+
+  const _sitemap = [...pages, ...articles].map((item) => {
+    return {
+      base: `${baseUrl}${item.link}`,
+      loc: `${baseUrl}${item.lang ? `/${item.lang}` : ''}${item.link}`,
+    };
+  });
+
+  const fileContent = `const sitemap = ${JSON.stringify(_sitemap)}; module.exports = sitemap;`;
+
+  const _formatted = prettier.format(fileContent, {
+    ...prettierConfig,
+    parser: 'babel',
+  });
+
+  writeFileSync('data/sitemap.js', _formatted);
 }
 
 generate();
