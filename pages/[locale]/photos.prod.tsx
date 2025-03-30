@@ -33,7 +33,7 @@ export function PhotosPage({ locale }: { locale: string }) {
       title={title}
       description={description}
       splash={{ img: '/images/kotor.jpg' }}
-      url="https://tripser.blog/photos"
+      url={`https://tripser.blog/${locale}/photos`}
       lang={locale}
     >
       <div className="photos-page">
@@ -97,7 +97,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const locale = params?.locale as string;
+  const locale = (params?.locale || 'en') as string;
 
   return {
     props: { locale },

@@ -20,11 +20,14 @@
 }
 
 .card {
+  display: block;
   position: relative;
   border-radius: var(--radius) 0 var(--radius) 0;
   box-shadow: var(--shadow);
   container-type: inline-size;
-  transition: all var(--transition);
+  text-decoration: none;
+  // fix issue with a tag turning to blue briefly on hover
+  transition-duration: 0s;
 
   &::after {
     content: '';
@@ -38,12 +41,6 @@
     background: var(--primary);
     background: linear-gradient(-45deg, var(--primary), var(--secondary));
     transition: all var(--transition);
-  }
-
-  a {
-    display: block;
-    text-decoration: none;
-    border-radius: inherit;
   }
 
   .card__img {

@@ -34,7 +34,7 @@ export const getArticles = () => {
         categories: data.categories || '',
         state: data.state || '',
         link: `/blog/${slug}`,
-        url: `https://tripser.blog/blog/${slug}`,
+        url: `https://tripser.blog/${data.lang || 'en'}/blog/${slug}`,
       };
     })
     .filter((x) => x.title);

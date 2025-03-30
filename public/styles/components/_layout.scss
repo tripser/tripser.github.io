@@ -81,6 +81,7 @@
   background: var(--bg);
   margin-top: calc(var(--radius-wave) * -1);
   border-top-left-radius: var(--radius-wave);
+  transition: color var(--transition), background-color var(--transition);
 
   &::after {
     content: '';

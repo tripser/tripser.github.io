@@ -16,11 +16,11 @@ export function SearchPage({ locale }: { locale: string }) {
   const search = (router.query.s as string) || '';
   const [input, setInput] = useState(search);
 
-  const title = locale === 'en' ? 'Search' : 'Recherche';
+  const title = locale === 'fr' ? 'Recherche' : 'Search';
   const description =
-    locale === 'en'
-      ? 'Search for any travel articles on Tripser. Voyages, city-trips, hikes, beaches, mountains, lakes, islands and much much more.'
-      : 'Recherchez des articles de voyage sur Tripser. Voyages, city-trips, randonnées, plages, montagnes, lacs, îles et bien plus encore.';
+    locale === 'fr'
+      ? 'Recherchez des articles de voyage sur Tripser. Voyages, city-trips, randonnées, plages, montagnes, lacs, îles et bien plus encore.'
+      : 'Search for any travel articles on Tripser. Voyages, city-trips, hikes, beaches, mountains, lakes, islands and much much more.';
 
   const normString = (s: string) =>
     s
@@ -39,7 +39,7 @@ export function SearchPage({ locale }: { locale: string }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    input.length > 0 ? router.push(`${locale}/search?s=${input}`) : router.push(`{locale}/search`);
+    input.length > 0 ? router.push(`/${locale}/search?s=${input}`) : router.push(`/${locale}/search`);
   }
 
   return (
@@ -47,7 +47,7 @@ export function SearchPage({ locale }: { locale: string }) {
       title={search ? `${t('search.title') || title}: ${search}` : t('search.title') || title}
       description={t('search.intro') || description}
       splash={{ img: '/images/lake.jpg' }}
-      url="https://tripser.blog/search"
+      url={`https://tripser.blog/${locale}/search${search ? `?s=${search}` : ''}`}
       lang={locale}
     >
       <div className="search-page">
@@ -107,7 +107,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const locale = params?.locale as string;
+  const locale = (params?.locale || 'en') as string;
 
   return {
     props: { locale },

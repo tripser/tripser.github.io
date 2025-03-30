@@ -45,6 +45,22 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }
   }, []);
 
+  useEffect(() => {
+    const handleLanguageChange = (lng: string) => {
+      if (typeof document !== 'undefined') {
+        document.documentElement.lang = lng || 'en';
+      }
+    };
+
+    i18n.on('languageChanged', handleLanguageChange);
+
+    handleLanguageChange(i18n.language);
+
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
+
   const title = `Tripser | Voyage blog`;
   const desc = `Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.`;
   const url = `https://tripser.blog`;

@@ -39,7 +39,7 @@ export function BlogPage({ locale }: { locale: string }) {
       title={title}
       description={description}
       splash={{ img: '/images/jura.jpg' }}
-      url="https://tripser.blog/blog"
+      url={`https://tripser.blog/${locale}/blog${cat ? `?cat=${cat}` : ''}`}
       lang={locale}
     >
       <div className="blog-page">
@@ -51,7 +51,7 @@ export function BlogPage({ locale }: { locale: string }) {
               <a className={`btn ${cat === '' ? 'active' : ''}`}>{t('blog.all')}</a>
             </Linkk>
             {categories.map((c) => (
-              <Linkk key={c} href={`?cat=${c}`} scroll={false}>
+              <Linkk key={c} href={`/blog?cat=${c}`} scroll={false}>
                 <a className={`btn ${cat === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
               </Linkk>
             ))}
@@ -76,7 +76,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const locale = params?.locale as string;
+  const locale = (params?.locale || 'en') as string;
 
   return {
     props: { locale },

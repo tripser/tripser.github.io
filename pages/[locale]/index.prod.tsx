@@ -29,6 +29,7 @@ export function HomePage({ locale }: { locale: string }) {
       description={description}
       splash={{ txt: 'Tripser', img: '/images/vercors.jpg' }}
       lang={locale}
+      url={`https://tripser.blog/${locale || ''}`}
     >
       <div className="home-page">
         <section id="blog" className="blog">
@@ -85,7 +86,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const locale = params?.locale as string;
+  const locale = (params?.locale || 'en') as string;
 
   return {
     props: { locale },

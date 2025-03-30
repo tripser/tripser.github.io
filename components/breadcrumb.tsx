@@ -6,7 +6,7 @@ export function Breadcrumb() {
   const router = useRouter();
 
   const route = router.pathname;
-  const split = route.split('/').filter((x) => x);
+  const split = route.split('/').filter((x) => !!x && x !== '[locale]');
 
   return router.route !== '/' ? (
     <div className="breadcrumb">

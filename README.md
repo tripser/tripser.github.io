@@ -33,13 +33,6 @@ Commit and Push your changes to master once site is deployed.
 
 ## TODO
 
-- Issue with SEO in french => non-blog pages are indexed in EN only as there is a single url => /fr/ 
-  - https://nextjs.org/docs/pages/building-your-application/routing/internationalization#locale-strategies
-  - https://locize.com/blog/next-i18n-static/
-- check /en /fr works
-- url metadata should be good
-- lang tag should be good
-
 - Articles
   - gorges du verdon 
   - reunion

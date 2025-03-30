@@ -27,7 +27,7 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  const locale = router.query.locale as string;
+  const locale = (router.query.locale || 'en') as string;
 
   return (
     <header className="header">
@@ -47,14 +47,11 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
         </div>
 
         <div className="actions">
-          <button
-            onClick={() => router.push(`/${locale}/search`)}
-            className="btn"
-            title="Search on Tripser"
-            aria-label="Search on Tripser"
-          >
-            <MdSearch title="Search on Tripser" aria-labelledby="Search on Tripser" />
-          </button>
+          <Linkk href="/search">
+            <a className="btn" title="Search on Tripser" aria-label="Search on Tripser">
+              <MdSearch title="Search on Tripser" aria-labelledby="Search on Tripser" />
+            </a>
+          </Linkk>
 
           <button
             onClick={() => {
@@ -63,6 +60,8 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
               window.localStorage.setItem('lang', newLang);
               if (router.pathname.includes('/blog/')) {
                 router.push(`/${newLang}/blog/${newLang === 'en' ? en : fr}`);
+              } else if (router.pathname.includes('[locale]/')) {
+                router.push(`/${newLang}/${router.pathname.split('[locale]/')[1]}`);
               } else {
                 router.push(`/${newLang}`);
               }
