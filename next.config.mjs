@@ -26,9 +26,13 @@ const conf = {
     ignoreDuringBuilds: true,
   },
   pageExtensions:
-    process.env.NODE_ENV !== 'development'
-      ? ['prod.ts', 'prod.tsx', 'md', 'mdx']
-      : ['prod.ts', 'prod.tsx', 'dev.ts', 'dev.tsx', 'md', 'mdx'],
+    process.env.NODE_ENV !== 'development' ? ['prod.ts', 'prod.tsx'] : ['prod.ts', 'prod.tsx', 'dev.ts', 'dev.tsx'],
+  // had to change how mdx work because it didn't work with the [locale] folder on first load
+  // temporary solution in blog/[slug].prod.tsx
+  // TODO: find a better solution
+  // process.env.NODE_ENV !== 'development'
+  //   ? ['prod.ts', 'prod.tsx', 'md', 'mdx']
+  //   : ['prod.ts', 'prod.tsx', 'dev.ts', 'dev.tsx', 'md', 'mdx'],
 };
 
 export default conf;

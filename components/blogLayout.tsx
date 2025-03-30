@@ -19,7 +19,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  const currPath = router.pathname.split('/').at(-1);
+  const currPath = router.asPath.split('/').at(-1);
 
   const article = articles.find((p) => p.slug === currPath) as ArticleType;
 

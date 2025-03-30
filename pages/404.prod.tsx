@@ -25,9 +25,9 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
 
   // redirect old url to new url with locale
   useEffect(() => {
-    if (process.env.NODE_ENV === 'development') return;
     const currentUrl = `${baseUrl}${router.asPath}`;
     const url = sitemap.find((x) => x.base === currentUrl && x.loc.includes(`/${locale}/`));
+    if (process.env.NODE_ENV === 'development') return;
     if (url) {
       router.replace(url.loc);
     }

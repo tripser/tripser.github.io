@@ -18,8 +18,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const { t, i18n } = useTranslation();
   const locale = useLocale();
 
-  const newLang = ['en', 'fr'].includes(locale) ? locale : 'en';
-
   useEffect(() => {
     if (typeof window !== 'undefined' && window['goatcounter']) {
       window['goatcounter'].count({
@@ -31,14 +29,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      router.pathname.replace('[locale]', newLang);
+      router.pathname.replace('[locale]', locale);
     }
   }, []);
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
-      i18n.changeLanguage(newLang);
-      document.documentElement.lang = newLang;
+      i18n.changeLanguage(locale);
+      document.documentElement.lang = locale;
     }
   }, [locale]);
 
