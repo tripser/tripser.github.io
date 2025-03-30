@@ -16,6 +16,16 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
+  const lang =
+    typeof window !== 'undefined'
+      ? router.query.locale ||
+        window.localStorage.getItem('lang') ||
+        window.navigator.language ||
+        window.navigator['userLanguage']
+      : 'en';
+
+  const newLang = ['en', 'fr'].includes(lang) ? lang : 'en';
+
   useEffect(() => {
     if (typeof window !== 'undefined' && window['goatcounter']) {
       window['goatcounter'].count({
@@ -26,40 +36,24 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, [router]);
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      router.pathname.replace('[locale]', newLang);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      i18n.changeLanguage(newLang);
+      document.documentElement.lang = newLang;
+    }
+  }, [lang]);
+
+  useEffect(() => {
     AOS.init({
       once: true,
       offset: 100,
     });
   }, [router]);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const lang = window.localStorage.getItem('lang') || window.navigator.language || window.navigator['userLanguage'];
-      if (['en', 'fr'].includes(lang)) {
-        i18n.changeLanguage(lang);
-        router.pathname.replace('[locale]', lang);
-      } else {
-        i18n.changeLanguage('en');
-        router.pathname.replace('[locale]', 'en');
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleLanguageChange = (lng: string) => {
-      if (typeof document !== 'undefined') {
-        document.documentElement.lang = lng || 'en';
-      }
-    };
-
-    i18n.on('languageChanged', handleLanguageChange);
-
-    handleLanguageChange(i18n.language);
-
-    return () => {
-      i18n.off('languageChanged', handleLanguageChange);
-    };
-  }, [i18n]);
 
   const title = `Tripser | Voyage blog`;
   const desc = `Get inspired by our best journeys. Tripser is a blog focused on voyages and trips. Discover the best views, hikes, stays activities and much more.`;
