@@ -64,6 +64,13 @@
       }
     }
   }
+
+  .edit-article {
+    position: sticky;
+    margin-left: -10rem;
+    bottom: 2rem;
+    z-index: 100;
+  }
 }
 
 .article__content {

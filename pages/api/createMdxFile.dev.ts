@@ -59,7 +59,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const finalContent = withFigures;
 
-    fs.writeFile(path.join(process.cwd(), 'pages/blog', `${slug}.mdx`), finalContent, (err) => {
+    fs.writeFile(path.join(process.cwd(), 'pages/[locale]/blog', `${slug}.mdx`), finalContent, (err) => {
       if (err) {
         console.error(err);
         res.status(500).json({ message: 'An error occurred while creating the file.' });

@@ -66,11 +66,6 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                   </div>
 
                   <div className="mb-15">
-                    {process.env.NODE_ENV === 'development' ? (
-                      <p className="mb-2">
-                        <Linkk href={`/admin/${slug}`}>Edit article</Linkk>
-                      </p>
-                    ) : null}
                     <Linkk href="/blog">
                       <a className="btn">
                         <AiFillCaretLeft className="mr-1" />
@@ -78,6 +73,12 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                       </a>
                     </Linkk>
                   </div>
+
+                  {process.env.NODE_ENV === 'development' ? (
+                    <p className="edit-article mb-2">
+                      <Linkk href={`/admin/${slug}`}>Edit article</Linkk>
+                    </p>
+                  ) : null}
 
                   {relatedLinks.length ? (
                     <div>

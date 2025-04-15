@@ -145,7 +145,7 @@ export default function Write({ title, description, article, articleContent }: W
 export async function getStaticProps(context) {
   const articles = require('@data/articles') as ArticleType[];
   const article = articles.find((p) => p.slug === context.params.slug) || null;
-  const articleContent = article ? fs.readFileSync(path.join(`pages/blog/${article.slug}.mdx`), 'utf8') : null;
+  const articleContent = article ? fs.readFileSync(path.join(`pages/[locale]/blog/${article.slug}.mdx`), 'utf8') : null;
 
   return {
     props: {

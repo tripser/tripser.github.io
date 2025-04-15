@@ -6,14 +6,24 @@ export function Linkk({ children, ...rest }: LinkProps & { children: ReactNode }
   const locale = useLocale();
 
   const exceptions = () => {
-    if (['/admin'].includes(String(rest.href))) return true;
+    if (String(rest.href).includes('/admin')) return true;
   };
 
   const _href = exceptions() ? `${rest.href}` : `/${locale}${rest.href}`;
 
+  const isExternal = String(rest.href).startsWith('http');
+
   return (
     <>
-      <Link href={_href}>{children}</Link>
+      {isExternal ? (
+        <Link href={rest.href}>
+          <a target="_blank" rel="noopener noreferrer">
+            {children}
+          </a>
+        </Link>
+      ) : (
+        <Link href={_href}>{children}</Link>
+      )}
     </>
   );
 }

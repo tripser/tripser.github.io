@@ -8,6 +8,11 @@ const sitemap = [
   { base: 'https://tripser.blog/photos', loc: 'https://tripser.blog/fr/photos' },
   { base: 'https://tripser.blog/search', loc: 'https://tripser.blog/en/search' },
   { base: 'https://tripser.blog/search', loc: 'https://tripser.blog/fr/search' },
+  { base: 'https://tripser.blog/blog/croatia-in-2-weeks', loc: 'https://tripser.blog/en/blog/croatia-in-2-weeks' },
+  {
+    base: 'https://tripser.blog/blog/croatie-en-2-semaines',
+    loc: 'https://tripser.blog/fr/blog/croatie-en-2-semaines',
+  },
   { base: 'https://tripser.blog/blog/gorges-du-verdon', loc: 'https://tripser.blog/fr/blog/gorges-du-verdon' },
   { base: 'https://tripser.blog/blog/gorges-of-verdon', loc: 'https://tripser.blog/en/blog/gorges-of-verdon' },
   {

@@ -1,4 +1,4 @@
-import { Linkk } from './link';
+import Link from 'next/link';
 
 type MdxLinkCompType = {
   href: string;
@@ -13,8 +13,8 @@ export function MdxLink({ href, children }: MdxLinkCompType) {
       {children}
     </a>
   ) : (
-    <Linkk href={href}>
+    <Link href={href}>
       <a>{children}</a>
-    </Linkk>
+    </Link>
   );
 }
