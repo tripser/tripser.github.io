@@ -19,8 +19,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
   const router = useRouter();
   const { t, i18n } = useTranslation();
 
-  const currPath = router.asPath.split('/').at(-1);
-
+  const currPath = router.query.slug; // slug is the dynamic route in blog/[slug].prod.tsx
   const article = articles.find((p) => p.slug === currPath) as ArticleType;
 
   const { title, intro, img, published, modified, categories, slug } = article;
