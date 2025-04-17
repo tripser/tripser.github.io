@@ -8,7 +8,7 @@ const articles = [
     modified: '2025-04-15',
     lang: 'en',
     en: '',
-    fr: 'coratie-en-2-semaines',
+    fr: 'croatie-en-2-semaines',
     categories: 'voyage, europe, hike, beach, island',
     state: 'published',
     link: '/blog/croatia-in-2-weeks',

@@ -27,13 +27,13 @@ export const getPhotos = () => {
         title: article.title,
         lang: article.lang,
         link: article.link,
+        date: article.published,
       };
     }).filter((x) => x);
-
     return pictures;
   });
 
-  return allPictures.flat();
+  return allPictures.flat().sort((a, b) => new Date(b.date) - new Date(a.date));
 };
 
 async function generate() {
