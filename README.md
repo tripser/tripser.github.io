@@ -34,7 +34,6 @@ Commit and Push your changes to master once site is deployed.
 ## TODO
 
 - find better solution for mdx files under [locale] folder !!
-- annoying delay between 404 end redirect to blog post if any
 
 ### Articles
 - reunion
@@ -52,7 +51,6 @@ Commit and Push your changes to master once site is deployed.
 - ...
 
 ### CONTENT
-- photos page: order by article-voyage date
 - add travel data: traveled period, days, budget, itinerary, car rental, currency, ...?
 - add a list of titles on top of the article
 - create my own itinerary images using openstreetmap

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import { AiFillCaretLeft } from 'react-icons/ai';
-import sitemap from '@data/sitemap';
 import { Grid } from '@components/grid';
 import { Layout } from '@components/layout';
 import { Linkk } from '@components/link';
@@ -20,18 +19,6 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
   const { t, i18n } = useTranslation();
   const locale = useLocale();
   const [random, setRandom] = useState<ArticleType[]>([]);
-
-  const baseUrl = 'https://tripser.blog';
-
-  // redirect old url to new url with locale
-  useEffect(() => {
-    const currentUrl = `${baseUrl}${router.asPath.split('?')[0]}`;
-    const url = sitemap.find((x) => x.base === currentUrl && (x.loc.includes('en') || x.loc.includes('fr')));
-    if (process.env.NODE_ENV === 'development') return;
-    if (url) {
-      router.replace(url.loc);
-    }
-  }, []);
 
   useEffect(() => {
     const articlesByLang = articles.filter((x) => x.lang === locale);

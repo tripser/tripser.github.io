@@ -5,6 +5,8 @@ import articles from './data/articles.js';
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const baseUrl = 'https://tripser.blog';
+
+  // standard sitemap.xml
   const today = `${new Date().getFullYear()}-${(new Date().getMonth() + 1).toString().padStart(2, '0')}-${new Date()
     .getDate()
     .toString()
@@ -49,7 +51,8 @@ async function generate() {
 
   writeFileSync('public/sitemap.xml', formatted);
 
-  const _sitemap = [...pages, ...articles].map((item) => {
+  // a data sitemap is needed to handle locale redirections (from /blog to /en/blog)
+  const _sitemap = [...pages.filter((p) => p.lang !== 'fr'), ...articles].map((item) => {
     return {
       base: `${baseUrl}${item.link}`,
       loc: `${baseUrl}${item.lang ? `/${item.lang}` : ''}${item.link}`,

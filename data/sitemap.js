@@ -1,13 +1,9 @@
 const sitemap = [
   { base: 'https://tripser.blog', loc: 'https://tripser.blog' },
   { base: 'https://tripser.blog', loc: 'https://tripser.blog/en' },
-  { base: 'https://tripser.blog', loc: 'https://tripser.blog/fr' },
   { base: 'https://tripser.blog/blog', loc: 'https://tripser.blog/en/blog' },
-  { base: 'https://tripser.blog/blog', loc: 'https://tripser.blog/fr/blog' },
   { base: 'https://tripser.blog/photos', loc: 'https://tripser.blog/en/photos' },
-  { base: 'https://tripser.blog/photos', loc: 'https://tripser.blog/fr/photos' },
   { base: 'https://tripser.blog/search', loc: 'https://tripser.blog/en/search' },
-  { base: 'https://tripser.blog/search', loc: 'https://tripser.blog/fr/search' },
   { base: 'https://tripser.blog/blog/croatia-in-2-weeks', loc: 'https://tripser.blog/en/blog/croatia-in-2-weeks' },
   {
     base: 'https://tripser.blog/blog/croatie-en-2-semaines',
