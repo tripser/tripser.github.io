@@ -417,7 +417,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
-    caption: 'Arc-en-ciel au-dessus du volcan du Piton de la Fournaise',
+    caption: 'Arc-en-ciel au-dessus du volcan du Piton de la Fournaise ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -425,7 +425,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
-    caption: 'Coucher de soleil au dessus de la mer',
+    caption: 'Coucher de soleil au dessus de la mer ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -433,7 +433,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trois-bassins.jpg',
-    caption: 'Cascade de la balade des 3 bassins',
+    caption: 'Cascade de la balade des 3 bassins ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -441,7 +441,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bassins-caches.jpg',
-    caption: 'Bassins cachés à la Réunion',
+    caption: 'Bassins cachés à la Réunion ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -449,7 +449,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/roche-plate.jpg',
-    caption: 'Vue sur Mafate depuis Roche Plate',
+    caption: 'Vue sur Mafate depuis Roche Plate ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -457,7 +457,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/maido.jpg',
-    caption: 'Vue sur Mafate depuis le Maido',
+    caption: 'Vue sur Mafate depuis le Maido ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -465,7 +465,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cafe-grille.jpg',
-    caption: 'Plante colorée du Domaine du Café Grillé',
+    caption: 'Plante colorée du Domaine du Café Grillé ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -473,7 +473,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/tamoul.jpg',
-    caption: "Tour d'un temple tamoul",
+    caption: "Tour d'un temple tamoul ©tripser",
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -481,7 +481,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
-    caption: 'Vue du Piton de la Fournaise',
+    caption: 'Vue du Piton de la Fournaise ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -489,7 +489,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trou-de-fer.jpg',
-    caption: 'Panorama sur le Trou de Fer',
+    caption: 'Panorama sur le Trou de Fer ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -497,7 +497,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grande-anse.jpg',
-    caption: 'Coucher de soleil à la plage de Grande Anse',
+    caption: 'Coucher de soleil à la plage de Grande Anse ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -505,7 +505,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bras-plaine.jpg',
-    caption: 'Au milieu du Bras de la Plaine',
+    caption: 'Au milieu du Bras de la Plaine ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -513,7 +513,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/parc-palmiers.jpg',
-    caption: 'Parc des Palmiers',
+    caption: 'Parc des Palmiers ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -521,7 +521,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-neige.jpg',
-    caption: 'Vue depuis le Piton des Neiges',
+    caption: 'Vue depuis le Piton des Neiges ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -529,7 +529,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cilaos.jpg',
-    caption: 'Les montagnes depuis le cirque de Cilaos',
+    caption: 'Les montagnes depuis le cirque de Cilaos ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -537,7 +537,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-galet.jpg',
-    caption: 'Cascade Grand Galet, rivière Langevin',
+    caption: 'Cascade Grand Galet, rivière Langevin ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -545,7 +545,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-ilet.jpg',
-    caption: 'vue sur le mer depuis Grand Ilet à la Reunion',
+    caption: 'vue sur le mer depuis Grand Ilet à la Reunion ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -553,7 +553,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sentier-scout.jpg',
-    caption: 'Vue panoramique sur Mafate depuis le sentier scout',
+    caption: 'Vue panoramique sur Mafate depuis le sentier scout ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -561,7 +561,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/boucan-canot.jpg',
-    caption: 'Coucher de soleil à Boucan Canot',
+    caption: 'Coucher de soleil à Boucan Canot ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -577,7 +577,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
-    caption: 'Rainbow over the Piton de la Fournaise volcano',
+    caption: 'Rainbow over the Piton de la Fournaise volcano ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -585,7 +585,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
-    caption: 'Sunset over the sea',
+    caption: 'Sunset over the sea ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -593,7 +593,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trois-bassins.jpg',
-    caption: 'Waterfall from the Three Basins hike',
+    caption: 'Waterfall from the Three Basins hike ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -601,7 +601,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bassins-caches.jpg',
-    caption: 'Hidden pools in Reunion',
+    caption: 'Hidden pools in Reunion ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -609,7 +609,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/roche-plate.jpg',
-    caption: 'View of Mafate from Roche Plate',
+    caption: 'View of Mafate from Roche Plate ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -617,7 +617,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/maido.jpg',
-    caption: 'View of Mafate from Maido',
+    caption: 'View of Mafate from Maido ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -625,7 +625,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cafe-grille.jpg',
-    caption: 'Colorful plant at Café Grillé domain',
+    caption: 'Colorful plant at Café Grillé domain ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -633,7 +633,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/tamoul.jpg',
-    caption: 'Tour of a Tamil temple',
+    caption: 'Tour of a Tamil temple ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -641,7 +641,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
-    caption: 'View of Piton de la Fournaise',
+    caption: 'View of Piton de la Fournaise ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -649,7 +649,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trou-de-fer.jpg',
-    caption: 'Panorama of the Trou de Fer',
+    caption: 'Panorama of the Trou de Fer ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -657,7 +657,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grande-anse.jpg',
-    caption: 'Sunset at Grande Anse beach',
+    caption: 'Sunset at Grande Anse beach ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -665,7 +665,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bras-plaine.jpg',
-    caption: 'In the middle of Bras de la Plaine',
+    caption: 'In the middle of Bras de la Plaine ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -673,7 +673,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/parc-palmiers.jpg',
-    caption: 'Parc des Palmiers',
+    caption: 'Parc des Palmiers ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -681,7 +681,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-neige.jpg',
-    caption: 'View from Piton des Neiges',
+    caption: 'View from Piton des Neiges ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -689,7 +689,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cilaos.jpg',
-    caption: 'The mountains from the cirque of Cilaos',
+    caption: 'The mountains from the cirque of Cilaos ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -697,7 +697,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-galet.jpg',
-    caption: 'Grand Galet waterfall, Langevin River',
+    caption: 'Grand Galet waterfall, Langevin River ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -705,7 +705,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-ilet.jpg',
-    caption: 'View of the sea from Grand Ilet, La Réunion',
+    caption: 'View of the sea from Grand Ilet, La Réunion ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -713,7 +713,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sentier-scout.jpg',
-    caption: 'Panoramic view of Mafate from the Scout Trail',
+    caption: 'Panoramic view of Mafate from the Scout Trail ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -721,7 +721,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/boucan-canot.jpg',
-    caption: 'Sunset at Boucan Canot',
+    caption: 'Sunset at Boucan Canot ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
@@ -737,7 +737,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/cabins.jpg',
-    caption: 'The beach cabins of Stella plage @destinationcotedopale.com',
+    caption: 'The beach cabins of Stella plage ©destinationcotedopale.com',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -745,7 +745,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/dunes.jpg',
-    caption: 'The dunes of Stella @tripser',
+    caption: 'The dunes of Stella ©tripser',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -753,7 +753,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/seal.jpg',
-    caption: "Baby seal at the Baie d'Otie @tripser",
+    caption: "Baby seal at the Baie d'Otie ©tripser",
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -761,7 +761,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/path.jpg',
-    caption: 'The dunes of Le Touquet @tripser',
+    caption: 'The dunes of Le Touquet ©tripser',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -769,7 +769,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/surf.jpg',
-    caption: 'Surfing in Le Touquet @tripser',
+    caption: 'Surfing in Le Touquet ©tripser',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -777,7 +777,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/nausicaa.jpg',
-    caption: 'Manta ray in Nausicaa aquarium @nausicaa.fr',
+    caption: 'Manta ray in Nausicaa aquarium ©nausicaa.fr',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
     link: '/blog/cote-opale-trip',
@@ -785,7 +785,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/cabins.jpg',
-    caption: 'Les cabines de Stella plage @destinationcotedopale.com',
+    caption: 'Les cabines de Stella plage ©destinationcotedopale.com',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
@@ -793,7 +793,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/dunes.jpg',
-    caption: 'Les dunes de Stella @tripser',
+    caption: 'Les dunes de Stella ©tripser',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
@@ -801,7 +801,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/seal.jpg',
-    caption: "Bébé phoque à la Baie d'Otie @tripser",
+    caption: "Bébé phoque à la Baie d'Otie ©tripser",
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
@@ -809,7 +809,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/nausicaa.jpg',
-    caption: "Raie Manta à l'aquarium de Nausicaa @nausicaa.fr",
+    caption: "Raie Manta à l'aquarium de Nausicaa ©nausicaa.fr",
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
@@ -817,7 +817,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/path.jpg',
-    caption: 'Les dunes du Touquet @tripser',
+    caption: 'Les dunes du Touquet ©tripser',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
@@ -825,7 +825,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/surf.jpg',
-    caption: 'Du Surf au Touquet @tripser',
+    caption: 'Du Surf au Touquet ©tripser',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
     link: '/blog/cote-opale-voyage',
