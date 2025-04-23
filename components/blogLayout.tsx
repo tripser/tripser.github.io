@@ -44,9 +44,7 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                     <div className="article__categories">
                       {categoriesList?.map((c) => (
                         <Linkk key={c} href={`/blog?cat=${c}`}>
-                          <a>
-                            <span itemProp="articleSection">{t(`categories.${c}`)}</span>
-                          </a>
+                          <span itemProp="articleSection">{t(`categories.${c}`)}</span>
                         </Linkk>
                       ))}
                     </div>
@@ -65,11 +63,9 @@ export function BlogLayout({ children }: BlogLayoutCompType) {
                   </div>
 
                   <div className="mb-15">
-                    <Linkk href="/blog">
-                      <a className="btn">
-                        <AiFillCaretLeft className="mr-1" />
-                        {t('blog.back')}
-                      </a>
+                    <Linkk href="/blog" className="btn">
+                      <AiFillCaretLeft className="mr-1" />
+                      {t('blog.back')}
                     </Linkk>
                   </div>
 

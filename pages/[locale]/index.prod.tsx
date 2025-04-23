@@ -39,11 +39,9 @@ export function HomePage({ locale }: { locale: string }) {
             <p className="mb-10">{t('articles.discover-articles')}</p>
             <Grid data={articlesByLang.slice(0, 6)} className="mt-10 mb-10" />
             <div className="btn-wrapper-right">
-              <Linkk href="/blog">
-                <a className="btn">
-                  {t('articles.check-articles')}
-                  <AiFillCaretRight className="ml-1" />
-                </a>
+              <Linkk href="/blog" className="btn">
+                {t('articles.check-articles')}
+                <AiFillCaretRight className="ml-1" />
               </Linkk>
             </div>
           </div>

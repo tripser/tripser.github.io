@@ -60,22 +60,20 @@ export function PhotosPage({ locale }: { locale: string }) {
                     </div>
                   }
                 >
-                  <Linkk href={photo.link}>
-                    <a title={photo.title}>
-                      <figure>
-                        <img
-                          srcSet={`${photo.src.replace('.jpg', '-400.jpg')} 400w, ${photo.src} 800w`}
-                          src={photo.src}
-                          sizes="calc(100vw - 2rem)"
-                          alt={photo.caption}
-                          width="260"
-                          height="146"
-                          itemProp="image"
-                          loading="lazy"
-                        />
-                        <figcaption>{photo.caption}</figcaption>
-                      </figure>
-                    </a>
+                  <Linkk href={photo.link} title={photo.title}>
+                    <figure>
+                      <img
+                        srcSet={`${photo.src.replace('.jpg', '-400.jpg')} 400w, ${photo.src} 800w`}
+                        src={photo.src}
+                        sizes="calc(100vw - 2rem)"
+                        alt={photo.caption}
+                        width="260"
+                        height="146"
+                        itemProp="image"
+                        loading="lazy"
+                      />
+                      <figcaption>{photo.caption}</figcaption>
+                    </figure>
                   </Linkk>
                 </Dialog>
               ))}

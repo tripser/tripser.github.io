@@ -39,8 +39,8 @@ export default function Admin({ title, description, articles }: AdminPageType) {
         <section className="py-5">
           <div className="container mt-3">
             <div className="space-between-x mb-4">
-              <Linkk href="/admin/new">
-                <a className="btn">Write an article</a>
+              <Linkk href="/admin/new" className="btn">
+                Write an article
               </Linkk>
               <button onClick={reset} className="btn">
                 Reset filters
@@ -72,20 +72,14 @@ export default function Admin({ title, description, articles }: AdminPageType) {
                           <td>{a.state}</td>
                           <td>
                             <Linkk href={`/admin/${a.slug}`}>
-                              <a>
-                                <MdEdit size={20} />
-                              </a>
+                              <MdEdit size={20} />
                             </Linkk>{' '}
                             <Linkk href={a.link}>
-                              <a>
-                                <MdCode size={20} />
-                              </a>
+                              <MdCode size={20} />
                             </Linkk>{' '}
                             {a.state === 'published' ? (
-                              <Linkk href={a.url}>
-                                <a target="_blank">
-                                  <MdPublic size={20} />
-                                </a>
+                              <Linkk href={a.url} target="_blank">
+                                <MdPublic size={20} />
                               </Linkk>
                             ) : null}
                           </td>

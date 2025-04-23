@@ -32,25 +32,21 @@ export function Header({ onClick, theme, en, fr }: HeaderCompType) {
   return (
     <header className="header">
       <div className="container">
-        <Linkk href="/">
-          <a className="logo">
-            <img src="/images/logo-80.png" alt="Tripser logo" title="Home" width="36" height="36" />
-          </a>
+        <Linkk href="/" className="logo">
+          <img src="/images/logo-80.png" alt="Tripser logo" title="Home" width="36" height="36" />
         </Linkk>
 
         <div className="links">
           {links.map((link) => (
             <Linkk href={`${link.link}`} key={link.text}>
-              <a>{link.text}</a>
+              {link.text}
             </Linkk>
           ))}
         </div>
 
         <div className="actions">
-          <Linkk href="/search">
-            <a className="btn" title="Search on Tripser" aria-label="Search on Tripser">
-              <MdSearch title="Search on Tripser" aria-labelledby="Search on Tripser" />
-            </a>
+          <Linkk href="/search" className="btn" title="Search on Tripser" aria-label="Search on Tripser">
+            <MdSearch title="Search on Tripser" aria-labelledby="Search on Tripser" />
           </Linkk>
 
           <button

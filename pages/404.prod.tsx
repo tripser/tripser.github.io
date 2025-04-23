@@ -36,11 +36,9 @@ export default function Custom404({ title, splash, articles }: Custom404PageType
           <Grid data={random} />
         </section>
         <div>
-          <Linkk href="/">
-            <a className="btn mb-20">
-              <AiFillCaretLeft className="mr-1" />
-              {t('404.back')}
-            </a>
+          <Linkk href="/" className="btn mb-20">
+            <AiFillCaretLeft className="mr-1" />
+            {t('404.back')}
           </Linkk>
         </div>
       </div>

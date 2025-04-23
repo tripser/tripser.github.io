@@ -45,12 +45,12 @@ export function BlogPage({ locale }: { locale: string }) {
           <p className="ch-80 mb-8">{t('blog.intro')}</p>
 
           <div className="blog__categories">
-            <Linkk href="/blog">
-              <a className={`btn ${cat === '' ? 'active' : ''}`}>{t('blog.all')}</a>
+            <Linkk href="/blog" className={`btn ${cat === '' ? 'active' : ''}`}>
+              {t('blog.all')}
             </Linkk>
             {categories.map((c) => (
-              <Linkk key={c} href={`/blog?cat=${c}`} scroll={false}>
-                <a className={`btn ${cat === c ? 'active' : ''}`}>{t(`categories.${c}`)}</a>
+              <Linkk key={c} href={`/blog?cat=${c}`} scroll={false} className={`btn ${cat === c ? 'active' : ''}`}>
+                {t(`categories.${c}`)}
               </Linkk>
             ))}
           </div>

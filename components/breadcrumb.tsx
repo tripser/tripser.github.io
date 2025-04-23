@@ -24,9 +24,7 @@ export function Breadcrumb() {
             ) : (
               <>
                 <AiFillCaretRight />
-                <Linkk href={`/${x}`}>
-                  <a>{x.replace(/-/g, ' ')}</a>
-                </Linkk>
+                <Linkk href={`/${x}`}>{x.replace(/-/g, ' ')}</Linkk>
               </>
             )}
           </li>

@@ -1,28 +1,40 @@
-import { ReactNode } from 'react';
+import { AnchorHTMLAttributes, ReactNode } from 'react';
 import Link, { LinkProps } from 'next/link';
 import useLocale from '@hooks/useLocale';
 
-export function Linkk({ children, ...rest }: LinkProps & { children: ReactNode }) {
+type LinkType = {
+  href: string;
+  children: ReactNode;
+} & AnchorHTMLAttributes<HTMLAnchorElement> &
+  LinkProps;
+
+export function Linkk({ href, children, ..._rest }: LinkType) {
   const locale = useLocale();
 
+  const { scroll, ...rest } = _rest;
+
+  const LinkProps = { scroll };
+
   const exceptions = () => {
-    if (String(rest.href).includes('/admin')) return true;
+    if (String(href).includes('/admin')) return true;
   };
 
-  const _href = exceptions() ? `${rest.href}` : `/${locale}${rest.href}`;
+  const _href = exceptions() ? `${href}` : `/${locale}${href}`;
 
-  const isExternal = String(rest.href).startsWith('http');
+  const isExternal = String(href).startsWith('http');
 
   return (
     <>
       {isExternal ? (
-        <Link href={rest.href}>
+        <Link href={href} {...LinkProps}>
           <a target="_blank" rel="noopener noreferrer">
             {children}
           </a>
         </Link>
       ) : (
-        <Link href={_href}>{children}</Link>
+        <Link href={_href} {...LinkProps}>
+          <a {...rest}>{children}</a>
+        </Link>
       )}
     </>
   );
