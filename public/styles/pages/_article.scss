@@ -170,4 +170,25 @@
       }
     }
   }
+
+  .iframe {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 56.25%; // 16:9
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: var(--bg2);
+    border-radius: var(--radius) 0 var(--radius) 0;
+
+    iframe {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 50px + 20px);
+      border: none;
+    }
+  }
 }

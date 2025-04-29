@@ -416,14 +416,6 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
-    caption: 'Arc-en-ciel au-dessus du volcan du Piton de la Fournaise ©tripser',
-    title: "3 semaines sur l'île de la Réunion",
-    lang: 'fr',
-    link: '/blog/3-semaines-a-la-reunion',
-    date: '2024-06-30',
-  },
-  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
     caption: 'Coucher de soleil au dessus de la mer ©tripser',
     title: "3 semaines sur l'île de la Réunion",
@@ -482,6 +474,14 @@ const photos = [
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
     caption: 'Vue du Piton de la Fournaise ©tripser',
+    title: "3 semaines sur l'île de la Réunion",
+    lang: 'fr',
+    link: '/blog/3-semaines-a-la-reunion',
+    date: '2024-06-30',
+  },
+  {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
+    caption: 'Arc-en-ciel au-dessus du volcan du Piton de la Fournaise ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
     link: '/blog/3-semaines-a-la-reunion',
@@ -576,14 +576,6 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
-    caption: 'Rainbow over the Piton de la Fournaise volcano ©tripser',
-    title: '3 weeks on La Réunion island',
-    lang: 'en',
-    link: '/blog/3-weeks-in-la-reunion',
-    date: '2024-06-30',
-  },
-  {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
     caption: 'Sunset over the sea ©tripser',
     title: '3 weeks on La Réunion island',
@@ -642,6 +634,14 @@ const photos = [
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
     caption: 'View of Piton de la Fournaise ©tripser',
+    title: '3 weeks on La Réunion island',
+    lang: 'en',
+    link: '/blog/3-weeks-in-la-reunion',
+    date: '2024-06-30',
+  },
+  {
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
+    caption: 'Rainbow over the Piton de la Fournaise volcano ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
     link: '/blog/3-weeks-in-la-reunion',
