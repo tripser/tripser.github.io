@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import P8FR from '@pages/[locale]/blog/1-semaine-en-crete.mdx';
+import P8EN from '@pages/[locale]/blog/1-week-in-crete.mdx';
 import P5FR from '@pages/[locale]/blog/3-semaines-a-la-reunion.mdx';
 import P5EN from '@pages/[locale]/blog/3-weeks-in-la-reunion.mdx';
 import P3EN from '@pages/[locale]/blog/alsace-and-christmas-markets.mdx';
@@ -36,6 +38,8 @@ export default function BlogPostPage({ article }: { article: ArticleType }) {
     'gorges-du-verdon': P6FR,
     'croatia-in-2-weeks': P7EN,
     'croatie-en-2-semaines': P7FR,
+    '1-week-in-crete': P8EN,
+    '1-semaine-en-crete': P8FR,
   };
 
   const Page = pages[slug];

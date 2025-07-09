@@ -53,7 +53,6 @@ Commit and Push your changes to master once site is deployed.
 ### CONTENT
 - add travel data: traveled period, days, budget, itinerary, car rental, currency, ...?
 - add a list of titles on top of the article
-- create my own itinerary images using openstreetmap
 - add framed text, quotes, highlighted words, 
 - rearange homepage: big pinned article (carousel??)
 - rework logo to svg + add on homepage?
@@ -104,9 +103,12 @@ Commit and Push your changes to master once site is deployed.
 - Write the article with keywords, speaking with we, giving lots of details on itinerary, location, hotels, restaurants, activities
 - Affiliation??
 - Review spell on https://languagetool.org/
-- Find splash image, 1920x1080 compress on https://compressjpeg.com/ and upload in /public/images/articles/(articleName).jpg
-- Find content images, 800x450, compress on https://compressjpeg.com/ and upload in /public/images/content/(articleName)/(name).jpg
-- Create itinerary image from https://pebblar.com/, 800x450, compress on https://compressjpeg.com/ and upload in /public/images/maps/(name).jpg
+- Find splash image, 1920x1080 compression will be done in article editor (/public/images/articles/(articleName).jpg)
+- Find content images, 800x450 compression will be done in article editor (/public/images/content/(articleName)/(name).jpg)
+- Create itinerary 
+  - Google mymaps (https://www.google.com/maps/d/u/4/) and embed it in the article 
+  - OR add code for openstreetmap with leafletjs
+  - OR https://codesandbox.io/p/sandbox/itinerary-frnrnw, 800x450, compression will be done in article editor (/public/images/maps/(name).jpg)
 
 ## SOCIALS
 
@@ -116,3 +118,20 @@ Commit and Push your changes to master once site is deployed.
 ## ANALYTICS
 
 Easy web analytics without tracking of personal data at https://tripser.goatcounter.com/
+
+
+## SCRIPTS
+
+- `yarn dev`: run the app in development mode
+- `yarn lint`: lint the code with eslint
+- `yarn ts`: check for TypeScript errors
+- `yarn build`: build the app in SSG mode for production,
+- `yarn start`: run the app in production mode (locally)
+- `yarn local`: shortcut to run the app in production mode (locally)
+- `yarn analyze`: analyse the next.js bundle size
+- `yarn export`: "next export"
+- `yarn sitemap`: generate the sitemap.xml & sitemap.js files
+- `yarn blog`: generate the blog list
+- `yarn photos`: generate the photos list
+- `yarn deploy`: build the app and deploy it to Firebase Hosting
+- `yarn deploy:h`: deploy to Firebase Hosting
