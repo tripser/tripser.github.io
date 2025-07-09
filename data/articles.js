@@ -2,7 +2,7 @@ const articles = [
   {
     slug: '1-semaine-en-crete',
     title: 'Une semaine en Crète',
-    intro: 'Intro',
+    intro: 'Comment passer une semaine en Crète, Grèce, avec des randonnées, des plages et de la gastronomie locale',
     img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/1-week-in-crete.jpg',
     published: '2025-07-09',
     modified: '2025-07-09',
@@ -17,7 +17,7 @@ const articles = [
   {
     slug: '1-week-in-crete',
     title: 'One week in Crete',
-    intro: 'Intro',
+    intro: 'How to spend a week in Crete, Greece, with hikes, beaches, and local gastronomy',
     img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/1-week-in-crete.jpg',
     published: '2025-07-09',
     modified: '2025-07-09',
