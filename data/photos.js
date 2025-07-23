@@ -1,7 +1,7 @@
 const photos = [
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/hania.jpg',
-    caption: 'Centre de Hania',
+    caption: 'Centre de Hania ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -9,7 +9,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas.jpg',
-    caption: 'Lac de Kournas',
+    caption: 'Lac de Kournas ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -17,7 +17,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas-turtles.jpg',
-    caption: 'Tortues du lac Kournas',
+    caption: 'Tortues du lac Kournas ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -25,7 +25,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/preveli.jpg',
-    caption: 'Plage de Preveli',
+    caption: 'Plage de Preveli ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -33,7 +33,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/loutro.jpg',
-    caption: 'Loutro',
+    caption: 'Loutro ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -41,7 +41,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/sfakia.jpg',
-    caption: 'Coucher de soleil à Sfakia',
+    caption: 'Coucher de soleil à Sfakia ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -49,7 +49,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/aradena-top.jpg',
-    caption: "Gorges d'Aradena vue d'en haut",
+    caption: "Gorges d'Aradena vue d'en haut ©tripser",
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -57,7 +57,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/elafonisi.jpg',
-    caption: "Plage d'Elafonisi et son sable rose",
+    caption: "Plage d'Elafonisi et son sable rose ©tripser",
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -65,7 +65,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/goat.jpg',
-    caption: 'Chèvre crétoise',
+    caption: 'Chèvre crétoise ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -73,7 +73,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/balos.jpg',
-    caption: 'View sur la plage de Balos',
+    caption: 'View sur la plage de Balos ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
     link: '/blog/1-semaine-en-crete',
@@ -81,7 +81,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/hania.jpg',
-    caption: 'Hania centre',
+    caption: 'Hania centre ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -89,7 +89,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas.jpg',
-    caption: 'Kournas lake',
+    caption: 'Kournas lake ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -97,7 +97,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas-turtles.jpg',
-    caption: 'Kournas Lake turtles',
+    caption: 'Kournas Lake turtles ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -105,7 +105,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/preveli.jpg',
-    caption: 'Preveli beach',
+    caption: 'Preveli beach ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -113,7 +113,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/loutro.jpg',
-    caption: 'Loutro',
+    caption: 'Loutro ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -121,7 +121,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/sfakia.jpg',
-    caption: 'Sfakia sunset',
+    caption: 'Sfakia sunset ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -129,7 +129,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/aradena-top.jpg',
-    caption: 'Aradena Gorge from the top',
+    caption: 'Aradena Gorge from the top ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -137,7 +137,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/elafonisi.jpg',
-    caption: 'Elafonisi beach pink sand',
+    caption: 'Elafonisi beach pink sand ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -145,7 +145,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/goat.jpg',
-    caption: 'Cretan goat',
+    caption: 'Cretan goat ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
@@ -153,7 +153,7 @@ const photos = [
   },
   {
     src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/balos.jpg',
-    caption: 'Balos beach view',
+    caption: 'Balos beach view ©tripser',
     title: 'One week in Crete',
     lang: 'en',
     link: '/blog/1-week-in-crete',
