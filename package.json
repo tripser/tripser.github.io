@@ -14,7 +14,7 @@
     "sitemap": "node ./generate-sitemap.mjs",
     "blog": "node ./generate-blog-list.mjs",
     "photos": "node ./generate-photos-list.mjs",
-    "deploy": "cross-env PROD=true npm run blog && npm run photos && npm run sitemap && npm run build && firebase deploy --only hosting",
+    "deploy": "cross-env PROD=true npm run blog && cross-env PROD=true npm run photos && cross-env PROD=true npm run sitemap && cross-env PROD=true npm run build && firebase deploy --only hosting",
     "deploy:h": "firebase deploy --only hosting"
   },
   "keywords": [],
