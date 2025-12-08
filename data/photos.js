@@ -1,6 +1,6 @@
 const photos = [
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/camara-de-lobos.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/camara-de-lobos.jpg',
     caption: 'Boat on top of Camara de Lobos ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -8,7 +8,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/camara.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/camara.jpg',
     caption: 'Camara de Lobos port ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -16,7 +16,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/monte.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/monte.jpg',
     caption: 'Jardin Monte Palace in Funchal ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -24,7 +24,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/verada-do-urzal.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/verada-do-urzal.jpg',
     caption: 'Hike PR2 Vereda do Urzal ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -32,7 +32,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/levada-do-caldeirao-verde.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/levada-do-caldeirao-verde.jpg',
     caption: 'PR9 Levada do Caldeirão Verde ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -40,7 +40,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/seixal.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/seixal.jpg',
     caption: 'Dark sand beach in Seixal ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -48,7 +48,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/pico-ruivo.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/pico-ruivo.jpg',
     caption: 'Sunrise from Pico Ruivo ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -56,7 +56,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/porto-da-cruz.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/porto-da-cruz.jpg',
     caption: 'Sunset in Porto da Cruz ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -64,7 +64,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/cruz.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/cruz.jpg',
     caption: 'Landscape from Porto da Cruz ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -72,7 +72,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/sao-lourenco.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/sao-lourenco.jpg',
     caption: 'Ponta de São Lourenço ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -80,7 +80,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/jardim-do-mar.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/jardim-do-mar.jpg',
     caption: 'View from Jardim do Mar',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -88,7 +88,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/mist.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/mist.jpg',
     caption: 'Mist on the road ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -96,7 +96,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/lagoa-do-vento.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/lagoa-do-vento.jpg',
     caption: 'Lagoa do Vento ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -104,7 +104,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/penacula-e-folhadal2.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/penacula-e-folhadal2.jpg',
     caption: 'Penaculo e Folhadal ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -112,7 +112,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/verada-do-larano.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/verada-do-larano.jpg',
     caption: 'Vereda do Larano ©tripser',
     title: 'Madeira, hikes, villages and nature',
     lang: 'en',
@@ -120,7 +120,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/camara-de-lobos.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/camara-de-lobos.jpg',
     caption: 'Bateau surplombant Camara de Lobos ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -128,7 +128,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/camara.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/camara.jpg',
     caption: 'Port de Camara de Lobos ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -136,7 +136,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/monte.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/monte.jpg',
     caption: 'Jardin Monte Palace à Funchal ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -144,7 +144,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/verada-do-urzal.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/verada-do-urzal.jpg',
     caption: 'Randonnée PR2 Vereda do Urzal ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -152,7 +152,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/levada-do-caldeirao-verde.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/levada-do-caldeirao-verde.jpg',
     caption: 'PR9 Levada do Caldeirão Verde ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -160,7 +160,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/seixal.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/seixal.jpg',
     caption: 'Plage de sable noir à Seixal ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -168,7 +168,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/pico-ruivo.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/pico-ruivo.jpg',
     caption: 'Lever de soleil depuis le Pico Ruivo ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -176,7 +176,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/porto-da-cruz.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/porto-da-cruz.jpg',
     caption: 'Coucher de soleil à Porto da Cruz ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -184,7 +184,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/cruz.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/cruz.jpg',
     caption: 'Vue depuis Porto da Cruz ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -192,7 +192,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/sao-lourenco.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/sao-lourenco.jpg',
     caption: 'Ponta de São Lourenço ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -200,7 +200,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/jardim-do-mar.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/jardim-do-mar.jpg',
     caption: 'Vue de Jardim do Mar',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -208,7 +208,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/mist.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/mist.jpg',
     caption: 'Brouillard sur la route ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -216,7 +216,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/lagoa-do-vento.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/lagoa-do-vento.jpg',
     caption: 'Lagoa do Vento ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -224,7 +224,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/penacula-e-folhadal2.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/penacula-e-folhadal2.jpg',
     caption: 'Penaculo e Folhadal ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
@@ -232,7 +232,7 @@ const photos = [
     date: '2025-12-08',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/temp/madeira/verada-do-larano.jpg',
+    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/madeira/verada-do-larano.jpg',
     caption: 'Vereda do Larano ©tripser',
     title: 'Madère, randonnées, villages et nature',
     lang: 'fr',
