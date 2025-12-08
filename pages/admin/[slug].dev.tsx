@@ -103,7 +103,7 @@ export default function Write({ title, description, article, articleContent }: W
 
                 {!isNew && response !== 'saving' ? (
                   <p className="mb-2">
-                    <Linkk href={`/blog/${slug}`}>Check out the article</Linkk>
+                    <Linkk href={`/${article.lang}${article.link}`}>Check out the article</Linkk>
                   </p>
                 ) : null}
 

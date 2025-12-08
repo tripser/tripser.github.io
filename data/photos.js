@@ -1,6 +1,246 @@
 const photos = [
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/hania.jpg',
+    src: '/images/temp/madeira/camara-de-lobos.jpg',
+    caption: 'Boat on top of Camara de Lobos ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/camara.jpg',
+    caption: 'Camara de Lobos port ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/monte.jpg',
+    caption: 'Jardin Monte Palace in Funchal ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/verada-do-urzal.jpg',
+    caption: 'Hike PR2 Vereda do Urzal ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/levada-do-caldeirao-verde.jpg',
+    caption: 'PR9 Levada do Caldeirão Verde ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/seixal.jpg',
+    caption: 'Dark sand beach in Seixal ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/pico-ruivo.jpg',
+    caption: 'Sunrise from Pico Ruivo ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/porto-da-cruz.jpg',
+    caption: 'Sunset in Porto da Cruz ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/cruz.jpg',
+    caption: 'Landscape from Porto da Cruz ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/sao-lourenco.jpg',
+    caption: 'Ponta de São Lourenço ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/jardim-do-mar.jpg',
+    caption: 'View from Jardim do Mar',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/mist.jpg',
+    caption: 'Mist on the road ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/lagoa-do-vento.jpg',
+    caption: 'Lagoa do Vento ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/penacula-e-folhadal2.jpg',
+    caption: 'Penaculo e Folhadal ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/verada-do-larano.jpg',
+    caption: 'Vereda do Larano ©tripser',
+    title: 'Madeira, hikes, villages and nature',
+    lang: 'en',
+    link: '/blog/madeira',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/camara-de-lobos.jpg',
+    caption: 'Bateau surplombant Camara de Lobos ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/camara.jpg',
+    caption: 'Port de Camara de Lobos ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/monte.jpg',
+    caption: 'Jardin Monte Palace à Funchal ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/verada-do-urzal.jpg',
+    caption: 'Randonnée PR2 Vereda do Urzal ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/levada-do-caldeirao-verde.jpg',
+    caption: 'PR9 Levada do Caldeirão Verde ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/seixal.jpg',
+    caption: 'Plage de sable noir à Seixal ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/pico-ruivo.jpg',
+    caption: 'Lever de soleil depuis le Pico Ruivo ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/porto-da-cruz.jpg',
+    caption: 'Coucher de soleil à Porto da Cruz ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/cruz.jpg',
+    caption: 'Vue depuis Porto da Cruz ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/sao-lourenco.jpg',
+    caption: 'Ponta de São Lourenço ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/jardim-do-mar.jpg',
+    caption: 'Vue de Jardim do Mar',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/mist.jpg',
+    caption: 'Brouillard sur la route ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/lagoa-do-vento.jpg',
+    caption: 'Lagoa do Vento ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/penacula-e-folhadal2.jpg',
+    caption: 'Penaculo e Folhadal ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/temp/madeira/verada-do-larano.jpg',
+    caption: 'Vereda do Larano ©tripser',
+    title: 'Madère, randonnées, villages et nature',
+    lang: 'fr',
+    link: '/blog/madere',
+    date: '2025-12-08',
+  },
+  {
+    src: '/images/content/1-week-in-crete/hania.jpg',
     caption: 'Centre de Hania ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -8,7 +248,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas.jpg',
+    src: '/images/content/1-week-in-crete/kournas.jpg',
     caption: 'Lac de Kournas ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -16,7 +256,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas-turtles.jpg',
+    src: '/images/content/1-week-in-crete/kournas-turtles.jpg',
     caption: 'Tortues du lac Kournas ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -24,7 +264,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/preveli.jpg',
+    src: '/images/content/1-week-in-crete/preveli.jpg',
     caption: 'Plage de Preveli ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -32,7 +272,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/loutro.jpg',
+    src: '/images/content/1-week-in-crete/loutro.jpg',
     caption: 'Loutro ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -40,7 +280,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/sfakia.jpg',
+    src: '/images/content/1-week-in-crete/sfakia.jpg',
     caption: 'Coucher de soleil à Sfakia ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -48,7 +288,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/aradena-top.jpg',
+    src: '/images/content/1-week-in-crete/aradena-top.jpg',
     caption: "Gorges d'Aradena vue d'en haut ©tripser",
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -56,7 +296,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/elafonisi.jpg',
+    src: '/images/content/1-week-in-crete/elafonisi.jpg',
     caption: "Plage d'Elafonisi et son sable rose ©tripser",
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -64,7 +304,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/goat.jpg',
+    src: '/images/content/1-week-in-crete/goat.jpg',
     caption: 'Chèvre crétoise ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -72,7 +312,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/balos.jpg',
+    src: '/images/content/1-week-in-crete/balos.jpg',
     caption: 'View sur la plage de Balos ©tripser',
     title: 'Une semaine en Crète',
     lang: 'fr',
@@ -80,7 +320,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/hania.jpg',
+    src: '/images/content/1-week-in-crete/hania.jpg',
     caption: 'Hania centre ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -88,7 +328,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas.jpg',
+    src: '/images/content/1-week-in-crete/kournas.jpg',
     caption: 'Kournas lake ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -96,7 +336,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/kournas-turtles.jpg',
+    src: '/images/content/1-week-in-crete/kournas-turtles.jpg',
     caption: 'Kournas Lake turtles ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -104,7 +344,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/preveli.jpg',
+    src: '/images/content/1-week-in-crete/preveli.jpg',
     caption: 'Preveli beach ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -112,7 +352,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/loutro.jpg',
+    src: '/images/content/1-week-in-crete/loutro.jpg',
     caption: 'Loutro ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -120,7 +360,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/sfakia.jpg',
+    src: '/images/content/1-week-in-crete/sfakia.jpg',
     caption: 'Sfakia sunset ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -128,7 +368,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/aradena-top.jpg',
+    src: '/images/content/1-week-in-crete/aradena-top.jpg',
     caption: 'Aradena Gorge from the top ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -136,7 +376,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/elafonisi.jpg',
+    src: '/images/content/1-week-in-crete/elafonisi.jpg',
     caption: 'Elafonisi beach pink sand ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -144,7 +384,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/goat.jpg',
+    src: '/images/content/1-week-in-crete/goat.jpg',
     caption: 'Cretan goat ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -152,7 +392,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/1-week-in-crete/balos.jpg',
+    src: '/images/content/1-week-in-crete/balos.jpg',
     caption: 'Balos beach view ©tripser',
     title: 'One week in Crete',
     lang: 'en',
@@ -160,7 +400,7 @@ const photos = [
     date: '2025-07-09',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/kotor-sunset.jpg',
+    src: '/images/content/croatia-in-2-weeks/kotor-sunset.jpg',
     caption: 'Sunset on the Bay of Kotor ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -168,7 +408,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/kotor.jpg',
+    src: '/images/content/croatia-in-2-weeks/kotor.jpg',
     caption: 'Kotor from Chruch of St. Giovanni ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -176,7 +416,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/kotor-peak.jpg',
+    src: '/images/content/croatia-in-2-weeks/kotor-peak.jpg',
     caption: 'The bay of Kotor from the top of a mountain ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -184,7 +424,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/dubrovnik-dock.jpg',
+    src: '/images/content/croatia-in-2-weeks/dubrovnik-dock.jpg',
     caption: "Dubrovnik's docks ©tripser",
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -192,7 +432,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/dubrovnik.jpg',
+    src: '/images/content/croatia-in-2-weeks/dubrovnik.jpg',
     caption: 'Dubrovnik from the top ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -200,7 +440,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/prapratno.jpg',
+    src: '/images/content/croatia-in-2-weeks/prapratno.jpg',
     caption: 'View from the Mljet ferry ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -208,7 +448,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/mljet-lake.jpg',
+    src: '/images/content/croatia-in-2-weeks/mljet-lake.jpg',
     caption: 'Mljet national park lake ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -216,7 +456,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/prozurska.jpg',
+    src: '/images/content/croatia-in-2-weeks/prozurska.jpg',
     caption: 'Prozurska clear water ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -224,7 +464,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/mljet-montocuk.jpg',
+    src: '/images/content/croatia-in-2-weeks/mljet-montocuk.jpg',
     caption: 'View of Mljet park from Montocuk ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -232,7 +472,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/skradin.jpg',
+    src: '/images/content/croatia-in-2-weeks/skradin.jpg',
     caption: 'Skradin boats ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -240,7 +480,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/krka-boat.jpg',
+    src: '/images/content/croatia-in-2-weeks/krka-boat.jpg',
     caption: 'View from the boat to Krka ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -248,7 +488,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/krka.jpg',
+    src: '/images/content/croatia-in-2-weeks/krka.jpg',
     caption: 'Krka famous waterfall ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -256,7 +496,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/krka-top.jpg',
+    src: '/images/content/croatia-in-2-weeks/krka-top.jpg',
     caption: 'Krka waterfall from the top ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -264,7 +504,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/split.jpg',
+    src: '/images/content/croatia-in-2-weeks/split.jpg',
     caption: 'View of Split from the Marjan park ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -272,7 +512,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/plivice.jpg',
+    src: '/images/content/croatia-in-2-weeks/plivice.jpg',
     caption: 'Plivice lake ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -280,7 +520,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/plivice-waterfall.jpg',
+    src: '/images/content/croatia-in-2-weeks/plivice-waterfall.jpg',
     caption: 'Plivice small waterfall ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -288,7 +528,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/plivice-lake.jpg',
+    src: '/images/content/croatia-in-2-weeks/plivice-lake.jpg',
     caption: 'Plivice lakes ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -296,7 +536,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/nin-beach.jpg',
+    src: '/images/content/croatia-in-2-weeks/nin-beach.jpg',
     caption: 'Nin beach ©tripser',
     title: "Croatia's parks, coast and islands",
     lang: 'en',
@@ -304,7 +544,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/kotor-sunset.jpg',
+    src: '/images/content/croatia-in-2-weeks/kotor-sunset.jpg',
     caption: 'Coucher de soleil sur la baie de Kotor ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -312,7 +552,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/kotor.jpg',
+    src: '/images/content/croatia-in-2-weeks/kotor.jpg',
     caption: "Kotor depuis l'église de St Giovanni ©tripser",
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -320,7 +560,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/kotor-peak.jpg',
+    src: '/images/content/croatia-in-2-weeks/kotor-peak.jpg',
     caption: "Les bouches de Kotor depuis le haut d'une montagne ©tripser",
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -328,7 +568,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/dubrovnik-dock.jpg',
+    src: '/images/content/croatia-in-2-weeks/dubrovnik-dock.jpg',
     caption: 'Le port de Dubrovnik ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -336,7 +576,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/dubrovnik.jpg',
+    src: '/images/content/croatia-in-2-weeks/dubrovnik.jpg',
     caption: "Dubrovnik vu d'en haut ©tripser",
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -344,7 +584,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/prapratno.jpg',
+    src: '/images/content/croatia-in-2-weeks/prapratno.jpg',
     caption: 'Vue depuis le ferry vers Mljet ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -352,7 +592,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/mljet-lake.jpg',
+    src: '/images/content/croatia-in-2-weeks/mljet-lake.jpg',
     caption: 'Un lac du parc national de Mljet ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -360,7 +600,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/prozurska.jpg',
+    src: '/images/content/croatia-in-2-weeks/prozurska.jpg',
     caption: "L'eau transparente de Prozurska ©tripser",
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -368,7 +608,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/mljet-montocuk.jpg',
+    src: '/images/content/croatia-in-2-weeks/mljet-montocuk.jpg',
     caption: 'Vue du parc de Mljet depuis Montocuk ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -376,7 +616,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/skradin.jpg',
+    src: '/images/content/croatia-in-2-weeks/skradin.jpg',
     caption: 'Le port de Skradin ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -384,7 +624,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/krka-boat.jpg',
+    src: '/images/content/croatia-in-2-weeks/krka-boat.jpg',
     caption: 'Vue depuis le bateau vers Krka ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -392,7 +632,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/krka.jpg',
+    src: '/images/content/croatia-in-2-weeks/krka.jpg',
     caption: 'La célèbre cascade de Krka ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -400,7 +640,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/krka-top.jpg',
+    src: '/images/content/croatia-in-2-weeks/krka-top.jpg',
     caption: "La cascade de Krka vue d'en haut ©tripser",
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -408,7 +648,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/split.jpg',
+    src: '/images/content/croatia-in-2-weeks/split.jpg',
     caption: 'Vue sur Split depuis le parc Marjan ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -416,7 +656,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/plivice.jpg',
+    src: '/images/content/croatia-in-2-weeks/plivice.jpg',
     caption: 'Un lac de Plivice ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -424,7 +664,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/plivice-waterfall.jpg',
+    src: '/images/content/croatia-in-2-weeks/plivice-waterfall.jpg',
     caption: 'Petit cascade de Plivice ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -432,7 +672,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/plivice-lake.jpg',
+    src: '/images/content/croatia-in-2-weeks/plivice-lake.jpg',
     caption: 'Les lacs de Plivice ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -440,7 +680,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/croatia-in-2-weeks/nin-beach.jpg',
+    src: '/images/content/croatia-in-2-weeks/nin-beach.jpg',
     caption: 'Plage de Nin ©tripser',
     title: 'Croatie, ses parcs, sa côte et ses îles',
     lang: 'fr',
@@ -448,7 +688,7 @@ const photos = [
     date: '2025-04-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/rive-droite.jpg',
+    src: '/images/content/gorges-of-verdon/rive-droite.jpg',
     caption: 'Vue sur le Verdon depuis la rive droite ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -456,7 +696,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/castellane.jpg',
+    src: '/images/content/gorges-of-verdon/castellane.jpg',
     caption: 'Vue au-dessus de Castellane ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -464,7 +704,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/blanc-martel.jpg',
+    src: '/images/content/gorges-of-verdon/blanc-martel.jpg',
     caption: 'Vue depuis le sentier Blanc-Martel ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -472,7 +712,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/lac-castillon.jpg',
+    src: '/images/content/gorges-of-verdon/lac-castillon.jpg',
     caption: 'Lac de Castillon ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -480,7 +720,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/imbut.jpg',
+    src: '/images/content/gorges-of-verdon/imbut.jpg',
     caption: "Vue sur le Verdon depuis le sentier de l'Imbut ©tripser",
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -488,7 +728,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/rive-gauche.jpg',
+    src: '/images/content/gorges-of-verdon/rive-gauche.jpg',
     caption: 'Vue sur le Lac Sainte-Croix ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -496,7 +736,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/moustier.jpg',
+    src: '/images/content/gorges-of-verdon/moustier.jpg',
     caption: 'Moustier-Sainte-Marie ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -504,7 +744,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/pedalo.jpg',
+    src: '/images/content/gorges-of-verdon/pedalo.jpg',
     caption: 'Pédalo sur le Verdon ©tripser',
     title: 'Une semaine dans les Gorges du Verdon',
     lang: 'fr',
@@ -512,7 +752,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/rive-droite.jpg',
+    src: '/images/content/gorges-of-verdon/rive-droite.jpg',
     caption: 'View on the Verdon from the right shore ©tripser',
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -520,7 +760,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/castellane.jpg',
+    src: '/images/content/gorges-of-verdon/castellane.jpg',
     caption: 'View from the top of Castellane ©tripser',
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -528,7 +768,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/blanc-martel.jpg',
+    src: '/images/content/gorges-of-verdon/blanc-martel.jpg',
     caption: 'View from Blanc-Martel trail ©tripser',
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -536,7 +776,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/lac-castillon.jpg',
+    src: '/images/content/gorges-of-verdon/lac-castillon.jpg',
     caption: "Castillon's lake ©tripser",
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -544,7 +784,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/imbut.jpg',
+    src: '/images/content/gorges-of-verdon/imbut.jpg',
     caption: "View on the Verdon from Imbut's trail ©tripser",
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -552,7 +792,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/rive-gauche.jpg',
+    src: '/images/content/gorges-of-verdon/rive-gauche.jpg',
     caption: "View on Sainte-Croix's lake ©tripser",
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -560,7 +800,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/moustier.jpg',
+    src: '/images/content/gorges-of-verdon/moustier.jpg',
     caption: 'Moustier-Sainte-Marie ©tripser',
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -568,7 +808,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/gorges-of-verdon/pedalo.jpg',
+    src: '/images/content/gorges-of-verdon/pedalo.jpg',
     caption: 'Pedalo on the Verdon ©tripser',
     title: 'A week in the Gorges of Verdon',
     lang: 'en',
@@ -576,7 +816,7 @@ const photos = [
     date: '2024-09-18',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
     caption: 'Coucher de soleil au dessus de la mer ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -584,7 +824,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trois-bassins.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/trois-bassins.jpg',
     caption: 'Cascade de la balade des 3 bassins ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -592,7 +832,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bassins-caches.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/bassins-caches.jpg',
     caption: 'Bassins cachés à la Réunion ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -600,7 +840,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/roche-plate.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/roche-plate.jpg',
     caption: 'Vue sur Mafate depuis Roche Plate ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -608,7 +848,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/maido.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/maido.jpg',
     caption: 'Vue sur Mafate depuis le Maido ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -616,7 +856,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cafe-grille.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/cafe-grille.jpg',
     caption: 'Plante colorée du Domaine du Café Grillé ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -624,7 +864,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/tamoul.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/tamoul.jpg',
     caption: "Tour d'un temple tamoul ©tripser",
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -632,7 +872,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
     caption: 'Vue du Piton de la Fournaise ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -640,7 +880,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
     caption: 'Arc-en-ciel au-dessus du volcan du Piton de la Fournaise ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -648,7 +888,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trou-de-fer.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/trou-de-fer.jpg',
     caption: 'Panorama sur le Trou de Fer ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -656,7 +896,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grande-anse.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/grande-anse.jpg',
     caption: 'Coucher de soleil à la plage de Grande Anse ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -664,7 +904,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bras-plaine.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/bras-plaine.jpg',
     caption: 'Au milieu du Bras de la Plaine ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -672,7 +912,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/parc-palmiers.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/parc-palmiers.jpg',
     caption: 'Parc des Palmiers ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -680,7 +920,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-neige.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/piton-neige.jpg',
     caption: 'Vue depuis le Piton des Neiges ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -688,7 +928,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cilaos.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/cilaos.jpg',
     caption: 'Les montagnes depuis le cirque de Cilaos ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -696,7 +936,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-galet.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/grand-galet.jpg',
     caption: 'Cascade Grand Galet, rivière Langevin ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -704,7 +944,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-ilet.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/grand-ilet.jpg',
     caption: 'vue sur le mer depuis Grand Ilet à la Reunion ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -712,7 +952,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sentier-scout.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/sentier-scout.jpg',
     caption: 'Vue panoramique sur Mafate depuis le sentier scout ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -720,7 +960,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/boucan-canot.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/boucan-canot.jpg',
     caption: 'Coucher de soleil à Boucan Canot ©tripser',
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -728,7 +968,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/run-helico.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/run-helico.jpg',
     caption: "Vue d'un hélicoptère devant une cascade de la Réunion ©runhelico.com",
     title: "3 semaines sur l'île de la Réunion",
     lang: 'fr',
@@ -736,7 +976,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/sunset-over-the-sea.jpg',
     caption: 'Sunset over the sea ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -744,7 +984,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trois-bassins.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/trois-bassins.jpg',
     caption: 'Waterfall from the Three Basins hike ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -752,7 +992,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bassins-caches.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/bassins-caches.jpg',
     caption: 'Hidden pools in Reunion ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -760,7 +1000,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/roche-plate.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/roche-plate.jpg',
     caption: 'View of Mafate from Roche Plate ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -768,7 +1008,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/maido.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/maido.jpg',
     caption: 'View of Mafate from Maido ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -776,7 +1016,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cafe-grille.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/cafe-grille.jpg',
     caption: 'Colorful plant at Café Grillé domain ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -784,7 +1024,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/tamoul.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/tamoul.jpg',
     caption: 'Tour of a Tamil temple ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -792,7 +1032,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/piton-fournaise.jpg',
     caption: 'View of Piton de la Fournaise ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -800,7 +1040,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/rainbow-over-the-volcano.jpg',
     caption: 'Rainbow over the Piton de la Fournaise volcano ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -808,7 +1048,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/trou-de-fer.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/trou-de-fer.jpg',
     caption: 'Panorama of the Trou de Fer ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -816,7 +1056,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grande-anse.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/grande-anse.jpg',
     caption: 'Sunset at Grande Anse beach ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -824,7 +1064,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/bras-plaine.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/bras-plaine.jpg',
     caption: 'In the middle of Bras de la Plaine ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -832,7 +1072,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/parc-palmiers.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/parc-palmiers.jpg',
     caption: 'Parc des Palmiers ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -840,7 +1080,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/piton-neige.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/piton-neige.jpg',
     caption: 'View from Piton des Neiges ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -848,7 +1088,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/cilaos.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/cilaos.jpg',
     caption: 'The mountains from the cirque of Cilaos ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -856,7 +1096,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-galet.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/grand-galet.jpg',
     caption: 'Grand Galet waterfall, Langevin River ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -864,7 +1104,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/grand-ilet.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/grand-ilet.jpg',
     caption: 'View of the sea from Grand Ilet, La Réunion ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -872,7 +1112,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/sentier-scout.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/sentier-scout.jpg',
     caption: 'Panoramic view of Mafate from the Scout Trail ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -880,7 +1120,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/boucan-canot.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/boucan-canot.jpg',
     caption: 'Sunset at Boucan Canot ©tripser',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -888,7 +1128,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/3-weeks-in-la-reunion/run-helico.jpg',
+    src: '/images/content/3-weeks-in-la-reunion/run-helico.jpg',
     caption: 'View from a helicopter over a waterfall in La Réunion ©runhelico.com',
     title: '3 weeks on La Réunion island',
     lang: 'en',
@@ -896,7 +1136,7 @@ const photos = [
     date: '2024-06-30',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/cabins.jpg',
+    src: '/images/content/cote-opale-trip/cabins.jpg',
     caption: 'The beach cabins of Stella plage ©destinationcotedopale.com',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
@@ -904,7 +1144,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/dunes.jpg',
+    src: '/images/content/cote-opale-trip/dunes.jpg',
     caption: 'The dunes of Stella ©tripser',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
@@ -912,7 +1152,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/seal.jpg',
+    src: '/images/content/cote-opale-trip/seal.jpg',
     caption: "Baby seal at the Baie d'Otie ©tripser",
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
@@ -920,7 +1160,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/path.jpg',
+    src: '/images/content/cote-opale-trip/path.jpg',
     caption: 'The dunes of Le Touquet ©tripser',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
@@ -928,7 +1168,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/surf.jpg',
+    src: '/images/content/cote-opale-trip/surf.jpg',
     caption: 'Surfing in Le Touquet ©tripser',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
@@ -936,7 +1176,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/nausicaa.jpg',
+    src: '/images/content/cote-opale-trip/nausicaa.jpg',
     caption: 'Manta ray in Nausicaa aquarium ©nausicaa.fr',
     title: "Côte d'Opale, 3 days of escape",
     lang: 'en',
@@ -944,7 +1184,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/cabins.jpg',
+    src: '/images/content/cote-opale-trip/cabins.jpg',
     caption: 'Les cabines de Stella plage ©destinationcotedopale.com',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
@@ -952,7 +1192,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/dunes.jpg',
+    src: '/images/content/cote-opale-trip/dunes.jpg',
     caption: 'Les dunes de Stella ©tripser',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
@@ -960,7 +1200,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/seal.jpg',
+    src: '/images/content/cote-opale-trip/seal.jpg',
     caption: "Bébé phoque à la Baie d'Otie ©tripser",
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
@@ -968,7 +1208,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/nausicaa.jpg',
+    src: '/images/content/cote-opale-trip/nausicaa.jpg',
     caption: "Raie Manta à l'aquarium de Nausicaa ©nausicaa.fr",
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
@@ -976,7 +1216,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/path.jpg',
+    src: '/images/content/cote-opale-trip/path.jpg',
     caption: 'Les dunes du Touquet ©tripser',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
@@ -984,7 +1224,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/cote-opale-trip/surf.jpg',
+    src: '/images/content/cote-opale-trip/surf.jpg',
     caption: 'Du Surf au Touquet ©tripser',
     title: "Côte d'Opale, 3 Jours d'Évasion",
     lang: 'fr',
@@ -992,7 +1232,7 @@ const photos = [
     date: '2024-01-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/strasbourg.jpg',
+    src: '/images/content/alsace-and-christmas-markets/strasbourg.jpg',
     caption: 'Strasbourg and its cathedral ©francebleu.fr',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1000,7 +1240,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/bains.jpg',
+    src: '/images/content/alsace-and-christmas-markets/bains.jpg',
     caption: 'Public baths in Strasbourg ©bulletindescommunes.net',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1008,7 +1248,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/petite-france.jpg',
+    src: '/images/content/alsace-and-christmas-markets/petite-france.jpg',
     caption: 'Petite France ©tripser',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1016,7 +1256,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/kaysersberg.jpg',
+    src: '/images/content/alsace-and-christmas-markets/kaysersberg.jpg',
     caption: 'Kaysersberg ©tripser',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1024,7 +1264,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/colmar.jpg',
+    src: '/images/content/alsace-and-christmas-markets/colmar.jpg',
     caption: 'Colmar ©visit.alsace',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1032,7 +1272,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/grande-roue.jpg',
+    src: '/images/content/alsace-and-christmas-markets/grande-roue.jpg',
     caption: 'Colmar Big wheel ©tripser',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1040,7 +1280,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/eguisheim.jpg',
+    src: '/images/content/alsace-and-christmas-markets/eguisheim.jpg',
     caption: 'Eguisheim ©tripser',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1048,7 +1288,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/3-fours.jpg',
+    src: '/images/content/alsace-and-christmas-markets/3-fours.jpg',
     caption: 'Domaine des 3 fours ©tripser',
     title: 'Discover Alsace and its Christmas markets',
     lang: 'en',
@@ -1056,7 +1296,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/strasbourg.jpg',
+    src: '/images/content/alsace-and-christmas-markets/strasbourg.jpg',
     caption: 'Strasbourg et sa cathédrale ©francebleu.fr',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1064,7 +1304,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/bains.jpg',
+    src: '/images/content/alsace-and-christmas-markets/bains.jpg',
     caption: 'Bains publics de Strasbourg ©bulletindescommunes.net',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1072,7 +1312,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/petite-france.jpg',
+    src: '/images/content/alsace-and-christmas-markets/petite-france.jpg',
     caption: 'Petite France ©tripser',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1080,7 +1320,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/kaysersberg.jpg',
+    src: '/images/content/alsace-and-christmas-markets/kaysersberg.jpg',
     caption: 'Kaysersberg ©tripser',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1088,7 +1328,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/colmar.jpg',
+    src: '/images/content/alsace-and-christmas-markets/colmar.jpg',
     caption: 'Colmar ©visit.alsace',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1096,7 +1336,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/grande-roue.jpg',
+    src: '/images/content/alsace-and-christmas-markets/grande-roue.jpg',
     caption: 'Colmar grande roue ©tripser',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1104,7 +1344,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/eguisheim.jpg',
+    src: '/images/content/alsace-and-christmas-markets/eguisheim.jpg',
     caption: 'Eguisheim ©tripser',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1112,7 +1352,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/alsace-and-christmas-markets/3-fours.jpg',
+    src: '/images/content/alsace-and-christmas-markets/3-fours.jpg',
     caption: 'Domaine des 3 fours ©tripser',
     title: "Découvrir l'Alsace et ses marchés de Noël",
     lang: 'fr',
@@ -1120,7 +1360,7 @@ const photos = [
     date: '2023-12-20',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mollans-sur-ouveze.jpg',
+    src: '/images/content/drome-and-vercors/mollans-sur-ouveze.jpg',
     caption: 'Aerial view of Mollans-sur-Ouvèze ©mollans.info',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1128,7 +1368,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/rock.jpg',
+    src: '/images/content/drome-and-vercors/rock.jpg',
     caption: 'Saint Julien rock ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1136,7 +1376,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mont-serein.jpg',
+    src: '/images/content/drome-and-vercors/mont-serein.jpg',
     caption: 'Mont Serein view ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1144,7 +1384,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/brantes.jpg',
+    src: '/images/content/drome-and-vercors/brantes.jpg',
     caption: 'Brantes village ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1152,7 +1392,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/via-ferrata.jpg',
+    src: '/images/content/drome-and-vercors/via-ferrata.jpg',
     caption: 'Via Ferrata St Julien ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1160,7 +1400,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/nyons.jpg',
+    src: '/images/content/drome-and-vercors/nyons.jpg',
     caption: 'Nyons view ©wikipedia',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1168,7 +1408,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/poet-laval.jpg',
+    src: '/images/content/drome-and-vercors/poet-laval.jpg',
     caption: 'View from Poet Laval ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1176,7 +1416,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/3-becs.jpg',
+    src: '/images/content/drome-and-vercors/3-becs.jpg',
     caption: 'The 3 becs hike ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1184,7 +1424,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/pont-en-royans.jpg',
+    src: '/images/content/drome-and-vercors/pont-en-royans.jpg',
     caption: 'Pont-en-Royans ©frankrijkpuur.nl',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1192,7 +1432,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/grand-veymont.jpg',
+    src: '/images/content/drome-and-vercors/grand-veymont.jpg',
     caption: 'Grand Veymont from Gresse-en-Vercors ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1200,7 +1440,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/goats.jpg',
+    src: '/images/content/drome-and-vercors/goats.jpg',
     caption: 'Goats on top of the Vercors ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1208,7 +1448,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mont-aiguille.jpg',
+    src: '/images/content/drome-and-vercors/mont-aiguille.jpg',
     caption: 'View of the Mont Aiguille ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1216,7 +1456,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/monteynard.jpg',
+    src: '/images/content/drome-and-vercors/monteynard.jpg',
     caption: 'The Hymalayan footbridges ©trieves-vercors.fr',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1224,7 +1464,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/lake.jpg',
+    src: '/images/content/drome-and-vercors/lake.jpg',
     caption: 'Monteynard lake ©tripser',
     title: 'A Journey through Drome and Vercors',
     lang: 'en',
@@ -1232,7 +1472,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mollans-sur-ouveze.jpg',
+    src: '/images/content/drome-and-vercors/mollans-sur-ouveze.jpg',
     caption: 'Vue aérienne de Mollans-sur-Ouvèze ©mollans.info',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1240,7 +1480,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/rock.jpg',
+    src: '/images/content/drome-and-vercors/rock.jpg',
     caption: 'Rocher Saint Julien ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1248,7 +1488,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mont-serein.jpg',
+    src: '/images/content/drome-and-vercors/mont-serein.jpg',
     caption: 'Vue du Mont Serein ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1256,7 +1496,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/brantes.jpg',
+    src: '/images/content/drome-and-vercors/brantes.jpg',
     caption: 'Village de Brantes ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1264,7 +1504,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/via-ferrata.jpg',
+    src: '/images/content/drome-and-vercors/via-ferrata.jpg',
     caption: 'Via Ferrata St Julien ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1272,7 +1512,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/nyons.jpg',
+    src: '/images/content/drome-and-vercors/nyons.jpg',
     caption: 'Vue de Nyons ©wikipedia',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1280,7 +1520,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/poet-laval.jpg',
+    src: '/images/content/drome-and-vercors/poet-laval.jpg',
     caption: 'Vue depuis Poet Laval ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1288,7 +1528,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/3-becs.jpg',
+    src: '/images/content/drome-and-vercors/3-becs.jpg',
     caption: 'La balade des 3 becs ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1296,7 +1536,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/pont-en-royans.jpg',
+    src: '/images/content/drome-and-vercors/pont-en-royans.jpg',
     caption: 'Pont-en-Royans ©frankrijkpuur.nl',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1304,7 +1544,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/grand-veymont.jpg',
+    src: '/images/content/drome-and-vercors/grand-veymont.jpg',
     caption: 'Grand Veymont depuis Gresse-en-Vercors ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1312,7 +1552,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/goats.jpg',
+    src: '/images/content/drome-and-vercors/goats.jpg',
     caption: 'Des chèvres au sommet du Vercors ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1320,7 +1560,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/mont-aiguille.jpg',
+    src: '/images/content/drome-and-vercors/mont-aiguille.jpg',
     caption: 'Vue du Mont Aiguille ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1328,7 +1568,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/monteynard.jpg',
+    src: '/images/content/drome-and-vercors/monteynard.jpg',
     caption: 'Les passerelles Hymalayennes ©trieves-vercors.fr',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1336,7 +1576,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/drome-and-vercors/lake.jpg',
+    src: '/images/content/drome-and-vercors/lake.jpg',
     caption: 'Lac de Monteynard ©tripser',
     title: 'Un voyage dans la Drome et le Vercors',
     lang: 'fr',
@@ -1344,7 +1584,7 @@ const photos = [
     date: '2023-12-06',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/vianden.jpg',
+    src: '/images/content/weekend-in-luxembourg/vianden.jpg',
     caption: 'Vue sur Vianden ©tripser',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1352,7 +1592,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/castle.jpg',
+    src: '/images/content/weekend-in-luxembourg/castle.jpg',
     caption: 'Château de Vianden ©castle-vianden.lu',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1360,7 +1600,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/victor-hugo.jpg',
+    src: '/images/content/weekend-in-luxembourg/victor-hugo.jpg',
     caption: 'Restaurant Victor Hugo à Vianden ©hotelvictorhugo.lu',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1368,7 +1608,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/kalktuffquell.jpg',
+    src: '/images/content/weekend-in-luxembourg/kalktuffquell.jpg',
     caption: 'Étang Kalktuffquell dans le Mullerthal ©squirrelsarah.com',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1376,7 +1616,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/scheissendempel.jpg',
+    src: '/images/content/weekend-in-luxembourg/scheissendempel.jpg',
     caption: 'Cascade Scheissendempel dans le Mullerthal ©researchluxembourg.org',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1384,7 +1624,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/echternach.jpg',
+    src: '/images/content/weekend-in-luxembourg/echternach.jpg',
     caption: "Ville d'Echternach ©visitluxembourg.com",
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1392,7 +1632,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/city.jpg',
+    src: '/images/content/weekend-in-luxembourg/city.jpg',
     caption: 'Luxembourg ville ©tripser',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1400,7 +1640,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/bridge.jpg',
+    src: '/images/content/weekend-in-luxembourg/bridge.jpg',
     caption: 'Le pont Adolf ©tripser',
     title: 'Un court weekend au Luxembourg',
     lang: 'fr',
@@ -1408,7 +1648,7 @@ const photos = [
     date: '2023-11-25',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/vianden.jpg',
+    src: '/images/content/weekend-in-luxembourg/vianden.jpg',
     caption: 'Vianden view ©tripser',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1416,7 +1656,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/castle.jpg',
+    src: '/images/content/weekend-in-luxembourg/castle.jpg',
     caption: 'Vianden castle ©castle-vianden.lu',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1424,7 +1664,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/victor-hugo.jpg',
+    src: '/images/content/weekend-in-luxembourg/victor-hugo.jpg',
     caption: 'Restaurant Victor Hugo in Vianden ©hotelvictorhugo.lu',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1432,7 +1672,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/kalktuffquell.jpg',
+    src: '/images/content/weekend-in-luxembourg/kalktuffquell.jpg',
     caption: 'Kalktuffquell ponds in Mullerthal ©squirrelsarah.com',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1440,7 +1680,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/scheissendempel.jpg',
+    src: '/images/content/weekend-in-luxembourg/scheissendempel.jpg',
     caption: 'Scheissendempel waterfall in Mullerthal ©researchluxembourg.org',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1448,7 +1688,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/echternach.jpg',
+    src: '/images/content/weekend-in-luxembourg/echternach.jpg',
     caption: 'Echternach city ©visitluxembourg.com',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1456,7 +1696,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/city.jpg',
+    src: '/images/content/weekend-in-luxembourg/city.jpg',
     caption: 'Luxembourg city ©tripser',
     title: 'A short weekend in Luxembourg',
     lang: 'en',
@@ -1464,7 +1704,7 @@ const photos = [
     date: '2023-11-15',
   },
   {
-    src: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/content/weekend-in-luxembourg/bridge.jpg',
+    src: '/images/content/weekend-in-luxembourg/bridge.jpg',
     caption: 'Adolf bridge ©tripser',
     title: 'A short weekend in Luxembourg',
     lang: 'en',

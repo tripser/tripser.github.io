@@ -17,6 +17,8 @@ export function Linkk({ href, children, ..._rest }: LinkType) {
 
   const exceptions = () => {
     if (String(href).includes('/admin')) return true;
+    if (href.startsWith('/en')) return true;
+    if (href.startsWith('/fr')) return true;
   };
 
   const _href = exceptions() ? `${href}` : `/${locale}${href}`;

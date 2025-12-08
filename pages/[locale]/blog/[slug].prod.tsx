@@ -14,6 +14,8 @@ import P2EN from '@pages/[locale]/blog/drome-and-vercors.mdx';
 import P2FR from '@pages/[locale]/blog/drome-et-vercors.mdx';
 import P6FR from '@pages/[locale]/blog/gorges-du-verdon.mdx';
 import P6EN from '@pages/[locale]/blog/gorges-of-verdon.mdx';
+import P9EN from '@pages/[locale]/blog/madeira.mdx';
+import P9FR from '@pages/[locale]/blog/madere.mdx';
 import P1FR from '@pages/[locale]/blog/weekend-au-luxembourg.mdx';
 import P1EN from '@pages/[locale]/blog/weekend-in-luxembourg.mdx';
 import { ArticleType } from '@types';
@@ -40,6 +42,8 @@ export default function BlogPostPage({ article }: { article: ArticleType }) {
     'croatie-en-2-semaines': P7FR,
     '1-week-in-crete': P8EN,
     '1-semaine-en-crete': P8FR,
+    madeira: P9EN,
+    madere: P9FR,
   };
 
   const Page = pages[slug];
