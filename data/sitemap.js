@@ -4,6 +4,8 @@ const sitemap = [
   { base: 'https://tripser.blog/blog', loc: 'https://tripser.blog/en/blog' },
   { base: 'https://tripser.blog/photos', loc: 'https://tripser.blog/en/photos' },
   { base: 'https://tripser.blog/search', loc: 'https://tripser.blog/en/search' },
+  { base: 'https://tripser.blog/blog/pouilles', loc: 'https://tripser.blog/fr/blog/pouilles' },
+  { base: 'https://tripser.blog/blog/puglia', loc: 'https://tripser.blog/en/blog/puglia' },
   { base: 'https://tripser.blog/blog/madeira', loc: 'https://tripser.blog/en/blog/madeira' },
   { base: 'https://tripser.blog/blog/madere', loc: 'https://tripser.blog/fr/blog/madere' },
   { base: 'https://tripser.blog/blog/1-semaine-en-crete', loc: 'https://tripser.blog/fr/blog/1-semaine-en-crete' },

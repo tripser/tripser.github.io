@@ -1,5 +1,36 @@
 const articles = [
   {
+    slug: 'pouilles',
+    title: 'Découvrez les Pouilles en une semaine',
+    intro:
+      "Préparez votre voyage d'une semaine dans les Pouilles en voiture. Découvrez notre itinéraire, nos conseils location, plages secrètes et bonnes adresses.",
+    img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/puglia.jpg',
+    published: '2026-05-25',
+    modified: '2026-05-25',
+    lang: 'fr',
+    en: 'puglia',
+    fr: '',
+    categories: 'voyage, europe, france, hike, beach, christmas, city-trip',
+    state: 'published',
+    link: '/blog/pouilles',
+    url: 'https://tripser.blog/fr/blog/pouilles',
+  },
+  {
+    slug: 'puglia',
+    title: 'Discover Puglia in one week',
+    intro: 'Intro',
+    img: 'https://raw.githubusercontent.com/tripser/tripser.github.io/main/public/images/articles/puglia.jpg',
+    published: '2026-05-25',
+    modified: '2026-05-25',
+    lang: 'en',
+    en: '',
+    fr: 'pouilles',
+    categories: 'voyage, europe, france, hike, beach, christmas, city-trip',
+    state: 'published',
+    link: '/blog/puglia',
+    url: 'https://tripser.blog/en/blog/puglia',
+  },
+  {
     slug: 'madeira',
     title: 'Madeira, hikes, villages and nature',
     intro:

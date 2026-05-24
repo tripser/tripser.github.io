@@ -16,6 +16,8 @@ import P6FR from '@pages/[locale]/blog/gorges-du-verdon.mdx';
 import P6EN from '@pages/[locale]/blog/gorges-of-verdon.mdx';
 import P9EN from '@pages/[locale]/blog/madeira.mdx';
 import P9FR from '@pages/[locale]/blog/madere.mdx';
+import P10FR from '@pages/[locale]/blog/pouilles.mdx';
+import P10EN from '@pages/[locale]/blog/puglia.mdx';
 import P1FR from '@pages/[locale]/blog/weekend-au-luxembourg.mdx';
 import P1EN from '@pages/[locale]/blog/weekend-in-luxembourg.mdx';
 import { ArticleType } from '@types';
@@ -44,6 +46,8 @@ export default function BlogPostPage({ article }: { article: ArticleType }) {
     '1-semaine-en-crete': P8FR,
     madeira: P9EN,
     madere: P9FR,
+    puglia: P10EN,
+    pouilles: P10FR,
   };
 
   const Page = pages[slug];
